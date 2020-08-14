@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">TravelApp</string>
     <string name="MenuBarTitle">be Free</string>
+    <string name="locationBarSample">Kandy,Sri Lanka</string>
+    <string name="hotelViewSort">Top Rated Hotels</string>
+    <string name="hotelItem1">Hotel thvesha</string>
+    <string name="LearnMoreBtn">Learn More</string>
+    <string name="bookNow">Book Now</string>
 </resources>
