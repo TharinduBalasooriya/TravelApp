@@ -3,7 +3,10 @@
     <string name="MenuBarTitle">be Free</string>
     <string name="locationBarSample">Kandy,Sri Lanka</string>
     <string name="hotelViewSort">Top Rated Hotels</string>
-    <string name="hotelItem1">Hotel thvesha</string>
+    <string name="hotelItem1">Theva Residency</string>
+    <string name="hotelItem2">The Grand Kandyan Hotel</string>
+    <string name="hotelItem3">Earls Regency</string>
+    <string name="hotelItem4">Serene Kandy</string>
     <string name="LearnMoreBtn">Learn More</string>
     <string name="bookNow">Book Now</string>
 </resources>
