@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".food"></activity>
+        <activity android:name=".RestaurantsList"></activity>
+        <activity android:name=".FoodCategory" />
         <activity android:name=".HotelList" />
         <activity android:name=".MainActivity">
             <intent-filter>

@@ -6,4 +6,9 @@
     <string name="hotelItem1">Hotel thvesha</string>
     <string name="LearnMoreBtn">Learn More</string>
     <string name="bookNow">Book Now</string>
+    <string name="restuarants">Restuarants</string>
+
+    <string name="todo">TODO</string>
+
+    <string name="shop_name">Shop name</string>
 </resources>
