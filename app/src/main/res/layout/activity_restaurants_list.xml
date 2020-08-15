@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:scrollbarSize="2dp"
+    tools:context=".HotelList">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="409dp"
+        android:layout_height="657dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <EditText
+
+            android:id="@+id/editTextTextPersonName8"
+            android:layout_width="273dp"
+            android:layout_height="45dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/restuarant6"
+            android:textAlignment="inherit"
+            android:textColor="#FAF6F6"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="120dp"
+            tools:layout_editor_absoluteY="528dp" />
+
+        <RatingBar
+            android:id="@+id/ratingBar6"
+            android:layout_width="240dp"
+            android:layout_height="45dp"
+            android:numStars="5"
+            android:progressTint="#FFEB3B"
+            android:rating="2"
+            android:stepSize="0.5"
+            tools:layout_editor_absoluteX="120dp"
+            tools:layout_editor_absoluteY="565dp" />
+
+        <EditText
+
+            android:id="@+id/editTextTextPersonName7"
+            android:layout_width="273dp"
+            android:layout_height="45dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/restuarant5"
+            android:textAlignment="inherit"
+            android:textColor="#FAF6F6"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="120dp"
+            tools:layout_editor_absoluteY="436dp" />
+
+        <RatingBar
+            android:id="@+id/ratingBar5"
+            android:layout_width="240dp"
+            android:layout_height="45dp"
+            android:numStars="5"
+            android:progressTint="#FFEB3B"
+            android:rating="5"
+
+            android:stepSize="0.5"
+            tools:layout_editor_absoluteX="120dp"
+            tools:layout_editor_absoluteY="473dp" />
+
+        <EditText
+
+            android:id="@+id/editTextTextPersonName6"
+            android:layout_width="273dp"
+            android:layout_height="45dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/restuarant4"
+            android:textAlignment="inherit"
+            android:textColor="#FAF6F6"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="120dp"
+            tools:layout_editor_absoluteY="345dp" />
+
+        <RatingBar
+            android:id="@+id/ratingBar4"
+            android:layout_width="240dp"
+            android:layout_height="45dp"
+            android:numStars="5"
+            android:progressTint="#FFEB3B"
+            android:rating="4"
+
+            android:stepSize="0.5"
+            tools:layout_editor_absoluteX="120dp"
+            tools:layout_editor_absoluteY="382dp" />
+
+        <RatingBar
+            android:id="@+id/ratingBar3"
+            android:layout_width="240dp"
+            android:layout_height="45dp"
+            android:numStars="5"
+            android:progressTint="#FFEB3B"
+            android:rating="1"
+
+            android:stepSize="0.5"
+            tools:layout_editor_absoluteX="122dp"
+            tools:layout_editor_absoluteY="290dp" />
+
+        <EditText
+
+            android:id="@+id/editTextTextPersonName5"
+            android:layout_width="273dp"
+            android:layout_height="45dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/restuarant3"
+            android:textAlignment="inherit"
+            android:textColor="#FAF6F6"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="122dp"
+            tools:layout_editor_absoluteY="252dp" />
+
+        <EditText
+
+            android:id="@+id/editTextTextPersonName4"
+            android:layout_width="273dp"
+            android:layout_height="45dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/restuarant2"
+            android:textAlignment="inherit"
+            android:textColor="#FAF6F6"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="122dp"
+            tools:layout_editor_absoluteY="164dp" />
+
+        <RatingBar
+            android:id="@+id/ratingBar2"
+            android:layout_width="240dp"
+            android:layout_height="45dp"
+            android:numStars="5"
+            android:progressTint="#FFEB3B"
+            android:rating="4"
+
+            android:stepSize="0.5"
+            tools:layout_editor_absoluteX="122dp"
+            tools:layout_editor_absoluteY="201dp" />
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="100dp"
+            android:layout_height="65dp"
+            android:background="#FFFFFF"
+            android:padding="1dp"
+            app:srcCompat="@drawable/hotwok"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="253dp" />
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="95dp"
+            android:layout_height="73dp"
+            android:background="#FFFFFF"
+            android:padding="1dp"
+            app:srcCompat="@drawable/pranzo"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="165dp" />
+
+        <ImageView
+            android:id="@+id/imageView16"
+            android:layout_width="100dp"
+            android:layout_height="65dp"
+            android:background="#FFFFFF"
+            android:padding="1dp"
+            app:srcCompat="@drawable/steamboat"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="346dp" />
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="93dp"
+            android:layout_height="60dp"
+            android:background="#FFFFFF"
+            android:padding="1dp"
+            app:srcCompat="@drawable/thebayleaf"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="437dp" />
+
+        <ImageView
+            android:id="@+id/imageView17"
+            android:layout_width="100dp"
+            android:layout_height="73dp"
+            android:background="#FFFFFF"
+            android:padding="1dp"
+            app:srcCompat="@drawable/lotusleaf"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="528dp" />
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="100dp"
+            android:layout_height="73dp"
+            android:background="#FFFFFF"
+            android:padding="1dp"
+            app:srcCompat="@drawable/gayan"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="75dp"
+
+            />
+
+        <EditText
+
+            android:layout_width="273dp"
+            android:layout_height="45dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/restuarant1"
+            android:textAlignment="inherit"
+            android:textColor="#FAF6F6"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="122dp"
+            tools:layout_editor_absoluteY="74dp" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="240dp"
+            android:layout_height="45dp"
+            android:clickable="false"
+
+            android:indeterminate="false"
+            android:numStars="5"
+            android:progressTint="#FFEB3B"
+            android:rating="3"
+            android:stepSize="0.5"
+            tools:layout_editor_absoluteX="122dp"
+            tools:layout_editor_absoluteY="111dp" />
+
+        <EditText
+            android:id="@+id/Restaurants"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/restuaranttitle"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="-39dp"
+            tools:layout_editor_absoluteY="3dp" />
+
+        <SearchView
+            android:layout_width="147dp"
+            android:layout_height="25dp"
+            android:background="#FFFFFF"
+            android:outlineSpotShadowColor="@color/black"
+            android:visibility="visible"
+            tools:layout_editor_absoluteX="248dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+

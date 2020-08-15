@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".hotelBookinForm1">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="417dp"
+        android:layout_height="151dp"
+        android:background="@drawable/path_10430"
+        android:backgroundTint="#29292B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="234dp"
+            android:layout_height="54dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/formTopic1"
+            android:textColor="#F6F6F6"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.579"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="68dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/textView4"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.496"
+            app:srcCompat="@drawable/icon_arrow_left" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout4"
+        android:layout_width="397dp"
+        android:layout_height="422dp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">
+
+        <LinearLayout
+            android:layout_width="398dp"
+            android:layout_height="397dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+
+            <EditText
+                android:id="@+id/customerFirstName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="40dp"
+                android:backgroundTint="#FFFFFF"
+                android:ems="10"
+                android:foregroundTint="#FFFFFF"
+                android:inputType="textPersonName"
+                android:text="firtst name"
+                android:textColor="#BDB8B8" />
+
+            <EditText
+                android:id="@+id/customerLastName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="40dp"
+                android:backgroundTint="#FFFFFF"
+                android:ems="10"
+                android:foregroundTint="#FFFFFF"
+                android:inputType="textPersonName"
+                android:text="Last name"
+                android:textColor="#BDB8B8" />
+
+            <EditText
+                android:id="@+id/customerMobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="40dp"
+                android:backgroundTint="#FFFFFF"
+                android:ems="10"
+                android:foregroundTint="#FFFFFF"
+                android:inputType="phone"
+                android:text="Mobile No"
+                android:textColor="#BDB8B8" />
+
+            <EditText
+                android:id="@+id/customerEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="40dp"
+                android:backgroundTint="#FFFFFF"
+                android:ems="10"
+                android:foregroundTint="#FFFFFF"
+                android:inputType="textEmailAddress"
+                android:text="Email"
+                android:textColor="#BDB8B8" />
+
+            <EditText
+                android:id="@+id/customerID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="40dp"
+                android:backgroundTint="#FFFFFF"
+                android:ems="10"
+                android:foregroundTint="#FFFFFF"
+                android:inputType="text"
+                android:text="NID"
+                android:textColor="#BDB8B8" />
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout5"
+        android:layout_width="408dp"
+        android:layout_height="80dp"
+        android:background="#29292B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/imageButton9"
+            android:layout_width="183dp"
+            android:layout_height="56dp"
+            android:backgroundTint="#00FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/bottom" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
