@@ -25,6 +25,7 @@
             android:id="@+id/textView4"
             android:layout_width="247dp"
             android:layout_height="73dp"
+            android:background="#00FFFFFF"
             android:fontFamily="@font/poppins_semibold"
             android:text="@string/formTopic2"
             android:textColor="#F6F6F6"
@@ -210,7 +211,6 @@
                     tools:ignore="MissingConstraints" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
-
 
 
         </LinearLayout>
