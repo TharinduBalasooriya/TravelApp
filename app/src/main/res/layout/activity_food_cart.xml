@@ -21,7 +21,7 @@
             android:id="@+id/textView18"
             android:layout_width="155dp"
             android:layout_height="27dp"
-            android:text="Food Name"
+            android:text="Chicken Curry"
             android:textColor="#000000"
             android:textSize="18sp"
             tools:layout_editor_absoluteX="116dp"
@@ -69,7 +69,10 @@
             android:layout_height="77dp"
             tools:layout_editor_absoluteX="16dp"
             tools:layout_editor_absoluteY="160dp"
-            tools:srcCompat="@tools:sample/avatars" />
+            app:srcCompat="@drawable/chickencurry"
+            android:background="#FFFFFF"
+            android:padding="1dp"/>
+
 
         <ImageView
             android:id="@+id/imageView18"
@@ -77,13 +80,15 @@
             android:layout_height="77dp"
             tools:layout_editor_absoluteX="16dp"
             tools:layout_editor_absoluteY="73dp"
-            tools:srcCompat="@tools:sample/avatars" />
+            app:srcCompat="@drawable/CHINESEFRIEDRICE"
+            android:background="#FFFFFF"
+            android:padding="1dp"/>
 
         <TextView
             android:id="@+id/textView15"
             android:layout_width="155dp"
             android:layout_height="27dp"
-            android:text="Food Name"
+            android:text="Chinese Fried Rice"
             android:textColor="#000000"
             android:textSize="18sp"
             tools:layout_editor_absoluteX="116dp"
@@ -113,14 +118,15 @@
             android:layout_height="63dp"
             android:background="#FFA500"
             android:text="Order Now"
-            tools:layout_editor_absoluteX="18dp"
-            tools:layout_editor_absoluteY="535dp" />
+
+            tools:layout_editor_absoluteX="22dp"
+            tools:layout_editor_absoluteY="578dp" />
 
         <TextView
             android:id="@+id/textView16"
             android:layout_width="142dp"
             android:layout_height="27dp"
-            android:text="Rs . 1000.00"
+            android:text="Rs . 850.00"
             android:textColor="#000000"
             android:textSize="18sp"
             tools:layout_editor_absoluteX="277dp"
@@ -140,13 +146,16 @@
             android:layout_height="77dp"
             tools:layout_editor_absoluteX="16dp"
             tools:layout_editor_absoluteY="248dp"
-            tools:srcCompat="@tools:sample/avatars" />
+            app:srcCompat="@drawable/cocacola"
+            android:background="#FFFFFF"
+            android:padding="1dp"/>
+
 
         <TextView
             android:id="@+id/textView12"
             android:layout_width="155dp"
             android:layout_height="27dp"
-            android:text="Food Name"
+            android:text="Coca Cola"
             android:textColor="#000000"
             android:textSize="18sp"
             tools:layout_editor_absoluteX="116dp"
@@ -174,7 +183,7 @@
             android:id="@+id/textView13"
             android:layout_width="142dp"
             android:layout_height="27dp"
-            android:text="Rs . 1000.00"
+            android:text="Rs . 250.00"
             android:textColor="#000000"
             android:textSize="18sp"
             tools:layout_editor_absoluteX="277dp"
@@ -205,10 +214,10 @@
             android:layout_height="50dp"
             android:text="Total : "
             android:textColor="#000000"
-            android:textSize="30sp"
+            android:textSize="25sp"
             android:textStyle="bold"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="459dp" />
+            tools:layout_editor_absoluteX="21dp"
+            tools:layout_editor_absoluteY="517dp" />
 
         <TextView
             android:id="@+id/textView22"
@@ -216,10 +225,16 @@
             android:layout_height="51dp"
             android:text="Rs . 3000.00"
             android:textColor="#000000"
-            android:textSize="30sp"
+            android:textSize="25sp"
             android:textStyle="bold"
-            tools:layout_editor_absoluteX="199dp"
-            tools:layout_editor_absoluteY="459dp" />
+            tools:layout_editor_absoluteX="207dp"
+            tools:layout_editor_absoluteY="516dp" />
+
+        <SearchView
+            android:layout_width="226dp"
+            android:layout_height="41dp"
+            tools:layout_editor_absoluteX="175dp"
+            tools:layout_editor_absoluteY="16dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
