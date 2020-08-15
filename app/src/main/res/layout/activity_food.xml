@@ -48,9 +48,10 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:src="@drawable/friedrice" />
+                        android:id="@+id/imageView28"
+                        android:layout_width="match_parent"
+                        android:layout_height="89dp"
+                        app:srcCompat="@drawable/friedrice" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -82,9 +83,10 @@
                     android:gravity="center">
 
                     <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:src="@drawable/Noodles"/>
+                        android:id="@+id/imageView27"
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        app:srcCompat="@drawable/noodles" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -115,9 +117,10 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:src="@drawable/Koththu" />
+                        android:id="@+id/imageView21"
+                        android:layout_width="match_parent"
+                        android:layout_height="129dp"
+                        app:srcCompat="@drawable/koththu" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -128,6 +131,7 @@
                         android:textSize="20dp">
 
                     </TextView>
+
 
                 </LinearLayout>
 
@@ -149,9 +153,10 @@
                     android:gravity="center">
 
                     <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:src="@drawable/Curries"/>
+                        android:id="@+id/imageView29"
+                        android:layout_width="match_parent"
+                        android:layout_height="112dp"
+                        app:srcCompat="@drawable/curries" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -183,9 +188,10 @@
                     android:gravity="center">
 
                     <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:src="@drawable/Drinks"/>
+                        android:id="@+id/imageView30"
+                        android:layout_width="match_parent"
+                        android:layout_height="114dp"
+                        app:srcCompat="@drawable/drinks" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -217,9 +223,10 @@
                     android:gravity="center">
 
                     <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:src="@drawable/Dessert"/>
+                        android:id="@+id/imageView31"
+                        android:layout_width="match_parent"
+                        android:layout_height="127dp"
+                        app:srcCompat="@drawable/dessert" />
 
                     <TextView
                         android:layout_width="wrap_content"

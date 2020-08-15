@@ -150,7 +150,7 @@
             android:layout_height="65dp"
             android:background="#FFFFFF"
             android:padding="1dp"
-            app:srcCompat="@drawable/HotWok"
+            app:srcCompat="@drawable/hotwok"
             tools:layout_editor_absoluteX="16dp"
             tools:layout_editor_absoluteY="253dp" />
 
@@ -160,7 +160,7 @@
             android:layout_height="73dp"
             android:background="#FFFFFF"
             android:padding="1dp"
-            app:srcCompat="@drawable/Pranzo"
+            app:srcCompat="@drawable/pranzo"
             tools:layout_editor_absoluteX="16dp"
             tools:layout_editor_absoluteY="165dp" />
 
@@ -170,17 +170,17 @@
             android:layout_height="65dp"
             android:background="#FFFFFF"
             android:padding="1dp"
-            app:srcCompat="@drawable/Steamboat"
+            app:srcCompat="@drawable/steamboat"
             tools:layout_editor_absoluteX="16dp"
             tools:layout_editor_absoluteY="346dp" />
 
         <ImageView
             android:id="@+id/imageView11"
-            android:layout_width="100dp"
-            android:layout_height="50dp"
+            android:layout_width="93dp"
+            android:layout_height="60dp"
             android:background="#FFFFFF"
             android:padding="1dp"
-            app:srcCompat="@drawable/Thebayleaf"
+            app:srcCompat="@drawable/thebayleaf"
             tools:layout_editor_absoluteX="16dp"
             tools:layout_editor_absoluteY="437dp" />
 
@@ -190,7 +190,7 @@
             android:layout_height="73dp"
             android:background="#FFFFFF"
             android:padding="1dp"
-            app:srcCompat="@drawable/LotusLeaf"
+            app:srcCompat="@drawable/lotusleaf"
             tools:layout_editor_absoluteX="16dp"
             tools:layout_editor_absoluteY="528dp" />
 
