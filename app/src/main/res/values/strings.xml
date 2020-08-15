@@ -11,6 +11,7 @@
     <string name="bookNow">Book Now</string>
     <string name="restuarants">Restuarants</string>
     <string name="formTopic1">Personal Details</string>
+    <string name="formTopic2">Booking Information</string>
     <string name="formName">Name</string>
 
     <string name="todo">TODO</string>
