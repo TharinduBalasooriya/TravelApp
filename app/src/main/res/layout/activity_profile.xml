@@ -20,5 +20,14 @@
             app:srcCompat="@drawable/ic_baseline_payment_24"
             tools:layout_editor_absoluteX="153dp"
             tools:layout_editor_absoluteY="302dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="134dp" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
