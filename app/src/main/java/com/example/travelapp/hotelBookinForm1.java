@@ -1,11 +1,10 @@
 package com.example.travelapp;
 
-import android.os.Bundle;
-
 import androidx.appcompat.app.AppCompatActivity;
 
-public class MainActivity extends AppCompatActivity {
+import android.os.Bundle;
 
+public class hotelBookinForm1 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
