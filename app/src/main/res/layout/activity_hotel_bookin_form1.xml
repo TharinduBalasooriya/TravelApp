@@ -60,8 +60,8 @@
 
         <TextView
             android:id="@+id/textView4"
-            android:layout_width="203dp"
-            android:layout_height="49dp"
+            android:layout_width="234dp"
+            android:layout_height="54dp"
             android:fontFamily="@font/poppins_semibold"
             android:text="@string/formTopic1"
             android:textColor="#F6F6F6"
