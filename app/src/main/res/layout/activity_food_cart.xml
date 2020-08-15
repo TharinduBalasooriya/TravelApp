@@ -1,23 +1,229 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
+
+
     tools:context=".FoodCart">
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="409dp"
         android:layout_height="657dp"
-        android:orientation="vertical"
+        android:outlineProvider="none"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="1dp">
 
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="155dp"
+            android:layout_height="27dp"
+            android:text="Food Name"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="116dp"
+            tools:layout_editor_absoluteY="160dp" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="93dp"
+            android:layout_height="37dp"
+            android:text="Update"
+            tools:layout_editor_absoluteX="184dp"
+            tools:layout_editor_absoluteY="194dp" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="93dp"
+            android:layout_height="37dp"
+            android:text="Delete"
+            tools:layout_editor_absoluteX="287dp"
+            tools:layout_editor_absoluteY="194dp" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="142dp"
+            android:layout_height="27dp"
+            android:text="Rs . 1000.00"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="277dp"
+            tools:layout_editor_absoluteY="156dp" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="83dp"
+            android:layout_height="30dp"
+            android:text="x 1"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="116dp"
+            tools:layout_editor_absoluteY="202dp" />
+
         <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:id="@+id/imageView14"
+            android:layout_width="91dp"
+            android:layout_height="77dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="160dp"
             tools:srcCompat="@tools:sample/avatars" />
-    </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView18"
+            android:layout_width="91dp"
+            android:layout_height="77dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="73dp"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="155dp"
+            android:layout_height="27dp"
+            android:text="Food Name"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="116dp"
+            tools:layout_editor_absoluteY="72dp" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="83dp"
+            android:layout_height="30dp"
+            android:text="x 1"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="116dp"
+            tools:layout_editor_absoluteY="115dp" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="93dp"
+            android:layout_height="37dp"
+            android:text="Update"
+            tools:layout_editor_absoluteX="184dp"
+            tools:layout_editor_absoluteY="107dp" />
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="365dp"
+            android:layout_height="63dp"
+            android:background="#FFA500"
+            android:text="Order Now"
+            tools:layout_editor_absoluteX="18dp"
+            tools:layout_editor_absoluteY="535dp" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="142dp"
+            android:layout_height="27dp"
+            android:text="Rs . 1000.00"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="277dp"
+            tools:layout_editor_absoluteY="69dp" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="93dp"
+            android:layout_height="37dp"
+            android:text="Delete"
+            tools:layout_editor_absoluteX="287dp"
+            tools:layout_editor_absoluteY="107dp" />
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="91dp"
+            android:layout_height="77dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="248dp"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="155dp"
+            android:layout_height="27dp"
+            android:text="Food Name"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="116dp"
+            tools:layout_editor_absoluteY="247dp" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="83dp"
+            android:layout_height="30dp"
+            android:text="x 1"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="116dp"
+            tools:layout_editor_absoluteY="292dp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="93dp"
+            android:layout_height="37dp"
+            android:text="Update"
+            tools:layout_editor_absoluteX="184dp"
+            tools:layout_editor_absoluteY="284dp" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="142dp"
+            android:layout_height="27dp"
+            android:text="Rs . 1000.00"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="277dp"
+            tools:layout_editor_absoluteY="246dp" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="93dp"
+            android:layout_height="37dp"
+            android:text="Delete"
+            tools:layout_editor_absoluteX="287dp"
+            tools:layout_editor_absoluteY="284dp" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="145dp"
+            android:layout_height="50dp"
+            android:text="My Orders"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="145dp"
+            android:layout_height="50dp"
+            android:text="Total : "
+            android:textColor="#000000"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="459dp" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="179dp"
+            android:layout_height="51dp"
+            android:text="Rs . 3000.00"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="199dp"
+            tools:layout_editor_absoluteY="459dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
