@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".HotellearnMoreView">
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="356dp"
+        android:layout_height="110dp"
+        android:text="@string/thevaDisc"
+        android:textColor="#F6F0F0"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ratingBar9" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="390dp"
+        android:layout_height="176dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView28">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="342dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/rectangle_6197"
+                android:backgroundTint="#504747">
+
+                <TextView
+                    android:id="@+id/textView27"
+                    android:layout_width="267dp"
+                    android:layout_height="100dp"
+                    android:text="We had a brilliant time at Theva. The staff were phenomenal and the rooms were well furnished and super comfortable! The views are stunning and the food was superb. During this pandemic, everyone was handling the guidelines well and they’ve …We had a brilliant time at Theva. The staff were phenomenal and the rooms were well furnished and super comfortable! The views are stunning and the food was superb. During this pandemic, everyone was handling the guidelines well and they’ve …"
+                    android:textColor="#F6F5F5"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.081" />
+
+                <ImageView
+                    android:id="@+id/imageView22"
+                    android:layout_width="115dp"
+                    android:layout_height="37dp"
+                    android:layout_marginStart="56dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@drawable/update"
+                    tools:layout_editor_absoluteY="118dp" />
+
+                <ImageView
+                    android:id="@+id/imageView23"
+                    android:layout_width="113dp"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="16dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.224"
+                    app:layout_constraintStart_toEndOf="@+id/imageView22"
+                    app:srcCompat="@drawable/remove" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="250dp"
+        android:layout_height="43dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/theva"
+        android:textColor="#F6F6F6"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.565"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.324" />
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="148dp"
+        android:layout_height="142dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/theva" />
+
+    <RatingBar
+        android:id="@+id/ratingBar9"
+        android:layout_width="241dp"
+        android:layout_height="46dp"
+        android:progressBackgroundTint="#FFFFFF"
+        android:progressTint="#FF9800"
+        android:rating="4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.535"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.406" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

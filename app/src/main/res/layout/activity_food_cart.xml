@@ -12,6 +12,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="409dp"
         android:layout_height="657dp"
+        android:background="#C6C0C0"
         android:outlineProvider="none"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="1dp"
@@ -67,22 +68,22 @@
             android:id="@+id/imageView14"
             android:layout_width="91dp"
             android:layout_height="77dp"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="160dp"
-            app:srcCompat="@drawable/chickencurry"
             android:background="#FFFFFF"
-            android:padding="1dp"/>
+            android:padding="1dp"
+            app:srcCompat="@drawable/chickencurry"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="160dp" />
 
 
         <ImageView
             android:id="@+id/imageView18"
             android:layout_width="91dp"
             android:layout_height="77dp"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="73dp"
-            app:srcCompat="@drawable/CHINESEFRIEDRICE"
             android:background="#FFFFFF"
-            android:padding="1dp"/>
+            android:padding="1dp"
+            app:srcCompat="@drawable/CHINESEFRIEDRICE"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="73dp" />
 
         <TextView
             android:id="@+id/textView15"
@@ -144,11 +145,11 @@
             android:id="@+id/imageView15"
             android:layout_width="91dp"
             android:layout_height="77dp"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="248dp"
-            app:srcCompat="@drawable/cocacola"
             android:background="#FFFFFF"
-            android:padding="1dp"/>
+            android:padding="1dp"
+            app:srcCompat="@drawable/cocacola"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="248dp" />
 
 
         <TextView

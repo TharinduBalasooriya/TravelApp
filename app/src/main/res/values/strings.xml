@@ -24,5 +24,7 @@
     <string name="hotelBooking1PriceExample2">17,000/=</string>
     <string name="hotelBooking1PriceExample3">12,000/=</string>
     <string name="statusPending">STATUS : PENDING</string>
+    <string name="theva">Theva  Residency</string>
+    <string name="thevaDisc">Theva Residency promises serenity, romance and rejuvenation in the peaceful hills of Kandy. Ideally perched on the slopes of the Hantana mountain range, ...</string>
 
 </resources>
