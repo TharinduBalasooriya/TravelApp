@@ -122,6 +122,7 @@
                 android:ems="10"
                 android:foregroundTint="#FFFFFF"
                 android:inputType="datetime"
+
                 android:text="Check-out-Time"
                 android:textColor="#BDB8B8" />
 

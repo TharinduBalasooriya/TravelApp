@@ -12,9 +12,17 @@
     <string name="restuarants">Restuarants</string>
     <string name="formTopic1">Personal Details</string>
     <string name="formTopic2">Booking Information</string>
+    <string name="bookingListTopic">My Hotel Bookings</string>
     <string name="formName">Name</string>
-
     <string name="todo">TODO</string>
-
     <string name="shop_name">Shop name</string>
+    <string name="hotelBooking1">Booking ID : 001FB</string>
+    <string name="hotelBooking2">Booking ID : 002HB</string>
+    <string name="hotelBooking3">Booking ID : 003FB</string>
+    <string name="hotelBooking4">Booking ID : 004HB</string>
+    <string name="hotelBooking1PriceExample1">10,000/=</string>
+    <string name="hotelBooking1PriceExample2">17,000/=</string>
+    <string name="hotelBooking1PriceExample3">12,000/=</string>
+    <string name="statusPending">STATUS : PENDING</string>
+
 </resources>
