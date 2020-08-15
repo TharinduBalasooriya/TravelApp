@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
+    android:scrollbarSize="2dp"
     tools:context=".HotelList">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="409dp"
         android:layout_height="657dp"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp"
-        tools:ignore="MissingConstraints">
+        tools:layout_editor_absoluteY="1dp">
 
         <EditText
 
@@ -22,7 +22,7 @@
             android:layout_height="45dp"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Lotus Leaf Restaurant"
+            android:text="@string/restuarant6"
             android:textAlignment="inherit"
             android:textColor="#FAF6F6"
             android:textStyle="bold"
@@ -34,9 +34,9 @@
             android:layout_width="240dp"
             android:layout_height="45dp"
             android:numStars="5"
+            android:progressTint="#FFEB3B"
             android:rating="2"
             android:stepSize="0.5"
-
             tools:layout_editor_absoluteX="120dp"
             tools:layout_editor_absoluteY="565dp" />
 
@@ -47,7 +47,7 @@
             android:layout_height="45dp"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="The Bayleaf"
+            android:text="@string/restuarant5"
             android:textAlignment="inherit"
             android:textColor="#FAF6F6"
             android:textStyle="bold"
@@ -59,9 +59,10 @@
             android:layout_width="240dp"
             android:layout_height="45dp"
             android:numStars="5"
+            android:progressTint="#FFEB3B"
             android:rating="5"
-            android:stepSize="0.5"
 
+            android:stepSize="0.5"
             tools:layout_editor_absoluteX="120dp"
             tools:layout_editor_absoluteY="473dp" />
 
@@ -72,7 +73,7 @@
             android:layout_height="45dp"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Steamboat Restaurant"
+            android:text="@string/restuarant4"
             android:textAlignment="inherit"
             android:textColor="#FAF6F6"
             android:textStyle="bold"
@@ -84,9 +85,10 @@
             android:layout_width="240dp"
             android:layout_height="45dp"
             android:numStars="5"
+            android:progressTint="#FFEB3B"
             android:rating="4"
-            android:stepSize="0.5"
 
+            android:stepSize="0.5"
             tools:layout_editor_absoluteX="120dp"
             tools:layout_editor_absoluteY="382dp" />
 
@@ -95,9 +97,10 @@
             android:layout_width="240dp"
             android:layout_height="45dp"
             android:numStars="5"
+            android:progressTint="#FFEB3B"
             android:rating="1"
-            android:stepSize="0.5"
 
+            android:stepSize="0.5"
             tools:layout_editor_absoluteX="122dp"
             tools:layout_editor_absoluteY="290dp" />
 
@@ -108,7 +111,7 @@
             android:layout_height="45dp"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Hot Wok Restaurant and Pub"
+            android:text="@string/restuarant3"
             android:textAlignment="inherit"
             android:textColor="#FAF6F6"
             android:textStyle="bold"
@@ -122,7 +125,7 @@
             android:layout_height="45dp"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Pranzo"
+            android:text="@string/restuarant2"
             android:textAlignment="inherit"
             android:textColor="#FAF6F6"
             android:textStyle="bold"
@@ -134,9 +137,10 @@
             android:layout_width="240dp"
             android:layout_height="45dp"
             android:numStars="5"
+            android:progressTint="#FFEB3B"
             android:rating="4"
-            android:stepSize="0.5"
 
+            android:stepSize="0.5"
             tools:layout_editor_absoluteX="122dp"
             tools:layout_editor_absoluteY="201dp" />
 
@@ -144,66 +148,61 @@
             android:id="@+id/imageView13"
             android:layout_width="100dp"
             android:layout_height="65dp"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="253dp"
-            app:srcCompat="@drawable/HotWok"
             android:background="#FFFFFF"
             android:padding="1dp"
-            />
+            app:srcCompat="@drawable/HotWok"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="253dp" />
 
         <ImageView
             android:id="@+id/imageView12"
             android:layout_width="95dp"
             android:layout_height="73dp"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="165dp"
-            app:srcCompat="@drawable/Pranzo"
             android:background="#FFFFFF"
             android:padding="1dp"
-            />
+            app:srcCompat="@drawable/Pranzo"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="165dp" />
 
         <ImageView
             android:id="@+id/imageView16"
             android:layout_width="100dp"
             android:layout_height="65dp"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="346dp"
-            app:srcCompat="@drawable/Steamboat"
             android:background="#FFFFFF"
             android:padding="1dp"
-            />
+            app:srcCompat="@drawable/Steamboat"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="346dp" />
 
         <ImageView
             android:id="@+id/imageView11"
             android:layout_width="100dp"
             android:layout_height="50dp"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="437dp"
-            app:srcCompat="@drawable/Thebayleaf"
             android:background="#FFFFFF"
             android:padding="1dp"
-            />
+            app:srcCompat="@drawable/Thebayleaf"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="437dp" />
 
         <ImageView
             android:id="@+id/imageView17"
             android:layout_width="100dp"
             android:layout_height="73dp"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="528dp"
-            app:srcCompat="@drawable/LotusLeaf"
             android:background="#FFFFFF"
             android:padding="1dp"
-            />
+            app:srcCompat="@drawable/LotusLeaf"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="528dp" />
 
         <ImageView
             android:id="@+id/imageView15"
             android:layout_width="100dp"
             android:layout_height="73dp"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="75dp"
-            app:srcCompat="@drawable/gayan"
             android:background="#FFFFFF"
             android:padding="1dp"
+            app:srcCompat="@drawable/gayan"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="75dp"
 
             />
 
@@ -213,7 +212,7 @@
             android:layout_height="45dp"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Fresh Ma Meal"
+            android:text="@string/restuarant1"
             android:textAlignment="inherit"
             android:textColor="#FAF6F6"
             android:textStyle="bold"
@@ -224,10 +223,13 @@
             android:id="@+id/ratingBar"
             android:layout_width="240dp"
             android:layout_height="45dp"
+            android:clickable="false"
+
+            android:indeterminate="false"
             android:numStars="5"
+            android:progressTint="#FFEB3B"
             android:rating="3"
             android:stepSize="0.5"
-
             tools:layout_editor_absoluteX="122dp"
             tools:layout_editor_absoluteY="111dp" />
 
@@ -237,7 +239,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Restaurants"
+            android:text="@string/restuaranttitle"
             android:textAlignment="center"
             android:textColor="#FFFFFF"
             android:textSize="24sp"
@@ -245,10 +247,13 @@
             tools:layout_editor_absoluteY="3dp" />
 
         <SearchView
-            android:layout_width="135dp"
-            android:layout_height="33dp"
-            tools:layout_editor_absoluteX="258dp"
-            tools:layout_editor_absoluteY="22dp" />
+            android:layout_width="147dp"
+            android:layout_height="25dp"
+            android:background="#FFFFFF"
+            android:outlineSpotShadowColor="@color/black"
+            android:visibility="visible"
+            tools:layout_editor_absoluteX="248dp"
+            tools:layout_editor_absoluteY="16dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
