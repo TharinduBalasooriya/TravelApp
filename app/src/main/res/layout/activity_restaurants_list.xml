@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".HotelList">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="409dp"
+        android:layout_height="657dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="95dp"
+            android:layout_height="83dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="253dp"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="95dp"
+            android:layout_height="83dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="165dp"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/imageView16"
+            android:layout_width="95dp"
+            android:layout_height="83dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="346dp"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="95dp"
+            android:layout_height="83dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="437dp"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/imageView17"
+            android:layout_width="95dp"
+            android:layout_height="83dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="528dp"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="95dp"
+            android:layout_height="83dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="75dp"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <EditText
+
+            android:layout_width="271dp"
+            android:layout_height="83dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Shop Name"
+            android:textAlignment="center"
+            android:textColor="#FAF6F6"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="122dp"
+            tools:layout_editor_absoluteY="74dp" />
+
+        <EditText
+
+            android:layout_width="271dp"
+            android:layout_height="83dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Shop Name"
+            android:textAlignment="center"
+            android:textColor="#FAF6F6"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="122dp"
+            tools:layout_editor_absoluteY="163dp" />
+
+        <EditText
+
+            android:layout_width="271dp"
+            android:layout_height="83dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Shop Name"
+            android:textAlignment="center"
+            android:textColor="#FAF6F6"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="122dp"
+            tools:layout_editor_absoluteY="252dp" />
+
+        <EditText
+
+            android:layout_width="271dp"
+            android:layout_height="83dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Shop Name"
+            android:textAlignment="center"
+            android:textColor="#FAF6F6"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="122dp"
+            tools:layout_editor_absoluteY="347dp" />
+
+        <EditText
+
+            android:layout_width="271dp"
+            android:layout_height="83dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Shop Name"
+            android:textAlignment="center"
+            android:textColor="#FAF6F6"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="122dp"
+            tools:layout_editor_absoluteY="436dp" />
+
+        <EditText
+
+            android:layout_width="271dp"
+            android:layout_height="83dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Shop Name"
+            android:textAlignment="center"
+            android:textColor="#FAF6F6"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="122dp"
+            tools:layout_editor_absoluteY="528dp"
+            android:autofillHints="" />
+
+        <EditText
+            android:id="@+id/Restaurants"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Restaurants"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="65dp"
+            tools:layout_editor_absoluteY="11dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
