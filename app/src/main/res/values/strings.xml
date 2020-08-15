@@ -27,4 +27,44 @@
     <string name="theva">Theva  Residency</string>
     <string name="thevaDisc">Theva Residency promises serenity, romance and rejuvenation in the peaceful hills of Kandy. Ideally perched on the slopes of the Hantana mountain range, ...</string>
 
+    <string name="categorytitle">Food and Beverage</string>
+    <string name="category1">Fried Rice</string>
+    <string name="category2">Noodles</string>
+    <string name="category3">Koththu</string>
+    <string name="category4">Curries</string>
+    <string name="category5">Drink</string>
+    <string name="category6">Dessert</string>
+    <string name="Orders">My Orders</string>
+
+    <string name="restuaranttitle">Restuarants</string>
+    <string name="restuarant1">Fresh Ma Meal</string>
+    <string name="restuarant2">Pranzo</string>
+    <string name="restuarant3">Hot Wok Restaurant and Pub</string>
+    <string name="restuarant4">Steamboat Restaurant</string>
+    <string name="restuarant5">The Bayleaf</string>
+    <string name="restuarant6">Lotus Leaf Restaurant</string>
+
+
+    <string name="ExampleFood1">Chinese Fried Rice</string>
+    <string name="ExampleFood2">Chicken Curry</string>
+    <string name="ExampleFood3">Coca Cola</string>
+
+    <string name="ExamplePrice1">Rs. 850 </string>
+    <string name="ExamplePrice2">Rs. 1000</string>
+    <string name="ExamplePrice3">Rs. 300</string>
+
+    <string name="ExampleQuantity1">x1</string>
+    <string name="ExampleQuantity2">x1</string>
+    <string name="ExampleQuantity3">x2</string>
+
+    <string name="Button1">Update</string>
+    <string name="Button2">Delete</string>
+
+    <string name="Totalcost">Total : </string>
+    <string name="Totalprice">Rs. 2150.00</string>
+
+    <string name="Ordernowbutton">Order Now</string>
+
+
+
 </resources>
