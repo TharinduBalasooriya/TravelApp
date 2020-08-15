@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".food"></activity>
+        <activity android:name=".Destinations"></activity>
+        <activity android:name=".TripProfile" />
+        <activity android:name=".Trip" />
+        <activity android:name=".Destination" />
+        <activity android:name=".food" />
         <activity android:name=".HotelList" />
         <activity android:name=".MainActivity">
             <intent-filter>
