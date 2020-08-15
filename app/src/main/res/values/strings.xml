@@ -10,6 +10,8 @@
     <string name="LearnMoreBtn">Learn More</string>
     <string name="bookNow">Book Now</string>
     <string name="restuarants">Restuarants</string>
+    <string name="formTopic1">Personal Details</string>
+    <string name="formName">Name</string>
 
     <string name="todo">TODO</string>
 

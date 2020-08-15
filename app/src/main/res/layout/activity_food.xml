@@ -16,10 +16,10 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="My_dashboard"
-            android:textSize="24sp"
+            android:layout_margin="20dp"
+            android:text="Food and Beverage"
             android:textColor="@color/white"
-            android:layout_margin="20dp"/>
+            android:textSize="24sp" />
 
         <GridLayout
             android:layout_width="match_parent"
@@ -36,8 +36,8 @@
                 android:layout_width="170dp"
                 android:layout_height="170dp"
                 android:layout_margin="10dp"
-                android:background="#F6ECEC"
-                app:cardBackgroundColor="@color/black"
+                android:background="@color/gray"
+                app:cardBackgroundColor="@color/gray"
                 app:cardCornerRadius="12dp"
                 app:cardElevation="5dp">
 
@@ -48,15 +48,15 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="35dp"
-                        android:layout_height="34dp"
-                        android:src="@drawable/coffee" />
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/friedrice" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="20dp"
-                        android:text="Drinks"
+                        android:layout_marginTop="10dp"
+                        android:text="Fried Rice"
                         android:textColor="@color/white"
                         android:textSize="20dp">
 
@@ -82,16 +82,17 @@
                     android:gravity="center">
 
                     <ImageView
-                        android:layout_width="35dp"
-                        android:layout_height="34dp"
-                        android:src="@drawable/coffee"/>
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/Noodles"/>
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Drinks"
-                        android:textSize="20dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Noodles"
                         android:textColor="@color/white"
-                        android:layout_marginTop="20dp">
+                        android:textSize="20dp">
 
                     </TextView>
 
@@ -114,15 +115,15 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="35dp"
-                        android:layout_height="34dp"
-                        android:src="@drawable/coffee" />
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/Koththu" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="20dp"
-                        android:text="Drinks"
+                        android:layout_marginTop="10dp"
+                        android:text="Koththu"
                         android:textColor="@color/white"
                         android:textSize="20dp">
 
@@ -148,16 +149,17 @@
                     android:gravity="center">
 
                     <ImageView
-                        android:layout_width="35dp"
-                        android:layout_height="34dp"
-                        android:src="@drawable/coffee"/>
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/Curries"/>
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Drinks"
-                        android:textSize="20dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Curries"
                         android:textColor="@color/white"
-                        android:layout_marginTop="20dp">
+                        android:textSize="20dp">
 
                     </TextView>
 
@@ -181,16 +183,16 @@
                     android:gravity="center">
 
                     <ImageView
-                        android:layout_width="35dp"
-                        android:layout_height="34dp"
-                        android:src="@drawable/coffee"/>
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/Drinks"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Drinks"
                         android:textSize="20dp"
                         android:textColor="@color/white"
-                        android:layout_marginTop="20dp">
+                        android:layout_marginTop="10dp">
 
                     </TextView>
 
@@ -214,16 +216,17 @@
                     android:gravity="center">
 
                     <ImageView
-                        android:layout_width="35dp"
-                        android:layout_height="34dp"
-                        android:src="@drawable/coffee"/>
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/Dessert"/>
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Drinks"
-                        android:textSize="20dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Dessert"
                         android:textColor="@color/white"
-                        android:layout_marginTop="20dp">
+                        android:textSize="20dp">
 
                     </TextView>
 
@@ -253,7 +256,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Cart"
+                    android:text="My Orders"
                     android:textSize="20dp"
                     android:textColor="@color/white"
                     android:layout_marginTop="8dp">

@@ -17,17 +17,18 @@
         android:id="@+id/color40"
         android:layout_width="match_parent"
         android:layout_height="400dip"
+        android:layout_marginTop="36dp"
         android:alpha="	"
-        android:background="#92BCBCBC"
-        tools:layout_editor_absoluteX="14dp"
-        tools:layout_editor_absoluteY="149dp" />
+        android:background="#80BCBCBC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <Button
         android:id="@+id/login"
-        android:layout_width="328dp"
-        android:layout_height="58dp"
+        android:layout_width="320dp"
+        android:layout_height="66dp"
         android:layout_gravity="start"
-        android:layout_marginEnd="16dp"
         android:layout_marginBottom="216dp"
         android:background="#99E6E0E0"
         android:enabled="false"
@@ -40,6 +41,7 @@
         android:textStyle="@string/LearnMoreBtn"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         tools:text="Sign In" />
 
     <ProgressBar
@@ -51,30 +53,32 @@
         android:layout_marginBottom="64dp"
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.3"
-        tools:layout_editor_absoluteX="206dp" />
+        app:layout_constraintVertical_bias="0.3" />
 
     <EditText
         android:id="@+id/editTextTextPassword"
-        android:layout_width="331dp"
-        android:layout_height="58dp"
+        android:layout_width="322dp"
+        android:layout_height="62dp"
         android:drawableLeft="@drawable/ic_baseline_lock_24"
         android:ems="10"
         android:inputType="textPassword"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="277dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="268dp" />
 
     <EditText
         android:id="@+id/editTextTextEmailAddress"
-        android:layout_width="329dp"
-        android:layout_height="57dp"
+        android:layout_width="323dp"
+        android:layout_height="55dp"
         android:drawableLeft="@drawable/ic_baseline_perm_identity_24"
         android:ems="10"
         android:filterTouchesWhenObscured="true"
         android:inputType="textEmailAddress"
-        tools:layout_editor_absoluteX="29dp"
-        tools:layout_editor_absoluteY="204dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="197dp" />
 
     <TextView
         android:id="@+id/textView15"
@@ -83,38 +87,63 @@
         android:text="Don't have an Account?"
         android:textColor="#1E1E1E"
         android:textSize="18sp"
-        tools:layout_editor_absoluteX="45dp"
-        tools:layout_editor_absoluteY="481dp" />
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="495dp" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="80dp"
         android:background="#99E6E0E0"
         android:text="Sign Up"
         android:textSize="18sp"
-        tools:layout_editor_absoluteX="241dp"
-        tools:layout_editor_absoluteY="481dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <EditText
         android:id="@+id/editTextTextPersonName4"
-        android:layout_width="168dp"
-        android:layout_height="39dp"
+        android:layout_width="179dp"
+        android:layout_height="45dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Forgot Password?"
-        tools:layout_editor_absoluteX="38dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="427dp" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chip4"
+        android:layout_width="157dp"
+        android:layout_height="45dp"
+        android:text="Remember me."
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="198dp"
         tools:layout_editor_absoluteY="427dp" />
 
     <TextView
-        android:id="@+id/textView16"
-        android:layout_width="292dp"
-        android:layout_height="45dp"
-        android:text="Already Have an Account?"
-        android:textColorHint="#100101"
-        android:textColorLink="#130101"
+        android:id="@+id/textView2"
+        android:layout_width="190dp"
+        android:layout_height="59dp"
+        android:drawableLeft="@drawable/ic_baseline_location_on_24"
+        android:text="HELLO"
+        android:textColorHint="#000000"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="262dp"
+        android:layout_height="56dp"
+        android:text="Sign into your Account..."
+        android:textColor="#0E0E0E"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="6dp"
-        tools:layout_editor_absoluteY="44dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="109dp" />
 
 
