@@ -145,4 +145,15 @@
     <string name="dessertprice4">Rs . 350</string>
     <string name="dessertprice5">Rs . 400</string>
 
+    <string name="bookingPreviewTitle">Booking ID : 001FB</string>
+    <string name="sampleName">Name : Tharindu Balasooriya</string>
+    <string name="sampleID">ID : 9812345678V</string>
+    <string name="sampleMObile">Mobile : 071 234 5657</string>
+    <string name="sampleEmail">Email : tharindu@gmail.com</string>
+    <string name="sampleCheckin">Check in Date - Time : 2020/8/15 - 12.00PM</string>
+    <string name="sampleCheckOut">Check in Date - Time : 2020/8/15 - 12.00PM</string>
+    <string name="sampleMembers">Adults : 4 Children : 3</string>
+    <string name="samplePayment">Total Payment : 10,000 /= </string>
+
+
 </resources>
