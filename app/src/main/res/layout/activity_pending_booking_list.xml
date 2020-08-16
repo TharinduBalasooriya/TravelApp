@@ -13,7 +13,7 @@
         android:layout_width="417dp"
         android:layout_height="151dp"
         android:background="@drawable/path_10430"
-        android:backgroundTint="#29292B"
+        android:backgroundTint="#3C3A3A"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.333"
@@ -43,7 +43,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/textView4"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.496"
+            app:layout_constraintVertical_bias="0.312"
             app:srcCompat="@drawable/icon_arrow_left" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
