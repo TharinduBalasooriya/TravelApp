@@ -70,8 +70,8 @@
                 android:orientation="vertical">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="87dp"
+                    android:layout_width="380dp"
+                    android:layout_height="123dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
                     android:layout_marginBottom="15dp"
@@ -79,8 +79,8 @@
 
                     <ImageView
                         android:id="@+id/imageView6"
-                        android:layout_width="117dp"
-                        android:layout_height="102dp"
+                        android:layout_width="140dp"
+                        android:layout_height="114dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
@@ -108,10 +108,10 @@
                         android:backgroundTint="#00FFFFFF"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@+id/imageButton2"
-                        app:layout_constraintHorizontal_bias="0.825"
+                        app:layout_constraintHorizontal_bias="1.0"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/textView7"
-                        app:layout_constraintVertical_bias="0.562"
+                        app:layout_constraintVertical_bias="0.538"
                         app:srcCompat="@drawable/component_408__1" />
 
                     <ImageButton
@@ -130,8 +130,8 @@
 
 
                 <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="87dp"
+                    android:layout_width="380dp"
+                    android:layout_height="123dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
                     android:layout_marginBottom="15dp"
@@ -139,8 +139,8 @@
 
                     <ImageView
                         android:id="@+id/imageView7"
-                        android:layout_width="117dp"
-                        android:layout_height="102dp"
+                        android:layout_width="140dp"
+                        android:layout_height="114dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
@@ -167,10 +167,10 @@
                         android:backgroundTint="#00FFFFFF"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@+id/imageButton4"
-                        app:layout_constraintHorizontal_bias="0.825"
+                        app:layout_constraintHorizontal_bias="1.0"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/textView8"
-                        app:layout_constraintVertical_bias="0.562"
+                        app:layout_constraintVertical_bias="0.519"
                         app:srcCompat="@drawable/component_408__1" />
 
                     <ImageButton
@@ -188,8 +188,8 @@
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="87dp"
+                    android:layout_width="380dp"
+                    android:layout_height="123dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
                     android:layout_marginBottom="15dp"
@@ -197,8 +197,8 @@
 
                     <ImageView
                         android:id="@+id/imageView8"
-                        android:layout_width="117dp"
-                        android:layout_height="102dp"
+                        android:layout_width="140dp"
+                        android:layout_height="114dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
@@ -225,10 +225,10 @@
                         android:backgroundTint="#00FFFFFF"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@+id/imageButton6"
-                        app:layout_constraintHorizontal_bias="0.825"
+                        app:layout_constraintHorizontal_bias="1.0"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/textView9"
-                        app:layout_constraintVertical_bias="0.562"
+                        app:layout_constraintVertical_bias="0.538"
                         app:srcCompat="@drawable/component_408__1" />
 
                     <ImageButton
@@ -247,8 +247,8 @@
 
 
                 <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="87dp"
+                    android:layout_width="369dp"
+                    android:layout_height="120dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
                     android:layout_marginBottom="15dp"
@@ -256,8 +256,8 @@
 
                     <ImageView
                         android:id="@+id/imageView9"
-                        android:layout_width="117dp"
-                        android:layout_height="102dp"
+                        android:layout_width="140dp"
+                        android:layout_height="114dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
