@@ -155,4 +155,31 @@
     <string name="sampleMembers">Adults : 4 Children : 3</string>
     <string name="samplePayment">Total Payment : 10,000 /= </string>
 
+    <string name="destinationTopic">Find Your Destination</string>
+    <string name="destination1">ANURADHAPURA</string>
+    <string name="destination2">ELLA</string>
+    <string name="destination3">SIGIRYA</string>
+    <string name="destination4">MIRISSA</string>
+    <string name="destination5">Nuwara Eliya</string>
+    <string name="destination6">Kandy</string>
+    <string name="seeMore">See more>></string>
+    <string name="tripFormTopic">Plan your trip</string>
+    <string name="tripFormTopic2">Trip Profile</string>
+
+    <string name="loginBtn">SIGN IN </string>
+    <string name="signUPbtn">SIGN UP</string>
+    <string name="createNewAccount">Don\'t have an Account?</string>
+    <string name="loginTopic1">Sign into your Account...</string>
+    <string name="loginTopic2">HELLO</string>
+    <string name="fgtPassword">Forgot Password?</string>
+    <string name="rmbrLgin">Remember Me</string>
+    <string name="newAccountName">Name</string>
+    <string name="newAccountPassword">Password</string>
+    <string name="newAccountEmail">Email</string>
+    <string name="newAccountContact">Contact Number</string>
+
+
+
+
+
 </resources>

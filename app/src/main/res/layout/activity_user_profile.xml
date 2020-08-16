@@ -33,7 +33,7 @@
                 android:layout_height="48dp"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:text="Name"
+                android:text="@string/newAccountName"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.505"
@@ -47,7 +47,7 @@
                 android:layout_height="48dp"
                 android:ems="10"
                 android:inputType="textEmailAddress"
-                android:text="E-mail"
+                android:text="@string/newAccountEmail"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.505"
@@ -61,7 +61,7 @@
                 android:layout_height="58dp"
                 android:ems="10"
                 android:inputType="phone"
-                android:text="Contact Number"
+                android:text="@string/newAccountContact"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.522"
@@ -90,9 +90,11 @@
                 android:layout_height="49dp"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:text="Password"
-                tools:layout_editor_absoluteX="44dp"
-                tools:layout_editor_absoluteY="240dp" />
+                android:text="@string/newAccountName"
+                app:layout_constraintBottom_toTopOf="@+id/button2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextPhone" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

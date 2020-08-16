@@ -39,15 +39,15 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Trip Profile"
+        android:text="@string/tripFormTopic2"
         android:textColor="@color/cardview_light_background"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/imageView"
         app:layout_constraintHorizontal_bias="0.392"
         app:layout_constraintStart_toStartOf="@+id/tpView"
-        tools:layout_editor_absoluteY="58dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="58dp" />
 
     <EditText
         android:id="@+id/editTextTextPersonName2"
