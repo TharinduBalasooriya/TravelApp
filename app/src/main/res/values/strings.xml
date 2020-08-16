@@ -11,149 +11,18 @@
     <string name="bookNow">Book Now</string>
     <string name="restuarants">Restuarants</string>
     <string name="formTopic1">Personal Details</string>
-    <string name="formTopic2">Booking Information</string>
-    <string name="bookingListTopic">My Hotel Bookings</string>
     <string name="formName">Name</string>
+
     <string name="todo">TODO</string>
+
     <string name="shop_name">Shop name</string>
-    <string name="hotelBooking1">Booking ID : 001FB</string>
-    <string name="hotelBooking2">Booking ID : 002HB</string>
-    <string name="hotelBooking3">Booking ID : 003FB</string>
-    <string name="hotelBooking4">Booking ID : 004HB</string>
-    <string name="hotelBooking1PriceExample1">10,000/=</string>
-    <string name="hotelBooking1PriceExample2">17,000/=</string>
-    <string name="hotelBooking1PriceExample3">12,000/=</string>
-    <string name="statusPending">STATUS : PENDING</string>
-    <string name="theva">Theva  Residency</string>
-    <string name="thevaDisc">Theva Residency promises serenity, romance and rejuvenation in the peaceful hills of Kandy. Ideally perched on the slopes of the Hantana mountain range, ...</string>
-
-    <string name="categorytitle">Food and Beverage</string>
-    <string name="category1">Fried Rice</string>
-    <string name="category2">Noodles</string>
-    <string name="category3">Koththu</string>
-    <string name="category4">Curries</string>
-    <string name="category5">Drinks</string>
-    <string name="category6">Desserts</string>
-    <string name="Orders">My Orders</string>
-
-    <string name="restuaranttitle">Restuarants</string>
-    <string name="restuarant1">Fresh Ma Meal</string>
-    <string name="restuarant2">Pranzo</string>
-    <string name="restuarant3">Hot Wok Restaurant and Pub</string>
-    <string name="restuarant4">Steamboat Restaurant</string>
-    <string name="restuarant5">The Bayleaf</string>
-    <string name="restuarant6">Lotus Leaf Restaurant</string>
-
-
-    <string name="ExampleFood1">Chinese Fried Rice</string>
-    <string name="ExampleFood2">Chicken Curry</string>
-    <string name="ExampleFood3">Coca Cola</string>
-
-    <string name="ExamplePrice1">Rs. 850 </string>
-    <string name="ExamplePrice2">Rs. 1000</string>
-    <string name="ExamplePrice3">Rs. 300</string>
-
-    <string name="ExampleQuantity1">x1</string>
-    <string name="ExampleQuantity2">x1</string>
-    <string name="ExampleQuantity3">x2</string>
-
-    <string name="Button1">Update</string>
-    <string name="Button2">Delete</string>
-    <string name="Button3">Add</string>
-
-
-    <string name="Totalcost">Total : </string>
-    <string name="Totalprice">Rs. 2150.00</string>
-
-    <string name="Ordernowbutton">Order Now</string>
-
-    <string name="FrieRiceType1">Lighter Fried Rice</string>
-    <string name="FrieRiceType2">Shrimp Fried Rice</string>
-    <string name="FrieRiceType3">Chicken Fried Rice</string>
-    <string name="FrieRiceType4">Almost Classic Pork Fried Rice</string>
-    <string name="FrieRiceType5">Fried Rice with Sweet Soy Sauce</string>
-    <string name="FrieRiceType6">Snow Pea-and-Pork Fried Rice</string>
-    <string name="FrieRiceType7">Quick and Easy Pork Fried Rice</string>
-
-    <string name="FrieRiceprice1">Rs . 350</string>
-    <string name="FrieRiceprice2">Rs . 200</string>
-    <string name="FrieRiceprice3">Rs . 450</string>
-    <string name="FrieRiceprice4">Rs . 400</string>
-    <string name="FrieRiceprice5">Rs . 550</string>
-    <string name="FrieRiceprice6">Rs . 350</string>
-    <string name="FrieRiceprice7">Rs . 400</string>
-
-
-    <string name="NoodlesType1">Japanese Soba Noodles</string>
-    <string name="NoodlesType2">Thai Noodle Soup</string>
-    <string name="NoodlesType3">Glass Noodle Salad</string>
-    <string name="NoodlesType4">Prawns Wrapped in Noodles</string>
-    <string name="NoodlesType5">Chicken Chopsuey</string>
-
-    <string name="Noodlesprice1">Rs . 650</string>
-    <string name="Noodlesprice2">Rs . 300</string>
-    <string name="Noodlesprice3">Rs . 250</string>
-    <string name="Noodlesprice4">Rs . 500</string>
-    <string name="Noodlesprice5">Rs . 750</string>
-
-    <string name="koththuType1">Roast Chicken Kottu roti</string>
-    <string name="koththuType2">Vegetarian Kottu roti </string>
-    <string name="koththuType3">Egg Kottu roti</string>
-    <string name="koththuType4">Cheese Kottu roti</string>
-    <string name="koththuType5">Chicken and Cheese Kottu roti</string>
-
-    <string name="koththuprice1">Rs . 350</string>
-    <string name="koththuprice2">Rs . 200</string>
-    <string name="koththuprice3">Rs . 450</string>
-    <string name="koththuprice4">Rs . 500</string>
-    <string name="koththuprice5">Rs . 650</string>
-
-    <string name="curriesType1">Fish ambul thiyal </string>
-    <string name="curriesType2">Parippu (dhal curry) </string>
-    <string name="curriesType3">Wambatu moju</string>
-    <string name="curriesType4">Polos (green jackfruit curry)</string>
-    <string name="curriesType5">Gotu kola sambol (salad)</string>
-
-    <string name="curriesprice1">Rs . 200</string>
-    <string name="curriesprice2">Rs . 250</string>
-    <string name="curriesprice3">Rs . 400</string>
-    <string name="curriesprice4">Rs . 350</string>
-    <string name="curriesprice5">Rs . 250</string>
-
-
-    <string name="drinksType1">Ceylon Tea</string>
-    <string name="drinksType2">King Coconut Juice</string>
-    <string name="drinksType3">Faluda</string>
-    <string name="drinksType4">Elephant House Ginger Beer</string>
-    <string name="drinksType5">Coca Cola</string>
-
-    <string name="drinksprice1">Rs . 150</string>
-    <string name="drinksprice2">Rs . 100</string>
-    <string name="drinksprice3">Rs . 150</string>
-    <string name="drinksprice4">Rs . 150</string>
-    <string name="drinksprice5">Rs . 200</string>.
-
-    <string name="dessertType1">Watalappam</string>
-    <string name="dessertType2">Ice Cream</string>
-    <string name="dessertType3">MILKMAID Coffee Pudding</string>
-    <string name="dessertType4">Chocolate Biscuit Pudding</string>
-    <string name="dessertType5">Christmas Pudding Truffles</string>
-
-    <string name="dessertprice1">Rs . 200</string>
-    <string name="dessertprice2">Rs . 300</string>
-    <string name="dessertprice3">Rs . 250</string>
-    <string name="dessertprice4">Rs . 350</string>
-    <string name="dessertprice5">Rs . 400</string>
-
-    <string name="bookingPreviewTitle">Booking ID : 001FB</string>
-    <string name="sampleName">Name : Tharindu Balasooriya</string>
-    <string name="sampleID">ID : 9812345678V</string>
-    <string name="sampleMObile">Mobile : 071 234 5657</string>
-    <string name="sampleEmail">Email : tharindu@gmail.com</string>
-    <string name="sampleCheckin">Check in Date - Time : 2020/8/15 - 12.00PM</string>
-    <string name="sampleCheckOut">Check in Date - Time : 2020/8/15 - 12.00PM</string>
-    <string name="sampleMembers">Adults : 4 Children : 3</string>
-    <string name="samplePayment">Total Payment : 10,000 /= </string>
-
-
+    <string name="title_activity_login">Login</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
 </resources>
