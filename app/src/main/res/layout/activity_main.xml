@@ -33,47 +33,44 @@
             android:background="@drawable/rectangle_6192">
 
             <androidx.gridlayout.widget.GridLayout
-                android:layout_width="317dp"
-                android:layout_height="260dp"
+                android:layout_width="304dp"
+                android:layout_height="295dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
 
-                <ImageButton
-                    android:id="@+id/imageButton8"
+                <ImageView
+                    android:id="@+id/imageView41"
                     android:layout_width="wrap_content"
-                    android:layout_height="124dp"
-                    android:backgroundTint="#00FFFFFF"
+                    android:layout_height="wrap_content"
                     app:layout_column="0"
                     app:layout_row="0"
-                    app:srcCompat="@drawable/component_6__1" />
+                    app:srcCompat="@drawable/component_4__1" />
 
-                <ImageButton
-                    android:id="@+id/hotel"
+                <ImageView
+                    android:id="@+id/imageView42"
                     android:layout_width="wrap_content"
-                    android:layout_height="128dp"
-                    android:backgroundTint="#00FFFFFF"
+                    android:layout_height="wrap_content"
                     app:layout_column="1"
                     app:layout_row="0"
                     app:srcCompat="@drawable/component_2__1" />
 
-                <ImageButton
+                <ImageView
+                    android:id="@+id/imageView43"
                     android:layout_width="wrap_content"
-                    android:layout_height="121dp"
-                    android:backgroundTint="#00FFFFFF"
-                    app:layout_column="1"
-                    app:layout_row="1"
-                    app:srcCompat="@drawable/component_2__1" />
-
-                <ImageButton
-                    android:id="@+id/imageButton7"
-                    android:layout_width="wrap_content"
-                    android:layout_height="121dp"
-                    android:backgroundTint="#00FFFFFF"
+                    android:layout_height="wrap_content"
                     app:layout_column="0"
                     app:layout_row="1"
                     app:srcCompat="@drawable/component_5__1" />
+
+                <ImageView
+                    android:id="@+id/imageView44"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_column="1"
+                    app:layout_row="1"
+                    app:srcCompat="@drawable/component_6__1" />
             </androidx.gridlayout.widget.GridLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>
 
