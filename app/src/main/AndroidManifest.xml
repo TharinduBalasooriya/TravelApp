@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".hotel_booking_preview"></activity>
+        <activity android:name=".login"></activity>
+        <activity android:name=".hotel_booking_preview" />
         <activity android:name=".my_deals" />
         <activity android:name=".dessertcategory" />
         <activity android:name=".drinkscategory" />
@@ -25,6 +26,10 @@
         <activity android:name=".RestaurantsList" />
         <activity android:name=".FoodCategory" />
         <activity android:name=".HotelList" />
+        <activity android:name=".AboutDestination" />
+        <activity android:name=".CardDetails" />
+        <activity android:name=".Destination" />
+        <activity android:name=".Destinations" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
