@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".hotel_booking_form2"></activity>
+        <activity android:name=".CardDetails"></activity>
+        <activity android:name=".SearchUserID" />
+        <activity android:name=".ViewUserDetails" />
+        <activity android:name=".userProfile" />
+        <activity android:name=".hotel_booking_form2" />
         <activity android:name=".hotelBookinForm1" />
         <activity android:name=".Profile" />
         <activity android:name=".RestaurantsList" />
