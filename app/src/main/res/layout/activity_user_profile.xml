@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".userProfile">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView2"
+        android:layout_width="409dp"
+        android:layout_height="79dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" >
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="391dp"
+            android:layout_height="66dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:text="Create a account"
+            android:textAlignment="textEnd"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:text="<"
+            android:textColor="#FFFFFF"
+            android:textSize="36sp" />
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bottomNavigationView3"
+        android:layout_width="411dp"
+        android:layout_height="576dp"
+        android:background="@drawable/profile01"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bottomNavigationView2"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout6"
+            android:layout_width="376dp"
+            android:layout_height="396dp"
+            android:background="#4DE8DFDF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.485"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <EditText
+                android:id="@+id/editTextTextPersonName3"
+                android:layout_width="289dp"
+                android:layout_height="48dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Name"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.505"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.08" />
+
+            <EditText
+                android:id="@+id/editTextTextEmailAddress2"
+                android:layout_width="285dp"
+                android:layout_height="48dp"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:text="E-mail"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.505"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.264" />
+
+            <EditText
+                android:id="@+id/editTextPhone"
+                android:layout_width="288dp"
+                android:layout_height="58dp"
+                android:ems="10"
+                android:inputType="phone"
+                android:text="Contact Number"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.522"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.461" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="288dp"
+                android:layout_height="45dp"
+                android:background="#66131313"
+                android:fontFamily="@font/almendra"
+                android:text="Create Account"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.522"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.897" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName9"
+                android:layout_width="287dp"
+                android:layout_height="49dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Password"
+                tools:layout_editor_absoluteX="44dp"
+                tools:layout_editor_absoluteY="240dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
