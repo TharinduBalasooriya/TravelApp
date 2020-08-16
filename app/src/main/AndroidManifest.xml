@@ -9,7 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AboutDestination"></activity>
+        <activity android:name=".hotel_booking_preview"></activity>
+        <activity android:name=".my_deals" />
+        <activity android:name=".dessertcategory" />
+        <activity android:name=".drinkscategory" />
+        <activity android:name=".curriescategory" />
+        <activity android:name=".koththucategory" />
+        <activity android:name=".noodlescategory" />
+        <activity android:name=".friedricecategory" />
         <activity android:name=".HotellearnMoreView" />
         <activity android:name=".pendingBookingList" />
         <activity android:name=".hotel_booking_form2" />
