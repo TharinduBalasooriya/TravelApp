@@ -2,12 +2,160 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="match_parent"
+    android:background="@color/gray"
     tools:context=".Destinations">
 
     <View
         android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="85dp"
+        android:background="@color/purple"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-5dp"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:background="@drawable/wave3"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView29"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Find Your Destination"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/view" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="409dp"
+        android:layout_height="128dp"
+        android:background="@drawable/anuradhapura"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="121dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="See more>>"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="320dp"
+            tools:layout_editor_absoluteY="107dp" />
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="248dp"
+            android:layout_height="41dp"
+            android:text="ANURADHAPURA"
+            android:textColor="@color/gray"
+            android:textSize="30sp"
+            android:textStyle="bold|italic"
+            tools:layout_editor_absoluteX="87dp"
+            tools:layout_editor_absoluteY="32dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="413dp"
+        android:layout_height="120dp"
+        android:background="@drawable/ella"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="267dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="See more>>"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="322dp"
+            tools:layout_editor_absoluteY="96dp" />
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ELLA"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold|italic"
+            tools:layout_editor_absoluteX="170dp"
+            tools:layout_editor_absoluteY="32dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="413dp"
+        android:layout_height="122dp"
+        android:background="@drawable/sigiriya2"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="399dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="125dp"
+            android:layout_height="47dp"
+            android:text="SIGIRIYA"
+            android:textColor="@color/gray"
+            android:textSize="30sp"
+            android:textStyle="bold|italic"
+            tools:layout_editor_absoluteX="143dp"
+            tools:layout_editor_absoluteY="26dp" />
+
+        <TextView
+            android:id="@+id/textView35"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="See more>>"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="322dp"
+            tools:layout_editor_absoluteY="98dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="410dp"
+        android:layout_height="124dp"
+        android:background="@drawable/MIRISSA1"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="534dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textView36"
+            android:layout_width="125dp"
+            android:layout_height="47dp"
+            android:text="MIRISSA"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold|italic"
+            tools:layout_editor_absoluteX="143dp"
+            tools:layout_editor_absoluteY="39dp" />
+
+        <TextView
+            android:id="@+id/textView37"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="See more>>"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="319dp"
+            tools:layout_editor_absoluteY="102dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
