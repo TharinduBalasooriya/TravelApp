@@ -14,12 +14,10 @@
         android:layout_height="151dp"
         android:background="@drawable/path_10430"
         android:backgroundTint="#3C3A3A"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:id="@+id/textView4"
@@ -112,24 +110,26 @@
                     app:layout_constraintTop_toBottomOf="@+id/textView24" />
 
                 <ImageView
-                    android:id="@+id/imageView2"
+                    android:id="@+id/imageView33"
                     android:layout_width="115dp"
-                    android:layout_height="37dp"
-                    android:layout_marginStart="140dp"
-                    android:layout_marginBottom="16dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:srcCompat="@drawable/update" />
-
-                <ImageView
-                    android:id="@+id/imageView19"
-                    android:layout_width="115dp"
-                    android:layout_height="37dp"
-                    android:layout_marginBottom="16dp"
+                    android:layout_height="39dp"
+                    android:layout_marginBottom="12dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/imageView2"
-                    app:srcCompat="@drawable/remove" />
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@drawable/group_16039" />
+
+                <ImageView
+                    android:id="@+id/imageView34"
+                    android:layout_width="115dp"
+                    android:layout_height="39dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginBottom="12dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.4"
+                    app:layout_constraintStart_toEndOf="@+id/imageView33"
+                    app:srcCompat="@drawable/group_16040" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -183,24 +183,26 @@
                     app:layout_constraintTop_toBottomOf="@+id/booking2T" />
 
                 <ImageView
-                    android:id="@+id/booking2UP"
+                    android:id="@+id/imageView35"
                     android:layout_width="115dp"
-                    android:layout_height="37dp"
-                    android:layout_marginStart="140dp"
-                    android:layout_marginBottom="16dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:srcCompat="@drawable/update" />
-
-                <ImageView
-                    android:id="@+id/booking2R"
-                    android:layout_width="115dp"
-                    android:layout_height="37dp"
-                    android:layout_marginBottom="16dp"
+                    android:layout_height="39dp"
+                    android:layout_marginBottom="12dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/booking2UP"
-                    app:srcCompat="@drawable/remove" />
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@drawable/group_16039" />
+
+                <ImageView
+                    android:id="@+id/imageView36"
+                    android:layout_width="115dp"
+                    android:layout_height="39dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginBottom="12dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.4"
+                    app:layout_constraintStart_toEndOf="@+id/imageView35"
+                    app:srcCompat="@drawable/group_16040" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -272,6 +274,30 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/booking3U"
                     app:srcCompat="@drawable/remove" />
+
+
+                <ImageView
+                    android:id="@+id/imageView37"
+                    android:layout_width="115dp"
+                    android:layout_height="39dp"
+                    android:layout_marginBottom="12dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@drawable/group_16039" />
+
+                <ImageView
+                    android:id="@+id/imageView38"
+                    android:layout_width="115dp"
+                    android:layout_height="39dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginBottom="12dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.4"
+                    app:layout_constraintStart_toEndOf="@+id/imageView37"
+                    app:srcCompat="@drawable/group_16040" />
+
 
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>

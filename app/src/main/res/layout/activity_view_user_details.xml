@@ -6,48 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".ViewUserDetails">
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomNavigationView4"
-        android:layout_width="419dp"
-        android:layout_height="88dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
-
-        <TextView
-            android:id="@+id/textView24"
-            android:layout_width="263dp"
-            android:layout_height="69dp"
-            android:layout_gravity="center|right"
-            android:fontFamily="sans-serif-condensed"
-            android:text="My Profile"
-            android:textAlignment="center"
-            android:textColor="#FFFFFF"
-            android:textSize="30sp" />
-
-        <Button
-            android:id="@+id/button10"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="#000000"
-            android:text="<"
-            android:textColor="#FFFFFF"
-            android:textSize="36sp" />
-    </com.google.android.material.bottomnavigation.BottomNavigationView>
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/bottomNavigationView5"
-        android:layout_width="414dp"
-        android:layout_height="574dp"
-        android:layout_marginBottom="4dp"
+        android:layout_width="409dp"
+        android:layout_height="652dp"
         android:background="@drawable/profile01"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.666"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <Button
             android:id="@+id/button11"
@@ -155,6 +123,17 @@
                 app:layout_constraintVertical_bias="0.072" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/imageView19"
+            android:layout_width="84dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.049"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/icon_arrow_left" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

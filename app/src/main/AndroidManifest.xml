@@ -9,10 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".cardssummary"></activity>
-        <activity android:name=".paymentsummary" />
-        <activity android:name=".carddetails02" />
-        <activity android:name=".hotel_booking_preview" />
+        <activity android:name=".hotel_booking_preview"></activity>
         <activity android:name=".my_deals" />
         <activity android:name=".dessertcategory" />
         <activity android:name=".drinkscategory" />

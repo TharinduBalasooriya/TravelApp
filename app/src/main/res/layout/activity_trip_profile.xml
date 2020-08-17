@@ -22,7 +22,8 @@
         android:layout_width="0dp"
         android:layout_height="90dp"
         android:background="@drawable/wave2"
-        app:layout_constraintTop_toBottomOf="@+id/tpView" />
+        app:layout_constraintTop_toBottomOf="@+id/tpView"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -31,19 +32,21 @@
         android:layout_marginEnd="24dp"
         app:layout_constraintEnd_toEndOf="@+id/tpView"
         app:srcCompat="@drawable/ic_baseline_person_24"
-        tools:layout_editor_absoluteY="28dp" />
+        tools:layout_editor_absoluteY="28dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Trip Profile"
+        android:text="@string/tripFormTopic2"
         android:textColor="@color/cardview_light_background"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/imageView"
         app:layout_constraintHorizontal_bias="0.392"
         app:layout_constraintStart_toStartOf="@+id/tpView"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteY="58dp" />
 
     <EditText
@@ -61,7 +64,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="231dp" />
+        tools:layout_editor_absoluteY="231dp"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/editTextTextPersonName7"
@@ -78,7 +82,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="302dp" />
+        tools:layout_editor_absoluteY="302dp"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/editTextTextPersonName8"
@@ -95,7 +100,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="372dp" />
+        tools:layout_editor_absoluteY="372dp"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/editTextTextPersonName9"
@@ -112,7 +118,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="445dp" />
+        tools:layout_editor_absoluteY="445dp"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/editTextTextPersonName10"
@@ -129,7 +136,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="516dp" />
+        tools:layout_editor_absoluteY="516dp"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button2"
@@ -139,9 +147,10 @@
         android:text="EDIT"
         android:textColor="@color/cardview_light_background"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.198"
+        app:layout_constraintHorizontal_bias="0.077"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="594dp" />
+        tools:layout_editor_absoluteY="594dp"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button3"
@@ -151,8 +160,22 @@
         android:text="DELETE"
         android:textColor="@color/cardview_light_background"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.743"
+        app:layout_constraintHorizontal_bias="0.925"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="594dp" />
+        tools:layout_editor_absoluteY="594dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_bd2"
+        android:text="UPDATE"
+        android:textColor="@color/cardview_light_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="594dp"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

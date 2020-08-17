@@ -1,15 +1,14 @@
 package com.example.travelapp;
 
-import android.os.Bundle;
-
 import androidx.appcompat.app.AppCompatActivity;
 
-public class MainActivity extends AppCompatActivity {
+import android.os.Bundle;
 
+public class AboutDestination extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_my_deals);
+        setContentView(R.layout.activity_about_destination);
     }
 }

@@ -6,50 +6,15 @@
     android:layout_height="match_parent"
     tools:context=".userProfile">
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomNavigationView2"
-        android:layout_width="409dp"
-        android:layout_height="79dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" >
-
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="394dp"
-            android:layout_height="match_parent"
-            android:fontFamily="sans-serif-condensed-light"
-            android:text="Create a account"
-            android:textAlignment="textEnd"
-            android:textAllCaps="false"
-            android:textColor="#FFFFFF"
-            android:textColorHint="#FFFFFF"
-            android:textSize="24sp" />
-
-        <Button
-            android:id="@+id/button8"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="#000000"
-            android:text="<"
-            android:textColor="#FFFFFF"
-            android:textSize="36sp" />
-    </com.google.android.material.bottomnavigation.BottomNavigationView>
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/bottomNavigationView3"
-        android:layout_width="411dp"
-        android:layout_height="576dp"
+        android:layout_width="408dp"
+        android:layout_height="655dp"
         android:background="@drawable/profile01"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bottomNavigationView2"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintStart_toStartOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintLayout6"
@@ -68,7 +33,7 @@
                 android:layout_height="48dp"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:text="Name"
+                android:text="@string/newAccountName"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.505"
@@ -82,7 +47,7 @@
                 android:layout_height="48dp"
                 android:ems="10"
                 android:inputType="textEmailAddress"
-                android:text="E-mail"
+                android:text="@string/newAccountEmail"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.505"
@@ -96,7 +61,7 @@
                 android:layout_height="58dp"
                 android:ems="10"
                 android:inputType="phone"
-                android:text="Contact Number"
+                android:text="@string/newAccountContact"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.522"
@@ -125,11 +90,25 @@
                 android:layout_height="49dp"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:text="Password"
-                tools:layout_editor_absoluteX="44dp"
-                tools:layout_editor_absoluteY="240dp" />
+                android:text="@string/newAccountName"
+                app:layout_constraintBottom_toTopOf="@+id/button2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextPhone" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/imageView39"
+            android:layout_width="51dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.044"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/icon_arrow_left" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
