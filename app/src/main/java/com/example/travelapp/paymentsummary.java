@@ -9,6 +9,6 @@ public class paymentsummary extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_paymentsummary);
+        setContentView(R.layout.activity_cardssummary);
     }
 }
