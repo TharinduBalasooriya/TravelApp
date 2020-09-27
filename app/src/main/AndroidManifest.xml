@@ -25,7 +25,9 @@
         <activity android:name=".RestaurantsList" />
         <activity android:name=".FoodCategory" />
         <activity android:name=".HotelList" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".AboutDestination">
+            
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
