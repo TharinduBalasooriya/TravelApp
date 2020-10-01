@@ -20,7 +20,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/hotelName"
             android:layout_width="247dp"
             android:layout_height="73dp"
             android:fontFamily="@font/poppins_semibold"
@@ -39,7 +39,7 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="68dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/textView4"
+            app:layout_constraintEnd_toStartOf="@+id/hotelName"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.312"
             app:srcCompat="@drawable/icon_arrow_left" />

@@ -179,9 +179,8 @@
     <string name="newAccountContact">Contact Number</string>
 
     <string name="myDealasTopic">My Deals</string>
-
-
-
+    <string name="hName">Hotel Name</string>
+    <string name="book">BookNow</string>
 
 
 </resources>

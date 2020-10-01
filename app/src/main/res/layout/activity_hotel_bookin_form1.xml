@@ -21,7 +21,7 @@
         app:layout_constraintVertical_bias="0.0">
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/hotelName"
             android:layout_width="234dp"
             android:layout_height="54dp"
             android:fontFamily="@font/poppins_semibold"
@@ -40,7 +40,7 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="68dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/textView4"
+            app:layout_constraintEnd_toStartOf="@+id/hotelName"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.496"
             app:srcCompat="@drawable/icon_arrow_left" />
@@ -59,32 +59,14 @@
         <LinearLayout
             android:layout_width="398dp"
             android:layout_height="397dp"
-            android:layout_marginEnd="8dp"
             android:orientation="vertical"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
 
-
             <EditText
-                android:id="@+id/customerFirstName"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="35dp"
-                android:layout_marginTop="40dp"
-                android:layout_marginRight="40dp"
-                android:backgroundTint="#FFFFFF"
-                android:ems="10"
-                android:foregroundTint="#FFFFFF"
-                android:inputType="textPersonName"
-                android:text="firtst name"
-                android:textColor="#BDB8B8" />
-
-            <EditText
-                android:id="@+id/customerLastName"
+                android:id="@+id/cutomerName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="35dp"
@@ -94,7 +76,7 @@
                 android:ems="10"
                 android:foregroundTint="#FFFFFF"
                 android:inputType="textPersonName"
-                android:text="Last name"
+                android:text="Name"
                 android:textColor="#BDB8B8" />
 
             <EditText
@@ -107,7 +89,7 @@
                 android:backgroundTint="#FFFFFF"
                 android:ems="10"
                 android:foregroundTint="#FFFFFF"
-                android:inputType="phone"
+                android:inputType="number"
                 android:text="Mobile No"
                 android:textColor="#BDB8B8" />
 
@@ -126,20 +108,21 @@
                 android:textColor="#BDB8B8" />
 
             <EditText
-                android:id="@+id/customerID"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="35dp"
-                android:layout_marginTop="25dp"
-                android:layout_marginRight="40dp"
-                android:backgroundTint="#FFFFFF"
-                android:ems="10"
-                android:foregroundTint="#FFFFFF"
-                android:inputType="text"
-                android:text="NID"
-                android:textColor="#BDB8B8" />
+            android:id="@+id/customerID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="40dp"
+            android:backgroundTint="#FFFFFF"
+            android:ems="10"
+            android:foregroundTint="#FFFFFF"
+            android:inputType="text"
+            android:text="NID"
+            android:textColor="#BDB8B8" />
 
         </LinearLayout>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -152,7 +135,7 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <ImageButton
-            android:id="@+id/imageButton9"
+            android:id="@+id/bookNow"
             android:layout_width="183dp"
             android:layout_height="56dp"
             android:backgroundTint="#00FFFFFF"
