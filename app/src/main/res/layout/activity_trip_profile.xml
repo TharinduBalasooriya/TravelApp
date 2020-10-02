@@ -11,6 +11,7 @@
         android:id="@+id/tpView"
         android:layout_width="0dp"
         android:layout_height="150dp"
+        android:layout_marginTop="4dp"
         android:background="@color/colorAccent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -29,10 +30,14 @@
         android:id="@+id/imageView"
         android:layout_width="104dp"
         android:layout_height="95dp"
-        android:layout_marginEnd="24dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/tpView"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.06"
         app:srcCompat="@drawable/ic_baseline_person_24"
-        tools:layout_editor_absoluteY="28dp"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -43,11 +48,13 @@
         android:textColor="@color/cardview_light_background"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/imageView"
-        app:layout_constraintHorizontal_bias="0.392"
-        app:layout_constraintStart_toStartOf="@+id/tpView"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="58dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.175"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.079"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/editTextTextPersonName2"
@@ -61,10 +68,12 @@
         android:padding="15dp"
         android:text="Trip ID: 001"
         android:textColor="@color/cardview_light_background"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="231dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.403"
         tools:ignore="MissingConstraints" />
 
     <EditText
@@ -79,10 +88,12 @@
         android:padding="15dp"
         android:text="Place: Anuradhapura"
         android:textColor="@color/cardview_light_background"
+        app:layout_constraintBottom_toBottomOf="@+id/button10"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="302dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.528"
         tools:ignore="MissingConstraints" />
 
     <EditText
@@ -97,10 +108,12 @@
         android:padding="15dp"
         android:text="Trip date: 22/10/2020"
         android:textColor="@color/cardview_light_background"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="372dp"
+        app:layout_constraintTop_toTopOf="@+id/tpView"
+        app:layout_constraintVertical_bias="0.625"
         tools:ignore="MissingConstraints" />
 
     <EditText
@@ -115,10 +128,12 @@
         android:padding="15dp"
         android:text="Tme: 5.00 am"
         android:textColor="@color/cardview_light_background"
+        app:layout_constraintBottom_toBottomOf="@+id/button10"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="445dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.763"
         tools:ignore="MissingConstraints" />
 
     <EditText
@@ -133,10 +148,12 @@
         android:padding="15dp"
         android:text="No. of Participants: 10"
         android:textColor="@color/cardview_light_background"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="516dp"
+        app:layout_constraintTop_toTopOf="@+id/tpView"
+        app:layout_constraintVertical_bias="0.853"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -146,10 +163,12 @@
         android:background="@drawable/round_bd2"
         android:text="EDIT"
         android:textColor="@color/cardview_light_background"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.077"
+        app:layout_constraintHorizontal_bias="0.049"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="594dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.973"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -159,10 +178,12 @@
         android:background="@drawable/round_bd2"
         android:text="DELETE"
         android:textColor="@color/cardview_light_background"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.925"
+        app:layout_constraintHorizontal_bias="0.95"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="594dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.97"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -172,10 +193,12 @@
         android:background="@drawable/round_bd2"
         android:text="UPDATE"
         android:textColor="@color/cardview_light_background"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="594dp"
+        app:layout_constraintTop_toTopOf="@+id/tpView"
+        app:layout_constraintVertical_bias="0.971"
         tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

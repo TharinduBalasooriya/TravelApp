@@ -121,4 +121,22 @@ public class DBHandler extends SQLiteOpenHelper {
         sqLiteDatabase.close();
 
     }
+
+    public void addTrip(TripModel tripmodel){
+           SQLiteDatabase sqLiteDatabase = getWritableDatabase();
+
+           ContentValues contentValues = new ContentValues();
+
+           contentValues.put(PLACE, tripmodel.getPlace());
+           contentValues.put(TRIP_DATE, tripmodel.getDate());
+           contentValues.put(TIME, tripmodel.getTime());
+           contentValues.put(NO_OF_PARTICIPANTS, tripmodel.getNumber());
+
+
+            //save to table
+            sqLiteDatabase.insert(TRIP_TABLE_NAME, null, contentValues);
+            //close database
+            sqLiteDatabase.close();
+
+    }
 }
