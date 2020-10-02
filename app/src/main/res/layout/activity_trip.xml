@@ -167,7 +167,6 @@
         android:text="Create"
         android:textColor="#FAF9F9"
         android:textStyle="bold"
-        android:onClick="showToast"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
