@@ -1,6 +1,8 @@
 package com.example.travelapp;
 
-public class BookingModel {
+import java.io.Serializable;
+
+public class BookingModel implements Serializable {
     private int id;
     private String name,nic,email,hName,checkIn,checkOut;
     private int mobile,price,discount,personCount;

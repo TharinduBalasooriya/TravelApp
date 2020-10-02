@@ -3,7 +3,10 @@ package com.example.travelapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -32,5 +35,16 @@ public class pendingBookingList extends AppCompatActivity {
         BookingListAdapter adapter = new BookingListAdapter(context,R.layout.single_booking,cusBookings);
         listView.setAdapter(adapter);
 
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+
+                BookingModel booking =cusBookings.get(i);
+                Intent intent = new Intent(context,hotel_booking_preview.class);
+                intent.putExtra("book",booking);
+                startActivity(intent);
+
+            }
+        });
     }
 }

@@ -198,6 +198,12 @@ public class DBHandler extends SQLiteOpenHelper {
         return bookings;
 
     }
+    //delete Booking
+    public void deleteBooking(int id){
+        SQLiteDatabase db = getWritableDatabase();
+        db.delete(BOOKING_TABLE_NAME,"id =?",new String[]{String.valueOf(id)});
+        db.close();
+    }
 
     public void addTrip(TripModel tripmodel){
            SQLiteDatabase sqLiteDatabase = getWritableDatabase();
