@@ -15,6 +15,8 @@ public class DBHandler extends SQLiteOpenHelper {
     //table names
 
     private static final String BOOKING_TABLE_NAME = "bookings";
+    private static final String USER_PROFILE_DETAILS ="userdetails";
+
     //common column names
     private  static final String ID = "id";
     private static final String STARTED = "started";
@@ -27,6 +29,11 @@ public class DBHandler extends SQLiteOpenHelper {
     private  static  final String CUSID = "nic";
     private  static final  String HOTEL_NAME = "hotelName";
 
+    //User Details Table
+    private static final String  USERNAME = "username";
+    private static final String USEREMAIL ="usermail";
+    private static final String USERPHONE = "userphone";
+    private static final String PASSWORD = "password";
 
     public DBHandler(@Nullable Context context) {
         super(context, DB_NAME, null, VERSION);
@@ -34,19 +41,32 @@ public class DBHandler extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        String BOOKING_TABLE_CREATE_QUERY = "CREATE TABLE "+BOOKING_TABLE_NAME+" " +
-                "("
-                +ID+" INTEGER PRIMARY KEY AUTOINCREMENT,"
-                +CUSNAME + " TEXT,"
-                +HOTEL_NAME + " TEXT,"
-                +CUSMAIL + " TEXT,"
-                +CUSMOBILE + " TEXT,"
-                +CUSID + " TEXT,"
-                +STARTED+ " TEXT,"
-                +FINISHED+" TEXT" +
-                ");";
+            String BOOKING_TABLE_CREATE_QUERY = "CREATE TABLE "+BOOKING_TABLE_NAME+" " +
+                    "("
+                    +ID+" INTEGER PRIMARY KEY AUTOINCREMENT,"
+                    +CUSNAME + " TEXT,"
+                    +HOTEL_NAME + " TEXT,"
+                    +CUSMAIL + " TEXT,"
+                    +CUSMOBILE + " TEXT,"
+                    +CUSID + " TEXT,"
+                    +STARTED+ " TEXT,"
+                    +FINISHED+" TEXT" +
+                    ");";
+
         db.execSQL(BOOKING_TABLE_CREATE_QUERY);
         Log.d("T1","db created");
+
+        String USER_PROFILE_DETAILS_CREATE_QUERY = "CREATE TABLE "+USER_PROFILE_DETAILS+" " +
+                "("
+                +ID+" INTEGER PRIMARY KEY AUTOINCREMENT,"
+                +USERNAME + " TEXT,"
+                +USEREMAIL + " TEXT,"
+                +USERPHONE + " TEXT,"
+                +PASSWORD + " TEXT"+
+                ");";
+
+
+        db.execSQL(USER_PROFILE_DETAILS_CREATE_QUERY);
 
     }
 
@@ -56,6 +76,13 @@ public class DBHandler extends SQLiteOpenHelper {
         String DROP_BOOKING_TABLE_QUERY = "DROP TABLE IF EXISTS "+ BOOKING_TABLE_NAME;
         // Drop older table if existed
         db.execSQL(DROP_BOOKING_TABLE_QUERY);
+        // Create tables again
+        onCreate(db);
+
+
+        String DROP_USER_PROFILE_DETAILS_TABLE = "DROP TABLE IF EXISTS "+ USER_PROFILE_DETAILS;
+        // Drop older table if existed
+        db.execSQL(DROP_USER_PROFILE_DETAILS_TABLE);
         // Create tables again
         onCreate(db);
 
