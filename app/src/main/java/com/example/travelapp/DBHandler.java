@@ -45,6 +45,7 @@ public class DBHandler extends SQLiteOpenHelper {
                 +STARTED+ " TEXT,"
                 +FINISHED+" TEXT" +
                 ");";
+
         db.execSQL(BOOKING_TABLE_CREATE_QUERY);
         Log.d("T1","db created");
 
