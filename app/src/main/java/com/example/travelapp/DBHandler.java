@@ -15,6 +15,8 @@ public class DBHandler extends SQLiteOpenHelper {
     //table names
 
     private static final String BOOKING_TABLE_NAME = "bookings";
+    private static final String TRIP_TABLE_NAME = "trip";
+
     //common column names
     private  static final String ID = "id";
     private static final String STARTED = "started";
@@ -26,6 +28,14 @@ public class DBHandler extends SQLiteOpenHelper {
     private  static  final String CUSMOBILE = "mobile";
     private  static  final String CUSID = "nic";
     private  static final  String HOTEL_NAME = "hotelName";
+
+
+
+    //destination table
+    private  static  final String PLACE = "place";
+    private  static  final String TRIP_DATE = "date";
+    private  static  final String TIME = "time";
+    private  static  final String NO_OF_PARTICIPANTS = "number";
 
 
     public DBHandler(@Nullable Context context) {
@@ -48,6 +58,20 @@ public class DBHandler extends SQLiteOpenHelper {
         db.execSQL(BOOKING_TABLE_CREATE_QUERY);
         Log.d("T1","db created");
 
+
+        String TRIP_TABLE_CREATE_QUERY = "CREATE TABLE "+TRIP_TABLE_NAME+" " +
+                "("
+                +ID+" INTEGER PRIMARY KEY AUTOINCREMENT,"
+                +PLACE + " TEXT,"
+                +TRIP_DATE + " TEXT,"
+                +TIME + " TEXT,"
+                +NO_OF_PARTICIPANTS + " TEXT,"
+                +STARTED+ " TEXT,"
+                +FINISHED+" TEXT" +
+                ");";
+        db.execSQL(TRIP_TABLE_CREATE_QUERY);
+
+
     }
 
     @Override
@@ -56,8 +80,14 @@ public class DBHandler extends SQLiteOpenHelper {
         String DROP_BOOKING_TABLE_QUERY = "DROP TABLE IF EXISTS "+ BOOKING_TABLE_NAME;
         // Drop older table if existed
         db.execSQL(DROP_BOOKING_TABLE_QUERY);
+
+
+        String DROP_TRIP_TABLE_QUERY = "DROP TABLE IF EXISTS "+ TRIP_TABLE_NAME;
+        // Drop older table if existed
+        db.execSQL(DROP_TRIP_TABLE_QUERY);
         // Create tables again
         onCreate(db);
+
 
     }
 
@@ -78,4 +108,8 @@ public class DBHandler extends SQLiteOpenHelper {
         sqLiteDatabase.close();
 
     }
+    
+
+
+    
 }

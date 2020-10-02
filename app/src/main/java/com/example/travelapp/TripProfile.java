@@ -3,6 +3,8 @@ package com.example.travelapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Toast;
 
 public class TripProfile extends AppCompatActivity {
 
@@ -11,4 +13,5 @@ public class TripProfile extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_trip_profile);
     }
+
 }
