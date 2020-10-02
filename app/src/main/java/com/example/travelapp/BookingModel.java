@@ -2,15 +2,19 @@ package com.example.travelapp;
 
 public class BookingModel {
     private int id;
-    private String name,nic,email,hName;
-    private int mobile;
+    private String name,nic,email,hName,checkIn,checkOut;
+    private int mobile,price,discount,personCount;
     private long started, finished;
+    private double totPrice;
+    private double discountPrice;
+    private double finalPrice;
+
 
     public BookingModel(){
 
     }
 
-    public BookingModel(int id, String name, String nic, String email, String hName, int mobile, long started, long finished) {
+    public BookingModel(int id, String name, String nic, String email, String hName, int mobile, long started, long finished,int price,int discount,String checkIn,String checkOut,int personCount) {
         this.id = id;
         this.name = name;
         this.nic = nic;
@@ -19,9 +23,16 @@ public class BookingModel {
         this.mobile = mobile;
         this.started = started;
         this.finished = finished;
+        this.price = price;
+        this.discount = discount;
+        this.checkIn = checkIn;
+        this.checkOut = checkOut;
+        this.personCount = personCount;
+
+        calcPrice(price,discount,personCount);
     }
 
-    public BookingModel(String name, String nic, String email, String hName, int mobile, long started, long finished) {
+    public BookingModel(String name, String nic, String email, String hName, int mobile, long started, long finished,int price,int discount,String checkIn,String checkOut, int personCount) {
         this.name = name;
         this.nic = nic;
         this.email = email;
@@ -29,6 +40,12 @@ public class BookingModel {
         this.mobile = mobile;
         this.started = started;
         this.finished = finished;
+        this.price = price;
+        this.discount = discount;
+        this.checkIn = checkIn;
+        this.checkOut = checkOut;
+        this.personCount = personCount;
+        calcPrice(price,discount,personCount);
     }
 
     public int getId() {
@@ -93,5 +110,78 @@ public class BookingModel {
 
     public void setFinished(long finished) {
         this.finished = finished;
+    }
+
+    public String getCheckIn() {
+        return checkIn;
+    }
+
+    public void setCheckIn(String checkIn) {
+        this.checkIn = checkIn;
+    }
+
+    public String getCheckOut() {
+        return checkOut;
+    }
+
+    public void setCheckOut(String checkOut) {
+        this.checkOut = checkOut;
+    }
+
+    public int getPrice() {
+        return price;
+    }
+
+    public void setPrice(int price) {
+        this.price = price;
+    }
+
+    public int getDiscount() {
+        return discount;
+    }
+
+    public void setDiscount(int discount) {
+        this.discount = discount;
+    }
+    public double getDiscountPrice() {
+        return discountPrice;
+    }
+
+    public void setDiscountPrice(double discountPrice) {
+        this.discountPrice = discountPrice;
+    }
+
+    public double getFinalPrice() {
+        return finalPrice;
+    }
+
+    public void setFinalPrice(double finalPrice) {
+        this.finalPrice = finalPrice;
+    }
+
+    public int getPersonCount() {
+        return personCount;
+    }
+
+    public void setPersonCount(int personCount) {
+        this.personCount = personCount;
+    }
+
+    public double getTotPrice() {
+        return totPrice;
+    }
+
+    public void setTotPrice(double totPrice) {
+        this.totPrice = totPrice;
+    }
+
+    public void calcPrice(double price, double discount, int personCount){
+
+        double totPrice = price * personCount;
+        this.totPrice = totPrice;
+        double discountPrice = totPrice* (discount/100);
+        double finalPrice = totPrice - discountPrice;
+        this.finalPrice = finalPrice;
+        this.discountPrice = discountPrice;
     }
 }

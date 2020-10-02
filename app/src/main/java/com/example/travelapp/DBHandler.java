@@ -2,11 +2,16 @@ package com.example.travelapp;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
 import androidx.annotation.Nullable;
+
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.List;
 
 public class DBHandler extends SQLiteOpenHelper {
 
@@ -28,6 +33,16 @@ public class DBHandler extends SQLiteOpenHelper {
     private  static  final String CUSMOBILE = "mobile";
     private  static  final String CUSID = "nic";
     private  static final  String HOTEL_NAME = "hotelName";
+    private static  final  String CHECK_IN = "checkIn";
+    private static  final String CHECK_OUT = "checkOut";
+    private static final String PRICE_HOTEL = "price";
+    private  static  final  String DISCOUNT_RATE = "discountRate";
+    private static  final  String  PERSON_COUNT = "numberofPerson";
+    private static  final  String  TOTALPRICE_HOTEL = "totprice";
+    private static  final  String  DISCPRICE_HOTEL = "discountValue";
+    private static  final  String  FINALPRICE_HOTEL = "finalprice";
+
+
 
     //User Details Table
     private static final String  USERNAME = "username";
@@ -58,7 +73,15 @@ public class DBHandler extends SQLiteOpenHelper {
                 +CUSMOBILE + " TEXT,"
                 +CUSID + " TEXT,"
                 +STARTED+ " TEXT,"
-                +FINISHED+" TEXT" +
+                +FINISHED+" TEXT,"
+                +CHECK_IN+ " TEXT,"
+                +CHECK_OUT+ " TEXT,"
+                +PRICE_HOTEL+ " TEXT,"
+                +DISCOUNT_RATE+ " TEXT,"
+                +PERSON_COUNT+ " TEXT,"
+                +TOTALPRICE_HOTEL+ " TEXT,"
+                +DISCPRICE_HOTEL+ " TEXT,"
+                +FINALPRICE_HOTEL+ " TEXT" +
                 ");";
 
         String USER_PROFILE_DETAILS_CREATE_QUERY = "CREATE TABLE "+USER_PROFILE_DETAILS+" " +
@@ -104,6 +127,7 @@ public class DBHandler extends SQLiteOpenHelper {
 
     }
 
+    //add booking method
     public void addBooking(BookingModel booking){
         SQLiteDatabase sqLiteDatabase = getWritableDatabase();
         ContentValues contentValues = new ContentValues();
@@ -114,11 +138,64 @@ public class DBHandler extends SQLiteOpenHelper {
         contentValues.put(CUSID,booking.getNic());
         contentValues.put(STARTED,booking.getStarted());
         contentValues.put(FINISHED,booking.getFinished());
+        contentValues.put(CHECK_IN,booking.getCheckIn());
+        contentValues.put(CHECK_OUT,booking.getCheckOut());
+        contentValues.put(PRICE_HOTEL,booking.getPrice());
+        contentValues.put(DISCOUNT_RATE,booking.getDiscount());
+        contentValues.put(PERSON_COUNT,booking.getPersonCount());
+        contentValues.put(TOTALPRICE_HOTEL,booking.getTotPrice());
+        contentValues.put(DISCPRICE_HOTEL,booking.getDiscountPrice());
+        contentValues.put(FINALPRICE_HOTEL,booking.getFinalPrice());
 
         //save to table
         sqLiteDatabase.insert(BOOKING_TABLE_NAME,null,contentValues);
         // close database
         sqLiteDatabase.close();
+
+
+    }
+    //get All bookings
+
+    public List<BookingModel> getAllBookings(){
+
+        List<BookingModel> bookings = new ArrayList();
+        SQLiteDatabase db = getReadableDatabase();
+        String query = "SELECT * FROM " + BOOKING_TABLE_NAME;
+
+        Cursor cursor = db.rawQuery(query,null);
+
+
+
+        if(cursor.moveToFirst()){
+            do {
+                // Create new Booking Object
+                BookingModel booking = new BookingModel();
+                // mmgby6hh
+               booking.setId(cursor.getInt(0));
+               booking.setName(cursor.getString(1));
+               booking.sethName(cursor.getString(2));
+               booking.setEmail(cursor.getString(3));
+               booking.setMobile(Integer.parseInt(cursor.getString(4)));
+               booking.setNic(cursor.getString(5));
+               booking.setStarted(cursor.getLong(6));
+               booking.setFinished(cursor.getLong(7));
+               booking.setCheckIn(cursor.getString(8));
+               booking.setCheckOut(cursor.getString(9));
+               booking.setPrice(Integer.parseInt(cursor.getString(10)));
+               booking.setDiscount(Integer.parseInt(cursor.getString(11)));
+               booking.setPersonCount(Integer.parseInt(cursor.getString(12)));
+               booking.setTotPrice(Double.parseDouble(cursor.getString(13)));
+               booking.setDiscountPrice(Double.parseDouble(cursor.getString(14)));
+                booking.setFinalPrice(Double.parseDouble(cursor.getString(15)));
+
+
+               Log.d("GetData"," " + cursor.getInt(0));
+               Log.d("GetData",""+booking.getMobile());
+                //toDos [obj,objs,asas,asa]
+                bookings.add(booking);
+            }while (cursor.moveToNext());
+        }
+        return bookings;
 
     }
 }

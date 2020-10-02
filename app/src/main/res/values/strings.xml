@@ -181,6 +181,15 @@
     <string name="myDealasTopic">My Deals</string>
     <string name="hName">Hotel Name</string>
     <string name="book">BookNow</string>
+    <string name="defaultHotelName">Hotelx</string>
+    <string name="nameHint">Your Name here</string>
+    <string name="phoneHint">07......................</string>
+    <string name="hintEmail">email.com</string>
+    <string name="price">PRICE :</string>
+    <string name="lkr">LKR</string>
+    <string name="percentageMrk">%</string>
+    <string name="frmDis">DISCOUNT :</string>
+    <string name="numP">numberOfPerson</string>
 
 
 </resources>

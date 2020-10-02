@@ -13,56 +13,40 @@
         android:layout_height="151dp"
         android:background="@drawable/path_10430"
         android:backgroundTint="#29292B"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/hotelName"
-            android:layout_width="234dp"
+            android:layout_width="wrap_content"
             android:layout_height="54dp"
             android:fontFamily="@font/poppins_semibold"
-            android:text="@string/formTopic1"
+            android:text="@string/formTopic2"
             android:textColor="#F6F6F6"
             android:textSize="24sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.579"
+            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <ImageView
-            android:id="@+id/imageView15"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="68dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/hotelName"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.496"
-            app:srcCompat="@drawable/icon_arrow_left" />
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <ScrollView
         android:id="@+id/constraintLayout4"
-        android:layout_width="397dp"
-        android:layout_height="422dp"
+        android:layout_width="403dp"
+        android:layout_height="382dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintBottom_toTopOf="@+id/constraintLayout5"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">
 
         <LinearLayout
             android:layout_width="398dp"
-            android:layout_height="397dp"
-            android:orientation="vertical"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
 
             <EditText
@@ -75,9 +59,10 @@
                 android:backgroundTint="#FFFFFF"
                 android:ems="10"
                 android:foregroundTint="#FFFFFF"
+                android:hint="@string/nameHint"
                 android:inputType="textPersonName"
-                android:text="Name"
-                android:textColor="#BDB8B8" />
+                android:textColor="#BDB8B8"
+                android:textColorHint="#FFFFFF" />
 
             <EditText
                 android:id="@+id/customerMobile"
@@ -89,9 +74,10 @@
                 android:backgroundTint="#FFFFFF"
                 android:ems="10"
                 android:foregroundTint="#FFFFFF"
+                android:hint="@string/phoneHint"
                 android:inputType="number"
-                android:text="Mobile No"
-                android:textColor="#BDB8B8" />
+                android:textColor="#BDB8B8"
+                android:textColorHint="#FDF9F9" />
 
             <EditText
                 android:id="@+id/customerEmail"
@@ -103,32 +89,123 @@
                 android:backgroundTint="#FFFFFF"
                 android:ems="10"
                 android:foregroundTint="#FFFFFF"
+                android:hint="@string/hintEmail"
                 android:inputType="textEmailAddress"
-                android:text="Email"
-                android:textColor="#BDB8B8" />
+                android:textColor="#BDB8B8"
+                android:textColorHint="#FFFFFF" />
 
             <EditText
-            android:id="@+id/customerID"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="35dp"
-            android:layout_marginTop="25dp"
-            android:layout_marginRight="40dp"
-            android:backgroundTint="#FFFFFF"
-            android:ems="10"
-            android:foregroundTint="#FFFFFF"
-            android:inputType="text"
-            android:text="NID"
-            android:textColor="#BDB8B8" />
+                android:id="@+id/customerID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="40dp"
+                android:backgroundTint="#FFFFFF"
+                android:ems="10"
+                android:foregroundTint="#FFFFFF"
+                android:hint="@string/sampleID"
+                android:inputType="text"
+                android:textColor="#BDB8B8"
+                android:textColorHint="#FAFAFA" />
+
+            <EditText
+                android:id="@+id/frmCheckIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="40dp"
+                android:backgroundTint="#FFFFFF"
+                android:ems="10"
+                android:foregroundTint="#FFFFFF"
+                android:hint="@string/sampleCheckin"
+                android:inputType="date"
+                android:textColor="#BDB8B8"
+                android:textColorHint="#FAFAFA" />
+
+            <EditText
+                android:id="@+id/frmCheckOut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="40dp"
+                android:backgroundTint="#FFFFFF"
+                android:ems="10"
+                android:foregroundTint="#FFFFFF"
+                android:hint="@string/sampleCheckOut"
+                android:inputType="date"
+                android:textColor="#BDB8B8"
+                android:textColorHint="#FAFAFA" />
+
+            <EditText
+                android:id="@+id/personNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="40dp"
+                android:backgroundTint="#FFFFFF"
+                android:ems="10"
+                android:foregroundTint="#FFFFFF"
+                android:hint="@string/numP"
+                android:inputType="number"
+                android:textColor="#BDB8B8"
+                android:textColorHint="#FAFAFA" />
+
+            <EditText
+                android:id="@+id/frmPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="40dp"
+                android:backgroundTint="#FFFFFF"
+                android:ems="10"
+                android:foregroundTint="#FFFFFF"
+                android:hint="100"
+                android:inputType="number|numberDecimal"
+                android:textColor="#FFFFFF"
+                tools:text="100" />
+
+            <EditText
+                android:id="@+id/frmDis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="40dp"
+                android:backgroundTint="#FFFFFF"
+                android:ems="10"
+                android:foregroundTint="#FFFFFF"
+                android:inputType="number|numberDecimal"
+                android:textColor="#FFFFFF"
+                tools:text="100" />
+
+            <EditText
+                android:id="@+id/hotelName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="40dp"
+                android:backgroundTint="#FFFFFF"
+                android:ems="10"
+                android:foregroundTint="#FFFFFF"
+                android:inputType="text"
+                android:text="@string/defaultHotelName"
+                android:textColor="#BDB8B8" />
+
 
         </LinearLayout>
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout5"
-        android:layout_width="408dp"
-        android:layout_height="80dp"
+        android:layout_width="400dp"
+        android:layout_height="56dp"
         android:background="#29292B"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

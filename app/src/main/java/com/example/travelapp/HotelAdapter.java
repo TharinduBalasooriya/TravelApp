@@ -47,6 +47,8 @@ public class HotelAdapter extends RecyclerView.Adapter<HotelAdapter.MyViewHolder
                 intent.putExtra("image",model.getImage());
                 intent.putExtra("name",model.getHotel_name());
                 intent.putExtra("desc",model.getDescription());
+                intent.putExtra("disc",model.getDiscount());
+                intent.putExtra("price",model.getPrice());
                 mcontext.startActivity(intent);
 
 
