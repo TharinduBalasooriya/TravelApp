@@ -49,7 +49,7 @@
 
         <EditText
 
-            android:id="@+id/editTextTextPersonName7"
+            android:id="@+id/upTripPlace"
             android:layout_width="273dp"
             android:layout_height="45dp"
             android:ems="10"
@@ -70,8 +70,8 @@
             android:rating="5"
 
             android:stepSize="0.5"
-            app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName7"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName7" />
+            app:layout_constraintStart_toStartOf="@+id/upTripPlace"
+            app:layout_constraintTop_toBottomOf="@+id/upTripPlace" />
 
         <EditText
 

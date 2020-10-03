@@ -3,6 +3,7 @@ package com.example.travelapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -49,6 +50,7 @@ public class Trip extends AppCompatActivity {
                 dbHandler.addTrip(tripmodel);
 
                 Toast.makeText(context, "Your Trip Profile created Succesfully", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(context,MainActivity.class));
             }
         });
 

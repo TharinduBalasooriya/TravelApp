@@ -1,6 +1,8 @@
 package com.example.travelapp;
 
-public class TripModel {
+import java.io.Serializable;
+
+public class TripModel implements Serializable {
      private int id;
      private String place, date, time, number;
      private long started, finished;

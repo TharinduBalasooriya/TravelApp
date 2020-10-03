@@ -86,6 +86,7 @@
         android:layout_width="413dp"
         android:layout_height="120dp"
         android:background="@drawable/ella"
+        android:onClick="goToDetails"
         app:layout_constraintBottom_toBottomOf="@+id/constraintLayout17"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"

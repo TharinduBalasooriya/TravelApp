@@ -31,4 +31,10 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this,RestaurantsList.class);
         startActivity(intent);
     }
+
+    public void goToDestinations(View view){
+        Intent intent = new Intent(this,Destinations.class);
+        startActivity(intent);
+    }
+
 }

@@ -65,6 +65,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
             android:backgroundTint="#00FFFFFF"
+            android:onClick="goToTripList"
             app:srcCompat="@drawable/group_9" />
 
         <ImageButton

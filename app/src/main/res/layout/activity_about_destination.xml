@@ -89,6 +89,7 @@
         android:layout_width="128dp"
         android:layout_height="54dp"
         android:background="@drawable/round_border2"
+        android:onClick="addTrip"
         android:text="Create a Trip"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"

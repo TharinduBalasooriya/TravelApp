@@ -33,7 +33,7 @@ public class OrderListAdapter extends ArrayAdapter<OrderModel> {
         LayoutInflater inflater = LayoutInflater.from(context);
         View row = inflater.inflate(resource,parent,false);
 
-        TextView orderName= row.findViewById(R.id.singleOrderName);
+        TextView orderName= row.findViewById(R.id.singleOrderID);
         TextView orderPrice = row.findViewById(R.id.singleOrderPrice);
 
 

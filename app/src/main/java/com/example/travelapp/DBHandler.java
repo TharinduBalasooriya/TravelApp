@@ -23,6 +23,7 @@ public class DBHandler extends SQLiteOpenHelper {
     private static final String USER_PROFILE_DETAILS ="userdetails";
     private static final String TRIP_TABLE_NAME = "trip";
     private static final String ORDER_TABLE_NAME = "order_table";
+    private static final String CARD_TABLE_NAME = "card_table";
     //common column names
     private  static final String ID = "id";
     private static final String STARTED = "started";
@@ -63,7 +64,11 @@ public class DBHandler extends SQLiteOpenHelper {
     private static final String ITEM3_QTY = "item3quanitity";
     private static final String TOT_PRICE_ORDER = "item4quanitity";
 
-
+    //cardtable
+    private  static  final String CRD_NAME = "crdName";
+    private  static  final String CRD_NUM = "crdNumber";
+    private  static  final String CRD_EXP = "exp";
+    private  static  final String CRD_CVV = "cvv";
 
 
     public DBHandler(@Nullable Context context) {
@@ -94,6 +99,7 @@ public class DBHandler extends SQLiteOpenHelper {
 
         String USER_PROFILE_DETAILS_CREATE_QUERY = "CREATE TABLE "+USER_PROFILE_DETAILS+" " +
                 "("
+                +ID+" INTEGER PRIMARY KEY AUTOINCREMENT,"
                 +USERNAME + " TEXT,"
                 +USEREMAIL + " TEXT,"
                 +USERPHONE + " TEXT,"
@@ -121,11 +127,21 @@ public class DBHandler extends SQLiteOpenHelper {
                 +TOT_PRICE_ORDER+" TEXT" +
                 ");";
 
+        String CARD_TABLE_CREATE_QUERY = "CREATE TABLE "+CARD_TABLE_NAME+" " +
+            "("
+                +ID+" INTEGER PRIMARY KEY AUTOINCREMENT,"
+                +CRD_NAME + " TEXT,"
+                +CRD_NUM + " TEXT,"
+                +CRD_CVV + " TEXT,"
+                +CRD_EXP + " TEXT" +
+                ");";
+
 
         db.execSQL(TRIP_TABLE_CREATE_QUERY);
         db.execSQL(BOOKING_TABLE_CREATE_QUERY);
         db.execSQL(USER_PROFILE_DETAILS_CREATE_QUERY);
         db.execSQL(ORDER_TABLE_CREATE_QUERY);
+        db.execSQL(CARD_TABLE_CREATE_QUERY);
         Log.d("T1","db created");
 
     }
@@ -146,6 +162,9 @@ public class DBHandler extends SQLiteOpenHelper {
         String DROP_ORDER_TABLE = "DROP TABLE IF EXISTS "+ ORDER_TABLE_NAME;
         // Drop older table if existed
         db.execSQL(DROP_ORDER_TABLE );
+        String DROP_CARD_TABLE = "DROP TABLE IF EXISTS "+ CARD_TABLE_NAME;
+        // Drop older table if existed
+        db.execSQL(DROP_CARD_TABLE );
         // Create tables again
         onCreate(db);
 
@@ -382,5 +401,97 @@ public class DBHandler extends SQLiteOpenHelper {
         db.close();
         return status;
     }
+
+    //getAllTrips
+    public List<TripModel> getAllTrips(){
+
+        List<TripModel> trips = new ArrayList();
+        SQLiteDatabase db = getReadableDatabase();
+        String query = "SELECT * FROM "+TRIP_TABLE_NAME;
+
+        Cursor cursor = db.rawQuery(query,null);
+
+        if(cursor.moveToFirst()){
+            do {
+
+                TripModel trip = new TripModel();
+                // mmgby6hh
+                trip.setId(cursor.getInt(0));
+                trip.setPlace(cursor.getString(1));
+                trip.setDate(cursor.getString(2));
+                trip.setTime(cursor.getString(3));
+                trip.setNumber(cursor.getString(4));
+                trips.add(trip);
+            }while (cursor.moveToNext());
+        }
+        return trips;
+    }
+    //delete Trip
+    public void deleteTrip(int id){
+        SQLiteDatabase db = getWritableDatabase();
+        db.delete(TRIP_TABLE_NAME,"id =?",new String[]{String.valueOf(id)});
+        db.close();
+    }
+    //update trip
+    public int updateTrp(TripModel tripmodel){
+        SQLiteDatabase db = getWritableDatabase();
+
+        ContentValues contentValues = new ContentValues();
+
+        contentValues.put(PLACE, tripmodel.getPlace());
+        contentValues.put(TRIP_DATE, tripmodel.getDate());
+        contentValues.put(TIME, tripmodel.getTime());
+        contentValues.put(NO_OF_PARTICIPANTS, tripmodel.getNumber());
+
+
+
+        int status = db.update(TRIP_TABLE_NAME,contentValues,ID +" =?",
+                new String[]{String.valueOf(tripmodel.getId())});
+
+        db.close();
+        return status;
+    }
+
+    //add Users
+
+    public void addUser(UserModel userModel){
+
+
+
+        SQLiteDatabase db =  getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+
+        contentValues.put(USERNAME,userModel.getUserName());
+        contentValues.put(USEREMAIL, userModel.getEmail());
+        contentValues.put(USERPHONE,userModel.getMobile());
+        contentValues.put(PASSWORD,userModel.getPassword());
+
+
+        db.insert(USER_PROFILE_DETAILS,null,contentValues);
+        db.close();
+
+    }
+  //add cards
+
+    public void addCard(cardModel cardModel){
+
+
+
+        SQLiteDatabase db =  getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+
+        contentValues.put(CRD_NAME,cardModel.getName());
+        contentValues.put(CRD_NUM,cardModel.getNumber());
+        contentValues.put(CRD_CVV,cardModel.getCvv());
+        contentValues.put(CRD_EXP,cardModel.getExpDate());
+
+
+
+        db.insert(CARD_TABLE_NAME,null,contentValues);
+        db.close();
+
+    }
+
+
 
 }

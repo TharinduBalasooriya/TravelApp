@@ -55,6 +55,7 @@
         android:padding="15dp"
         android:text="Trip ID:"
         android:textColor="@color/cardview_light_background"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
