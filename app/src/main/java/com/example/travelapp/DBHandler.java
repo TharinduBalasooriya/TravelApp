@@ -186,7 +186,7 @@ public class DBHandler extends SQLiteOpenHelper {
                booking.setPersonCount(Integer.parseInt(cursor.getString(12)));
                booking.setTotPrice(Double.parseDouble(cursor.getString(13)));
                booking.setDiscountPrice(Double.parseDouble(cursor.getString(14)));
-                booking.setFinalPrice(Double.parseDouble(cursor.getString(15)));
+               booking.setFinalPrice(Double.parseDouble(cursor.getString(15)));
 
 
                Log.d("GetData"," " + cursor.getInt(0));
@@ -203,6 +203,70 @@ public class DBHandler extends SQLiteOpenHelper {
         SQLiteDatabase db = getWritableDatabase();
         db.delete(BOOKING_TABLE_NAME,"id =?",new String[]{String.valueOf(id)});
         db.close();
+    }
+    // get single booking
+    public BookingModel getSingleBooking(int id){
+        SQLiteDatabase db = getWritableDatabase();
+
+        Cursor cursor = db.query(BOOKING_TABLE_NAME,new String[]{ID,CUSNAME,HOTEL_NAME,CUSMAIL, CUSMOBILE,CUSID,STARTED,FINISHED,CHECK_IN,CHECK_OUT,PRICE_HOTEL,DISCOUNT_RATE,PERSON_COUNT,TOTALPRICE_HOTEL,DISCPRICE_HOTEL,FINALPRICE_HOTEL},
+                ID + "= ?",new String[]{String.valueOf(id)}
+                ,null,null,null);
+
+        BookingModel booking;
+        if(cursor != null){
+            cursor.moveToFirst();
+            booking = new BookingModel(
+
+                    //public BookingModel(/int id, /String name, /String nic, /String email, /String hName, /int mobile, /long started, /long finished,/int price,/int discount,String /checkIn,String /checkOut,int personCount)
+                    cursor.getInt(0),
+                    cursor.getString(1),
+                    cursor.getString(5),
+                    cursor.getString(3),
+                    cursor.getString(2),
+                    Integer.parseInt(cursor.getString(4)),
+                    Long.parseLong(cursor.getString(6)),
+                    Long.parseLong(cursor.getString(7)),
+                    Integer.parseInt(cursor.getString(10)),
+                    Integer.parseInt(cursor.getString(11)),
+                    cursor.getString(8),
+                    cursor.getString(9),
+                    Integer.parseInt(cursor.getString(12))
+
+
+
+
+            );
+            return booking;
+        }
+        return null;
+    }
+    //update single booking
+    public int updateSingleBooking(BookingModel booking){
+        SQLiteDatabase db = getWritableDatabase();
+
+        ContentValues contentValues = new ContentValues();
+
+        contentValues.put(CUSNAME,booking.getName());
+        contentValues.put(HOTEL_NAME,booking.gethName());
+        contentValues.put(CUSMAIL,booking.getName());
+        contentValues.put(CUSMOBILE,booking.getMobile());
+        contentValues.put(CUSID,booking.getNic());
+        contentValues.put(STARTED,booking.getStarted());
+        contentValues.put(FINISHED,booking.getFinished());
+        contentValues.put(CHECK_IN,booking.getCheckIn());
+        contentValues.put(CHECK_OUT,booking.getCheckOut());
+        contentValues.put(PRICE_HOTEL,booking.getPrice());
+        contentValues.put(DISCOUNT_RATE,booking.getDiscount());
+        contentValues.put(PERSON_COUNT,booking.getPersonCount());
+        contentValues.put(TOTALPRICE_HOTEL,booking.getTotPrice());
+        contentValues.put(DISCPRICE_HOTEL,booking.getDiscountPrice());
+        contentValues.put(FINALPRICE_HOTEL,booking.getFinalPrice());
+
+        int status = db.update(BOOKING_TABLE_NAME,contentValues,ID +" =?",
+                new String[]{String.valueOf(booking.getId())});
+
+        db.close();
+        return status;
     }
 
     public void addTrip(TripModel tripmodel){

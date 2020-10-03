@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".Update_Booking">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/upconstraintLayout3"
+        android:layout_width="417dp"
+        android:layout_height="151dp"
+        android:background="@drawable/path_10430"
+        android:backgroundTint="#29292B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="54dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/updateFormTopic"
+            android:textColor="#F6F6F6"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:id="@+id/upconstraintLayout4"
+        android:layout_width="403dp"
+        android:layout_height="382dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/upconstraintLayout5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/upconstraintLayout3">
+
+        <LinearLayout
+            android:layout_width="398dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/upcutomerName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="40dp"
+                android:backgroundTint="#FFFFFF"
+                android:ems="10"
+                android:foregroundTint="#FFFFFF"
+                android:hint="@string/nameHint"
+                android:inputType="textPersonName"
+                android:textColor="#BDB8B8"
+                android:textColorHint="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/upcustomerMobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="40dp"
+                android:backgroundTint="#FFFFFF"
+                android:ems="10"
+                android:foregroundTint="#FFFFFF"
+                android:hint="@string/phoneHint"
+                android:inputType="number"
+                android:textColor="#BDB8B8"
+                android:textColorHint="#FDF9F9" />
+
+            <EditText
+                android:id="@+id/upcustomerEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="40dp"
+                android:backgroundTint="#FFFFFF"
+                android:ems="10"
+                android:foregroundTint="#FFFFFF"
+                android:hint="@string/hintEmail"
+                android:inputType="textEmailAddress"
+                android:textColor="#BDB8B8"
+                android:textColorHint="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/upcustomerID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="40dp"
+                android:backgroundTint="#FFFFFF"
+                android:ems="10"
+                android:foregroundTint="#FFFFFF"
+                android:hint="@string/sampleID"
+                android:inputType="text"
+                android:textColor="#BDB8B8"
+                android:textColorHint="#FAFAFA" />
+
+            <EditText
+                android:id="@+id/upfrmCheckIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="40dp"
+                android:backgroundTint="#FFFFFF"
+                android:ems="10"
+                android:foregroundTint="#FFFFFF"
+                android:hint="@string/sampleCheckin"
+                android:inputType="date"
+                android:textColor="#BDB8B8"
+                android:textColorHint="#FAFAFA" />
+
+            <EditText
+                android:id="@+id/upfrmCheckOut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="40dp"
+                android:backgroundTint="#FFFFFF"
+                android:ems="10"
+                android:foregroundTint="#FFFFFF"
+                android:hint="@string/sampleCheckOut"
+                android:inputType="date"
+                android:textColor="#BDB8B8"
+                android:textColorHint="#FAFAFA" />
+
+            <EditText
+                android:id="@+id/uppersonNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="40dp"
+                android:backgroundTint="#FFFFFF"
+                android:ems="10"
+                android:foregroundTint="#FFFFFF"
+                android:hint="@string/numP"
+                android:inputType="number"
+                android:textColor="#BDB8B8"
+                android:textColorHint="#FAFAFA" />
+
+            <EditText
+                android:id="@+id/upfrmPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="40dp"
+                android:backgroundTint="#FFFFFF"
+                android:ems="10"
+                android:foregroundTint="#FFFFFF"
+                android:hint="100"
+                android:inputType="number|numberDecimal"
+                android:textColor="#FFFFFF"
+                tools:text="100" />
+
+            <EditText
+                android:id="@+id/upfrmDis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="40dp"
+                android:backgroundTint="#FFFFFF"
+                android:ems="10"
+                android:foregroundTint="#FFFFFF"
+                android:inputType="number|numberDecimal"
+                android:textColor="#FFFFFF"
+                tools:text="100" />
+
+            <EditText
+                android:id="@+id/uphotelName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="40dp"
+                android:backgroundTint="#FFFFFF"
+                android:ems="10"
+                android:foregroundTint="#FFFFFF"
+                android:inputType="text"
+                android:text="@string/defaultHotelName"
+                android:textColor="#BDB8B8" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/upconstraintLayout5"
+        android:layout_width="400dp"
+        android:layout_height="56dp"
+        android:background="#29292B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/upbookNow"
+            android:layout_width="183dp"
+            android:layout_height="56dp"
+            android:backgroundTint="#00FFFFFF"
+            android:onClick="updateBookingNow"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/group_16033" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

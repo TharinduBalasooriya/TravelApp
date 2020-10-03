@@ -80,7 +80,7 @@
             tools:layout_editor_absoluteY="216dp" />
 
         <TextView
-            android:id="@+id/textView36"
+            android:id="@+id/bprenumberOfPersons"
             android:layout_width="205dp"
             android:layout_height="28dp"
             android:text="@string/FrieRiceType4"
@@ -98,7 +98,7 @@
             tools:layout_editor_absoluteY="174dp" />
 
         <TextView
-            android:id="@+id/textView37"
+            android:id="@+id/bprePrice"
             android:layout_width="142dp"
             android:layout_height="27dp"
             android:text="@string/FrieRiceprice4"
@@ -108,7 +108,7 @@
             tools:layout_editor_absoluteY="184dp" />
 
         <TextView
-            android:id="@+id/textView34"
+            android:id="@+id/bpreCheckIn"
             android:layout_width="205dp"
             android:layout_height="26dp"
             android:text="@string/FrieRiceType3"
@@ -126,7 +126,7 @@
             tools:layout_editor_absoluteY="140dp" />
 
         <TextView
-            android:id="@+id/textView35"
+            android:id="@+id/bpreCheckOut"
             android:layout_width="142dp"
             android:layout_height="27dp"
             android:text="@string/FrieRiceprice3"
@@ -136,7 +136,7 @@
             tools:layout_editor_absoluteY="149dp" />
 
         <TextView
-            android:id="@+id/textView32"
+            android:id="@+id/bpreMobile"
             android:layout_width="198dp"
             android:layout_height="25dp"
             android:text="@string/FrieRiceType2"
@@ -154,7 +154,7 @@
             tools:layout_editor_absoluteY="105dp" />
 
         <TextView
-            android:id="@+id/textView33"
+            android:id="@+id/bpreMail"
             android:layout_width="142dp"
             android:layout_height="27dp"
             android:text="@string/FrieRiceprice2"

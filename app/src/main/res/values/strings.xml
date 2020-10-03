@@ -190,6 +190,7 @@
     <string name="percentageMrk">%</string>
     <string name="frmDis">DISCOUNT :</string>
     <string name="numP">numberOfPerson</string>
+    <string name="updateFormTopic">Update Booking Details</string>
 
 
 </resources>

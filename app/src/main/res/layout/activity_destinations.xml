@@ -52,7 +52,7 @@
         tools:ignore="MissingConstraints">
 
         <TextView
-            android:id="@+id/textView31"
+            android:id="@+id/bpreID"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/seeMore"
@@ -95,7 +95,7 @@
         tools:ignore="MissingConstraints">
 
         <TextView
-            android:id="@+id/textView33"
+            android:id="@+id/bpreMail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/seeMore"
@@ -109,7 +109,7 @@
             app:layout_constraintVertical_bias="0.91" />
 
         <TextView
-            android:id="@+id/textView32"
+            android:id="@+id/bpreMobile"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/destination2"
@@ -135,7 +135,7 @@
         tools:layout_editor_absoluteX="0dp">
 
         <TextView
-            android:id="@+id/textView34"
+            android:id="@+id/bpreCheckIn"
             android:layout_width="125dp"
             android:layout_height="47dp"
             android:text="@string/destination3"
@@ -148,7 +148,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/textView35"
+            android:id="@+id/bpreCheckOut"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/seeMore"
@@ -176,7 +176,7 @@
         tools:ignore="MissingConstraints">
 
         <TextView
-            android:id="@+id/textView36"
+            android:id="@+id/bprenumberOfPersons"
             android:layout_width="125dp"
             android:layout_height="47dp"
             android:text="@string/destination4"

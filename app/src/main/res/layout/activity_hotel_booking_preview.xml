@@ -16,147 +16,209 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            app:layout_constraintTop_toTopOf="parent">
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="66dp"
-                android:backgroundTint="#1B1A1A">
-
-                <TextView
-                    android:id="@+id/textView29"
-                    android:layout_width="232dp"
-                    android:layout_height="36dp"
-                    android:fontFamily="@font/baloo"
-                    android:text="@string/bookingPreviewTitle"
-                    android:textColor="#050505"
-                    android:textSize="24sp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.496"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.533" />
-
-                <ImageView
-                    android:id="@+id/imageView20"
-                    android:layout_width="60dp"
-                    android:layout_height="46dp"
-                    android:backgroundTint="#000000"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@+id/textView29"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/ic_baseline_chevron_left_24" />
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-            <TextView
-                android:id="@+id/bpreName"
-                android:layout_width="match_parent"
-                android:layout_height="47dp"
-                android:layout_marginTop="40dp"
-                android:fontFamily="@font/poppins_semibold"
-                android:paddingLeft="25dp"
-                android:text="@string/sampleName"
-                android:textColor="#000000"
-                android:textSize="17sp" />
-            <TextView
-                android:id="@+id/textView31"
-                android:layout_width="match_parent"
-                android:layout_height="47dp"
-                android:fontFamily="@font/poppins_semibold"
-                android:paddingLeft="25dp"
-                android:text="@string/sampleID"
-                android:textColor="#000000"
-                android:textSize="17sp" />
-            <TextView
-                android:id="@+id/textView32"
-                android:layout_width="match_parent"
-                android:layout_height="47dp"
-                android:fontFamily="@font/poppins_semibold"
-                android:paddingLeft="25dp"
-                android:text="@string/sampleMObile"
-                android:textColor="#000000"
-                android:textSize="17sp" />
-
-            <TextView
-                android:id="@+id/textView33"
-                android:layout_width="match_parent"
-                android:layout_height="47dp"
-                android:fontFamily="@font/poppins_semibold"
-                android:paddingLeft="25dp"
-                android:text="@string/sampleEmail"
-                android:textColor="#000000"
-                android:textSize="17sp" />
-
-            <TextView
-                android:id="@+id/textView34"
-                android:layout_width="match_parent"
-                android:layout_height="47dp"
-                android:fontFamily="@font/poppins_semibold"
-                android:paddingLeft="25dp"
-                android:text="@string/sampleCheckin"
-                android:textColor="#000000"
-                android:textSize="17sp" />
-
-            <TextView
-                android:id="@+id/textView35"
-                android:layout_width="match_parent"
-                android:layout_height="47dp"
-                android:fontFamily="@font/poppins_semibold"
-                android:paddingLeft="25dp"
-                android:text="@string/sampleCheckOut"
-                android:textColor="#000000"
-                android:textSize="17sp" />
-            <TextView
-                android:id="@+id/textView36"
-                android:layout_width="match_parent"
-                android:layout_height="47dp"
-                android:fontFamily="@font/poppins_semibold"
-                android:paddingLeft="25dp"
-                android:text="@string/sampleMembers"
-                android:textColor="#000000"
-                android:textSize="17sp" />
-
-            <TextView
-                android:id="@+id/textView37"
-                android:layout_width="match_parent"
-                android:layout_height="47dp"
-                android:fontFamily="@font/poppins_semibold"
-                android:paddingLeft="25dp"
-                android:text="@string/sampleMembers"
-                android:textColor="#000000"
-                android:textSize="17sp" />
+        <ScrollView
+            android:layout_width="399dp"
+            android:layout_height="478dp"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
-                <ImageButton
-                    android:id="@+id/imageButton15"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:backgroundTint="#00FFFFFF"
-                    app:srcCompat="@drawable/group_16033" />
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="66dp"
+                    android:backgroundTint="#1B1A1A">
 
-                <ImageButton
-                    android:id="@+id/imageButton16"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:backgroundTint="#00FFFFFF"
-                    android:onClick="deleteBooking"
-                    app:srcCompat="@drawable/group_16036" />
+                    <TextView
+                        android:id="@+id/textView29"
+                        android:layout_width="232dp"
+                        android:layout_height="36dp"
+                        android:fontFamily="@font/baloo"
+                        android:text="@string/bookingPreviewTitle"
+                        android:textColor="#050505"
+                        android:textSize="24sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.496"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.533" />
+
+                    <ImageView
+                        android:id="@+id/imageView20"
+                        android:layout_width="60dp"
+                        android:layout_height="46dp"
+                        android:backgroundTint="#000000"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/textView29"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_baseline_chevron_left_24" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:id="@+id/bpreName"
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:layout_marginTop="40dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:paddingLeft="25dp"
+                    android:text="@string/sampleName"
+                    android:textColor="#000000"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/bpreID"
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:paddingLeft="25dp"
+                    android:text="@string/sampleID"
+                    android:textColor="#000000"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/bpreMobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:paddingLeft="25dp"
+                    android:text="@string/sampleMObile"
+                    android:textColor="#000000"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/bpreMail"
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:paddingLeft="25dp"
+                    android:text="@string/sampleEmail"
+                    android:textColor="#000000"
+                    android:textSize="17sp" />
+                <TextView
+                    android:id="@+id/bpreHotelName"
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:layout_marginTop="40dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:paddingLeft="25dp"
+                    android:text="@string/sampleName"
+                    android:textColor="#000000"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/bpreCheckIn"
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:paddingLeft="25dp"
+                    android:text="@string/sampleCheckin"
+                    android:textColor="#000000"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/bpreCheckOut"
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:paddingLeft="25dp"
+                    android:text="@string/sampleCheckOut"
+                    android:textColor="#000000"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/bprenumberOfPersons"
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:paddingLeft="25dp"
+                    android:text="@string/sampleMembers"
+                    android:textColor="#000000"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/bprePrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:paddingLeft="25dp"
+                    android:text="@string/sampleMembers"
+                    android:textColor="#000000"
+                    android:textSize="17sp" />
+                <TextView
+                    android:id="@+id/bpreTotPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:paddingLeft="25dp"
+                    android:text="@string/sampleMembers"
+                    android:textColor="#000000"
+                    android:textSize="17sp" />
+                <TextView
+                    android:id="@+id/bpreDiscountR"
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:paddingLeft="25dp"
+                    android:text="@string/sampleMembers"
+                    android:textColor="#000000"
+                    android:textSize="17sp" />
+                <TextView
+                    android:id="@+id/bpreDiscountVal"
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:paddingLeft="25dp"
+                    android:text="@string/sampleMembers"
+                    android:textColor="#000000"
+                    android:textSize="17sp" />
+                <TextView
+                    android:id="@+id/bpreFinalPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:paddingLeft="25dp"
+                    android:text="@string/sampleMembers"
+                    android:textColor="#000000"
+                    android:textSize="17sp" />
+
+
             </LinearLayout>
+        </ScrollView>
 
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="406dp"
+            android:layout_height="76dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
 
+            <ImageButton
+                android:id="@+id/imageButton15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#00FFFFFF"
+                android:onClick="goToUpdate"
+                app:srcCompat="@drawable/group_16033" />
+
+            <ImageButton
+                android:id="@+id/imageButton16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#00FFFFFF"
+                android:onClick="deleteBooking"
+                app:srcCompat="@drawable/group_16036" />
         </LinearLayout>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
