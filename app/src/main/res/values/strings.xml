@@ -191,6 +191,14 @@
     <string name="frmDis">DISCOUNT :</string>
     <string name="numP">numberOfPerson</string>
     <string name="updateFormTopic">Update Booking Details</string>
+    <string name="AddOrder">Add a New Order</string>
+    <string name="kottu">Koththu</string>
+    <string name="fired">Fried Rice</string>
+    <string name="coc">Coca cola</string>
+    <string name="selectFood">Select FavouriteFood</string>
+    <string name="selF">Select your Foods</string>
+    <string name="upOrder">Update Order</string>
+    <string name="delOr">Delete Order</string>
 
 
 </resources>

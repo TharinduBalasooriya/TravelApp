@@ -53,6 +53,7 @@
                     android:id="@+id/imageView42"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:onClick="goToOrder"
                     app:layout_column="1"
                     app:layout_row="0"
                     app:srcCompat="@drawable/component_2__1" />

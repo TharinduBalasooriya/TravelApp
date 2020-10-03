@@ -6,14 +6,21 @@
     android:layout_height="match_parent"
     android:background="@drawable/background"
     android:scrollbarSize="2dp"
-    tools:context=".HotelList">
+    tools:context=".RestaurantsList">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="409dp"
         android:layout_height="657dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp">
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints">
 
         <EditText
 
@@ -26,8 +33,8 @@
             android:textAlignment="inherit"
             android:textColor="#FAF6F6"
             android:textStyle="bold"
-            tools:layout_editor_absoluteX="120dp"
-            tools:layout_editor_absoluteY="528dp" />
+            app:layout_constraintStart_toStartOf="@+id/ratingBar5"
+            app:layout_constraintTop_toBottomOf="@+id/ratingBar5" />
 
         <RatingBar
             android:id="@+id/ratingBar6"
@@ -37,8 +44,8 @@
             android:progressTint="#FFEB3B"
             android:rating="2"
             android:stepSize="0.5"
-            tools:layout_editor_absoluteX="120dp"
-            tools:layout_editor_absoluteY="565dp" />
+            app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName8"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName8" />
 
         <EditText
 
@@ -51,8 +58,8 @@
             android:textAlignment="inherit"
             android:textColor="#FAF6F6"
             android:textStyle="bold"
-            tools:layout_editor_absoluteX="120dp"
-            tools:layout_editor_absoluteY="436dp" />
+            app:layout_constraintStart_toStartOf="@+id/ratingBar4"
+            app:layout_constraintTop_toBottomOf="@+id/ratingBar4" />
 
         <RatingBar
             android:id="@+id/ratingBar5"
@@ -63,197 +70,204 @@
             android:rating="5"
 
             android:stepSize="0.5"
-            tools:layout_editor_absoluteX="120dp"
-            tools:layout_editor_absoluteY="473dp" />
-
-        <EditText
-
-            android:id="@+id/editTextTextPersonName6"
-            android:layout_width="273dp"
-            android:layout_height="45dp"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="@string/restuarant4"
-            android:textAlignment="inherit"
-            android:textColor="#FAF6F6"
-            android:textStyle="bold"
-            tools:layout_editor_absoluteX="120dp"
-            tools:layout_editor_absoluteY="345dp" />
-
-        <RatingBar
-            android:id="@+id/ratingBar4"
-            android:layout_width="240dp"
-            android:layout_height="45dp"
-            android:numStars="5"
-            android:progressTint="#FFEB3B"
-            android:rating="4"
-
-            android:stepSize="0.5"
-            tools:layout_editor_absoluteX="120dp"
-            tools:layout_editor_absoluteY="382dp" />
-
-        <RatingBar
-            android:id="@+id/ratingBar3"
-            android:layout_width="240dp"
-            android:layout_height="45dp"
-            android:numStars="5"
-            android:progressTint="#FFEB3B"
-            android:rating="1"
-
-            android:stepSize="0.5"
-            tools:layout_editor_absoluteX="122dp"
-            tools:layout_editor_absoluteY="290dp" />
+            app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName7"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName7" />
 
         <EditText
 
             android:id="@+id/editTextTextPersonName5"
             android:layout_width="273dp"
             android:layout_height="45dp"
+            android:layout_marginTop="4dp"
             android:ems="10"
             android:inputType="textPersonName"
             android:text="@string/restuarant3"
             android:textAlignment="inherit"
             android:textColor="#FAF6F6"
             android:textStyle="bold"
-            tools:layout_editor_absoluteX="122dp"
-            tools:layout_editor_absoluteY="252dp" />
+            app:layout_constraintStart_toStartOf="@+id/ratingBar2"
+            app:layout_constraintTop_toBottomOf="@+id/ratingBar2" />
+
+        <EditText
+
+            android:id="@+id/editTextTextPersonName6"
+            android:layout_width="273dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="70dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/restuarant4"
+            android:textAlignment="inherit"
+            android:textColor="#FAF6F6"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName5"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5" />
+
+        <RatingBar
+            android:id="@+id/ratingBar4"
+            android:layout_width="240dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:numStars="5"
+            android:progressTint="#FFEB3B"
+
+            android:rating="4"
+            android:stepSize="0.5"
+            app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName6"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName6" />
 
         <EditText
 
             android:id="@+id/editTextTextPersonName4"
             android:layout_width="273dp"
             android:layout_height="45dp"
+            android:layout_marginTop="4dp"
             android:ems="10"
             android:inputType="textPersonName"
             android:text="@string/restuarant2"
             android:textAlignment="inherit"
             android:textColor="#FAF6F6"
             android:textStyle="bold"
-            tools:layout_editor_absoluteX="122dp"
-            tools:layout_editor_absoluteY="164dp" />
+            app:layout_constraintStart_toStartOf="@+id/ratingBar"
+            app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
 
         <RatingBar
             android:id="@+id/ratingBar2"
             android:layout_width="240dp"
             android:layout_height="45dp"
+            android:layout_marginTop="8dp"
             android:numStars="5"
+
             android:progressTint="#FFEB3B"
             android:rating="4"
-
             android:stepSize="0.5"
-            tools:layout_editor_absoluteX="122dp"
-            tools:layout_editor_absoluteY="201dp" />
+            app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName4"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4" />
 
         <ImageView
             android:id="@+id/imageView13"
             android:layout_width="100dp"
             android:layout_height="65dp"
+            android:layout_marginTop="32dp"
             android:background="#FFFFFF"
             android:padding="1dp"
-            app:srcCompat="@drawable/hotwok"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="253dp" />
+            app:layout_constraintStart_toStartOf="@+id/imageView16"
+            app:layout_constraintTop_toBottomOf="@+id/imageView12"
+            app:srcCompat="@drawable/hotwok" />
 
         <ImageView
             android:id="@+id/imageView12"
             android:layout_width="95dp"
             android:layout_height="73dp"
+            android:layout_marginTop="30dp"
             android:background="#FFFFFF"
             android:padding="1dp"
-            app:srcCompat="@drawable/pranzo"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="165dp" />
+            app:layout_constraintStart_toStartOf="@+id/imageView13"
+            app:layout_constraintTop_toBottomOf="@+id/addOrderGo"
+            app:srcCompat="@drawable/pranzo" />
 
         <ImageView
             android:id="@+id/imageView16"
             android:layout_width="100dp"
             android:layout_height="65dp"
+            android:layout_marginTop="28dp"
             android:background="#FFFFFF"
             android:padding="1dp"
-            app:srcCompat="@drawable/steamboat"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="346dp" />
+            app:layout_constraintStart_toStartOf="@+id/imageView11"
+            app:layout_constraintTop_toBottomOf="@+id/imageView13"
+            app:srcCompat="@drawable/steamboat" />
 
         <ImageView
             android:id="@+id/imageView11"
             android:layout_width="93dp"
             android:layout_height="60dp"
+            android:layout_marginTop="28dp"
             android:background="#FFFFFF"
             android:padding="1dp"
-            app:srcCompat="@drawable/thebayleaf"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="437dp" />
+            app:layout_constraintStart_toStartOf="@+id/imageView17"
+            app:layout_constraintTop_toBottomOf="@+id/imageView16"
+            app:srcCompat="@drawable/thebayleaf" />
 
         <ImageView
             android:id="@+id/imageView17"
             android:layout_width="100dp"
             android:layout_height="73dp"
+            android:layout_marginTop="20dp"
             android:background="#FFFFFF"
             android:padding="1dp"
-            app:srcCompat="@drawable/lotusleaf"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="528dp" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView11"
+            app:srcCompat="@drawable/lotusleaf" />
 
-        <ImageView
-            android:id="@+id/imageView15"
+        <ImageButton
+            android:id="@+id/addOrderGo"
             android:layout_width="100dp"
             android:layout_height="73dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="20dp"
             android:background="#FFFFFF"
-            android:padding="1dp"
-            app:srcCompat="@drawable/gayan"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="75dp"
+            android:onClick="goTo"
 
-            />
+            android:padding="1dp"
+            android:src="@drawable/lotusleaf"
+            app:layout_constraintStart_toStartOf="@+id/imageView12"
+            app:layout_constraintTop_toBottomOf="@+id/Restaurants" />
 
         <EditText
 
+            android:id="@+id/editText"
             android:layout_width="273dp"
             android:layout_height="45dp"
+            android:layout_marginStart="40dp"
             android:ems="10"
             android:inputType="textPersonName"
             android:text="@string/restuarant1"
             android:textAlignment="inherit"
             android:textColor="#FAF6F6"
             android:textStyle="bold"
-            tools:layout_editor_absoluteX="122dp"
-            tools:layout_editor_absoluteY="74dp" />
+            app:layout_constraintStart_toEndOf="@+id/addOrderGo"
+            app:layout_constraintTop_toBottomOf="@+id/searchView2" />
 
         <RatingBar
             android:id="@+id/ratingBar"
             android:layout_width="240dp"
             android:layout_height="45dp"
-            android:clickable="false"
 
+            android:layout_marginTop="4dp"
+            android:clickable="false"
             android:indeterminate="false"
             android:numStars="5"
             android:progressTint="#FFEB3B"
             android:rating="3"
             android:stepSize="0.5"
-            tools:layout_editor_absoluteX="122dp"
-            tools:layout_editor_absoluteY="111dp" />
+            app:layout_constraintStart_toStartOf="@+id/editText"
+            app:layout_constraintTop_toBottomOf="@+id/editText" />
 
         <EditText
             android:id="@+id/Restaurants"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="201dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="16dp"
             android:ems="10"
             android:inputType="textPersonName"
             android:text="@string/restuaranttitle"
             android:textAlignment="center"
             android:textColor="#FFFFFF"
             android:textSize="24sp"
-            tools:layout_editor_absoluteX="-39dp"
-            tools:layout_editor_absoluteY="3dp" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <SearchView
+            android:id="@+id/searchView2"
             android:layout_width="147dp"
             android:layout_height="25dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="16dp"
             android:background="#FFFFFF"
             android:outlineSpotShadowColor="@color/black"
             android:visibility="visible"
-            tools:layout_editor_absoluteX="248dp"
-            tools:layout_editor_absoluteY="16dp" />
+            app:layout_constraintStart_toEndOf="@+id/Restaurants"
+            app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

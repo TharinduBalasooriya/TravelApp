@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#535151"
+    android:orientation="vertical"
+    tools:context=".UpdateOrder">
+
+    <TextView
+        android:id="@+id/uptextView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/upOrder"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/uporderCusName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="@string/nameHint"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#D3CFCF" />
+
+    <EditText
+        android:id="@+id/uporderCusMobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="@string/phoneHint"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#EFEBEB"
+        android:textColorHint="#D3CFCF" />
+
+    <TextView
+        android:id="@+id/uptextView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/selF"
+        android:textAlignment="center"
+        android:textColor="#F8F1F1"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/uporderKottu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="@string/kottu"
+        android:inputType="number"
+        android:textColorHint="#D3CFCF" />
+
+    <EditText
+        android:id="@+id/uporderFriedRice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="@string/fired"
+        android:inputType="none|number"
+        android:textColor="#CFCCCC"
+        android:textColorHint="#D3CFCF" />
+
+    <EditText
+        android:id="@+id/uporderCoc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="@string/coc"
+        android:inputType="number"
+        android:textColor="#E6DCDC"
+        android:textColorHint="#D3CFCF" />
+
+    <Button
+        android:id="@+id/upaddOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="30dp"
+        android:backgroundTint="#00B8D4"
+        android:onClick="updateOrder"
+        android:text="@string/upOrder" />
+
+    <Button
+        android:id="@+id/delOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:backgroundTint="#E53935"
+        android:onClick="delOrder"
+        android:text="@string/delOr" />
+
+</LinearLayout>

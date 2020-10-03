@@ -19,4 +19,9 @@ public class my_deals extends AppCompatActivity {
         startActivity(intent);
 
     }
+
+    public void goToFoodOrderList(View view){
+        Intent intent = new Intent(this,FoodorderList.class);
+        startActivity(intent);
+    }
 }

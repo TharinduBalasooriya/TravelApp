@@ -22,6 +22,7 @@ public class DBHandler extends SQLiteOpenHelper {
     private static final String BOOKING_TABLE_NAME = "bookings";
     private static final String USER_PROFILE_DETAILS ="userdetails";
     private static final String TRIP_TABLE_NAME = "trip";
+    private static final String ORDER_TABLE_NAME = "order_table";
     //common column names
     private  static final String ID = "id";
     private static final String STARTED = "started";
@@ -55,6 +56,13 @@ public class DBHandler extends SQLiteOpenHelper {
     private  static  final String TRIP_DATE = "date";
     private  static  final String TIME = "time";
     private  static  final String NO_OF_PARTICIPANTS = "number";
+
+    //order Table
+    private static final String ITEM1_QTY = "item1quanitity";
+    private static final String ITEM2_QTY = "item2quanitity";
+    private static final String ITEM3_QTY = "item3quanitity";
+    private static final String TOT_PRICE_ORDER = "item4quanitity";
+
 
 
 
@@ -102,10 +110,22 @@ public class DBHandler extends SQLiteOpenHelper {
                 +STARTED+ " TEXT,"
                 +FINISHED+" TEXT" +
                 ");";
+        String ORDER_TABLE_CREATE_QUERY = "CREATE TABLE "+ORDER_TABLE_NAME+" " +
+                "("
+                +ID+" INTEGER PRIMARY KEY AUTOINCREMENT,"
+                +CUSNAME + " TEXT,"
+                +CUSMOBILE + " TEXT,"
+                +ITEM1_QTY + " TEXT,"
+                +ITEM2_QTY + " TEXT,"
+                +ITEM3_QTY+ " TEXT,"
+                +TOT_PRICE_ORDER+" TEXT" +
+                ");";
+
 
         db.execSQL(TRIP_TABLE_CREATE_QUERY);
         db.execSQL(BOOKING_TABLE_CREATE_QUERY);
         db.execSQL(USER_PROFILE_DETAILS_CREATE_QUERY);
+        db.execSQL(ORDER_TABLE_CREATE_QUERY);
         Log.d("T1","db created");
 
     }
@@ -122,6 +142,10 @@ public class DBHandler extends SQLiteOpenHelper {
         String DROP_TRIP_TABLE_QUERY = "DROP TABLE IF EXISTS "+ TRIP_TABLE_NAME;
         // Drop older table if existed
         db.execSQL(DROP_TRIP_TABLE_QUERY);
+
+        String DROP_ORDER_TABLE = "DROP TABLE IF EXISTS "+ ORDER_TABLE_NAME;
+        // Drop older table if existed
+        db.execSQL(DROP_ORDER_TABLE );
         // Create tables again
         onCreate(db);
 
@@ -286,4 +310,77 @@ public class DBHandler extends SQLiteOpenHelper {
             sqLiteDatabase.close();
 
     }
+
+    //add order
+    public void adddOrder(OrderModel order){
+
+        SQLiteDatabase db =  getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(CUSNAME,order.getCusName());
+        contentValues.put(CUSMOBILE,order.getCusMobile());
+        contentValues.put(ITEM1_QTY,order.getItem1q());
+        contentValues.put(ITEM2_QTY,order.getItemq2());
+        contentValues.put(ITEM3_QTY,order.getItemq3());
+        contentValues.put(TOT_PRICE_ORDER,order.getTotPrice());
+
+        db.insert(ORDER_TABLE_NAME,null,contentValues);
+        db.close();
+
+    }
+
+    //get All orders
+    public List<OrderModel> getAllOrders(){
+
+        List<OrderModel> orders = new ArrayList();
+        SQLiteDatabase db = getReadableDatabase();
+        String query = "SELECT * FROM "+ORDER_TABLE_NAME;
+
+        Cursor cursor = db.rawQuery(query,null);
+
+        if(cursor.moveToFirst()){
+            do {
+                // Create new ToDo object
+                OrderModel order = new OrderModel();
+                // mmgby6hh
+                order.setId(cursor.getInt(0));
+                order.setCusName(cursor.getString(1));
+                order.setCusMobile(cursor.getString(2));
+                order.setItem1q(Integer.parseInt(cursor.getString(3)));
+                order.setItemq2(Integer.parseInt(cursor.getString(4)));
+                order.setItemq3(Integer.parseInt(cursor.getString(5)));
+                order.setTotPrice(Double.parseDouble(cursor.getString(6)));
+                //toDos [obj,objs,asas,asa]
+                orders.add(order);
+            }while (cursor.moveToNext());
+        }
+        return orders;
+    }
+    //delete Order
+    public void deleteOrder(int id){
+        SQLiteDatabase db = getWritableDatabase();
+        db.delete(ORDER_TABLE_NAME,"id =?",new String[]{String.valueOf(id)});
+        db.close();
+    }
+
+    //update order
+    public int updateOrder(OrderModel order){
+        SQLiteDatabase db = getWritableDatabase();
+
+        ContentValues contentValues = new ContentValues();
+
+        contentValues.put(CUSNAME,order.getCusName());
+        contentValues.put(CUSMOBILE,order.getCusMobile());
+        contentValues.put(ITEM1_QTY,order.getItem1q());
+        contentValues.put(ITEM2_QTY,order.getItemq2());
+        contentValues.put(ITEM3_QTY,order.getItemq3());
+
+
+
+        int status = db.update(ORDER_TABLE_NAME,contentValues,ID +" =?",
+                new String[]{String.valueOf(order.getId())});
+
+        db.close();
+        return status;
+    }
+
 }

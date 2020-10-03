@@ -71,7 +71,8 @@ public class hotelBookinForm1 extends AppCompatActivity {
                 BookingModel bookingModel = new BookingModel(name,nic,email,hn,mobile,started,0,hotelPrice,hotelDiscount,checkIn,checkout,personCount);
                 dbHandler.addBooking(bookingModel);
 
-                startActivity(new Intent(context,pendingBookingList.class));
+                Toast.makeText(context, "Order added successfully", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(context,MainActivity.class));
 
 
             }

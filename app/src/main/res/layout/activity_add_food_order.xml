@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#535151"
+    android:orientation="vertical"
+    tools:context=".AddFoodOrder">
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/AddOrder"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/orderCusName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="@string/nameHint"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#D3CFCF" />
+
+    <EditText
+        android:id="@+id/orderCusMobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="@string/phoneHint"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#EFEBEB"
+        android:textColorHint="#D3CFCF" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/selF"
+        android:textAlignment="center"
+        android:textColor="#F8F1F1"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/orderKottu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="@string/kottu"
+        android:inputType="number"
+        android:textColorHint="#D3CFCF" />
+
+    <EditText
+        android:id="@+id/orderFriedRice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="@string/fired"
+        android:inputType="none|number"
+        android:textColor="#CFCCCC"
+        android:textColorHint="#D3CFCF" />
+
+    <EditText
+        android:id="@+id/orderCoc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="@string/coc"
+        android:inputType="number"
+        android:textColor="#E6DCDC"
+        android:textColorHint="#D3CFCF" />
+
+    <Button
+        android:id="@+id/addOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="30dp"
+        android:backgroundTint="#00B8D4"
+        android:text="@string/AddOrder" />
+
+</LinearLayout>
