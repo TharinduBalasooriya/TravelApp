@@ -176,7 +176,7 @@ public class DBHandler extends SQLiteOpenHelper {
         ContentValues contentValues = new ContentValues();
         contentValues.put(CUSNAME,booking.getName());
         contentValues.put(HOTEL_NAME,booking.gethName());
-        contentValues.put(CUSMAIL,booking.getName());
+        contentValues.put(CUSMAIL,booking.getEmail());
         contentValues.put(CUSMOBILE,booking.getMobile());
         contentValues.put(CUSID,booking.getNic());
         contentValues.put(STARTED,booking.getStarted());
@@ -291,7 +291,7 @@ public class DBHandler extends SQLiteOpenHelper {
 
         contentValues.put(CUSNAME,booking.getName());
         contentValues.put(HOTEL_NAME,booking.gethName());
-        contentValues.put(CUSMAIL,booking.getName());
+        contentValues.put(CUSMAIL,booking.getEmail());
         contentValues.put(CUSMOBILE,booking.getMobile());
         contentValues.put(CUSID,booking.getNic());
         contentValues.put(STARTED,booking.getStarted());

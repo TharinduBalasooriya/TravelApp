@@ -168,7 +168,7 @@ public class hotelBookinForm1 extends AppCompatActivity {
              *         TimeUnit.DAYS.convert(difference, TimeUnit.MILLISECONDS)
              */
 
-            System.out.println("Number of Days between dates: "+daysBetween);
+
         } catch (Exception e) {
             e.printStackTrace();
         }
