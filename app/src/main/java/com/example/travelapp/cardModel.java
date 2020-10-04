@@ -1,6 +1,8 @@
 package com.example.travelapp;
 
-public class cardModel {
+import java.io.Serializable;
+
+public class cardModel implements Serializable {
 
     private int id;
     private String name;

@@ -61,8 +61,8 @@
                 android:foregroundTint="#FFFFFF"
                 android:hint="@string/nameHint"
                 android:inputType="textPersonName"
-                android:textColor="#BDB8B8"
-                android:textColorHint="#FFFFFF" />
+                android:textColor="#FFFEFE"
+                android:textColorHint="#E3DFDF" />
 
             <EditText
                 android:id="@+id/upcustomerMobile"
@@ -76,7 +76,7 @@
                 android:foregroundTint="#FFFFFF"
                 android:hint="@string/phoneHint"
                 android:inputType="number"
-                android:textColor="#BDB8B8"
+                android:textColor="#FDFCFC"
                 android:textColorHint="#FDF9F9" />
 
             <EditText
@@ -91,7 +91,7 @@
                 android:foregroundTint="#FFFFFF"
                 android:hint="@string/hintEmail"
                 android:inputType="textEmailAddress"
-                android:textColor="#BDB8B8"
+                android:textColor="#F3F2F2"
                 android:textColorHint="#FFFFFF" />
 
             <EditText
@@ -106,7 +106,7 @@
                 android:foregroundTint="#FFFFFF"
                 android:hint="@string/sampleID"
                 android:inputType="text"
-                android:textColor="#BDB8B8"
+                android:textColor="#FFFFFF"
                 android:textColorHint="#FAFAFA" />
 
             <EditText
@@ -121,7 +121,7 @@
                 android:foregroundTint="#FFFFFF"
                 android:hint="@string/sampleCheckin"
                 android:inputType="date"
-                android:textColor="#BDB8B8"
+                android:textColor="#FFFEFE"
                 android:textColorHint="#FAFAFA" />
 
             <EditText
@@ -136,7 +136,7 @@
                 android:foregroundTint="#FFFFFF"
                 android:hint="@string/sampleCheckOut"
                 android:inputType="date"
-                android:textColor="#BDB8B8"
+                android:textColor="#FBF7F7"
                 android:textColorHint="#FAFAFA" />
 
             <EditText
@@ -151,7 +151,7 @@
                 android:foregroundTint="#FFFFFF"
                 android:hint="@string/numP"
                 android:inputType="number"
-                android:textColor="#BDB8B8"
+                android:textColor="#FFFFFF"
                 android:textColorHint="#FAFAFA" />
 
             <EditText
@@ -167,6 +167,7 @@
                 android:hint="100"
                 android:inputType="number|numberDecimal"
                 android:textColor="#FFFFFF"
+                android:visibility="gone"
                 tools:text="100" />
 
             <EditText
@@ -181,6 +182,7 @@
                 android:foregroundTint="#FFFFFF"
                 android:inputType="number|numberDecimal"
                 android:textColor="#FFFFFF"
+                android:visibility="gone"
                 tools:text="100" />
 
             <EditText
@@ -195,7 +197,8 @@
                 android:foregroundTint="#FFFFFF"
                 android:inputType="text"
                 android:text="@string/defaultHotelName"
-                android:textColor="#BDB8B8" />
+                android:textColor="#BDB8B8"
+                android:visibility="gone" />
 
 
         </LinearLayout>

@@ -199,6 +199,10 @@
     <string name="selF">Select your Foods</string>
     <string name="upOrder">Update Order</string>
     <string name="delOr">Delete Order</string>
+    <string name="myPro">My Profile</string>
+    <string name="myCard">My Cards</string>
+    <string name="cheid">checkIn:dd/MM/yyyy</string>
+    <string name="cod">check out: dd/MM/yyyy</string>
 
 
 </resources>

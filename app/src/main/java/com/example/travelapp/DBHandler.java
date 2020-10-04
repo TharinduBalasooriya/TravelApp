@@ -491,6 +491,60 @@ public class DBHandler extends SQLiteOpenHelper {
         db.close();
 
     }
+    //getAllCard
+
+    public List<cardModel> getAllCard(){
+
+        List<cardModel> cards = new ArrayList();
+        SQLiteDatabase db = getReadableDatabase();
+        String query = "SELECT * FROM "+CARD_TABLE_NAME;
+
+        Cursor cursor = db.rawQuery(query,null);
+
+        if(cursor.moveToFirst()){
+            do {
+
+                cardModel card = new cardModel();
+
+                card.setId(cursor.getInt(0));
+                card.setName(cursor.getString(1));
+                card.setNumber(cursor.getString(2));
+                card.setExpDate(cursor.getString(4));
+                card.setCvv(cursor.getString(3));
+                cards.add(card);
+            }while (cursor.moveToNext());
+        }
+        return cards;
+    }
+    //deleteCard
+    public void deleteCard(int id){
+        SQLiteDatabase db = getWritableDatabase();
+        db.delete(CARD_TABLE_NAME,"id =?",new String[]{String.valueOf(id)});
+        db.close();
+    }
+    //update card
+
+    public int updateCard(cardModel cardModel){
+        SQLiteDatabase db = getWritableDatabase();
+
+        ContentValues contentValues = new ContentValues();
+
+
+
+        contentValues.put(CRD_NAME,cardModel.getName());
+        contentValues.put(CRD_NUM,cardModel.getNumber());
+        contentValues.put(CRD_EXP, cardModel.getExpDate());
+        contentValues.put(CRD_CVV,cardModel.getCvv());
+
+
+
+
+        int status = db.update(CARD_TABLE_NAME,contentValues,ID +" =?",
+                new String[]{String.valueOf(cardModel.getId())});
+
+        db.close();
+        return status;
+    }
 
 
 

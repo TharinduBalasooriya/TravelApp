@@ -1,6 +1,8 @@
 package com.example.travelapp;
 
 import java.io.Serializable;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class BookingModel implements Serializable {
     private int id;
@@ -179,11 +181,35 @@ public class BookingModel implements Serializable {
 
     public void calcPrice(double price, double discount, int personCount){
 
-        double totPrice = price * personCount;
+
+        float numberOfDates = getDateDif(this.checkIn,this.checkOut);
+        double totPrice = price * personCount * numberOfDates;
         this.totPrice = totPrice;
         double discountPrice = totPrice* (discount/100);
         double finalPrice = totPrice - discountPrice;
         this.finalPrice = finalPrice;
         this.discountPrice = discountPrice;
+    }
+
+    public float getDateDif( String cid, String cod){
+        SimpleDateFormat myFormat = new SimpleDateFormat("dd/MM/yyyy");
+        String dateBeforeString = cid;
+        String dateAfterString = cod;
+        float daysBetween = 0;
+        try {
+            Date dateBefore = myFormat.parse(dateBeforeString);
+            Date dateAfter = myFormat.parse(dateAfterString);
+            long difference = dateAfter.getTime() - dateBefore.getTime();
+            daysBetween = (difference / (1000*60*60*24));
+            /* You can also convert the milliseconds to days using this method
+             * float daysBetween =
+             *         TimeUnit.DAYS.convert(difference, TimeUnit.MILLISECONDS)
+             */
+
+            System.out.println("Number of Days between dates: "+daysBetween);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return daysBetween;
     }
 }

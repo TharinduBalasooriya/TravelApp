@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.travelapp">
+    package="com.example.travelapp" >
 
     <application
         android:allowBackup="true"
@@ -8,8 +8,11 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".TripList"></activity>
+        android:theme="@style/AppTheme" >
+        <activity android:name=".UpdateCard" >
+        </activity>
+        <activity android:name=".Profile_Inter" />
+        <activity android:name=".TripList" />
         <activity android:name=".UpdateOrder" />
         <activity android:name=".FoodorderList" />
         <activity android:name=".newResturentList" />
@@ -44,7 +47,7 @@
         <activity android:name=".TripProfile" />
         <activity android:name=".userProfile" />
         <activity android:name=".ViewUserDetails" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

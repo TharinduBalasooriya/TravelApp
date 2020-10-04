@@ -6,26 +6,26 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import java.util.List;
 
-public class BookingListAdapter extends ArrayAdapter<BookingModel> {
+
+public class cardAdapter extends ArrayAdapter<cardModel> {
 
     private Context context;
     private int resource;
-    List<BookingModel> bookings;
+    List<cardModel> cards;
 
 
-    public BookingListAdapter(@NonNull Context context, int resource, @NonNull List<BookingModel> bookings) {
-        super(context, resource, bookings);
+    public cardAdapter(@NonNull Context context, int resource, @NonNull List<cardModel> cards) {
+        super(context, resource, cards);
 
         this.context = context;
         this.resource = resource;
-        this.bookings = bookings;
+        this.cards = cards;
     }
 
     @NonNull
@@ -34,14 +34,13 @@ public class BookingListAdapter extends ArrayAdapter<BookingModel> {
         LayoutInflater inflater = LayoutInflater.from(context);
         View row = inflater.inflate(resource,parent,false);
 
-        TextView bookingID = row.findViewById(R.id.bookingID);
-        TextView bookingDate = row.findViewById(R.id.bookingDate);
-        TextView hotelName = row.findViewById(R.id.bookingHname);
+        TextView pID= row.findViewById(R.id.pcardName);
 
-        BookingModel book = bookings.get(position);
-        bookingID.setText("Booking ID :B " + book.getId());
-        bookingDate.setText(book.getCheckIn());
-        hotelName.setText(book.gethName());
+
+
+        cardModel card = cards.get(position);
+        pID.setText("Card ID : " + card.getId());
+
 
         return row;
 

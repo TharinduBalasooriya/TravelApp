@@ -3,6 +3,7 @@ package com.example.travelapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -14,6 +15,7 @@ public class carddetails02 extends AppCompatActivity {
     private DBHandler dbHandler;
     private EditText crdname,crdnum,exp,cvv;
     private Button crdadd;
+    private String cuscrdname,cuscrdnum,cusexp,cuscvv;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +35,13 @@ public class carddetails02 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+                cuscrdname = crdname.getText().toString();
+                cuscrdnum = crdnum.getText().toString();
+                cusexp = exp.getText().toString();
+                cuscvv = cvv.getText().toString();
+                cardModel card = new cardModel(cuscrdname,cuscrdnum,cusexp,cuscvv);
+                dbHandler.addCard(card);
+                startActivity( new Intent(context,cardssummary.class));
 
             }
         });

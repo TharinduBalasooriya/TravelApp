@@ -7,47 +7,42 @@
     android:background="#000000"
     tools:context=".hotelBookinForm1">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout3"
-        android:layout_width="417dp"
-        android:layout_height="151dp"
-        android:background="@drawable/path_10430"
-        android:backgroundTint="#29292B"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="54dp"
-            android:fontFamily="@font/poppins_semibold"
-            android:text="@string/formTopic2"
-            android:textColor="#F6F6F6"
-            android:textSize="24sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
     <ScrollView
         android:id="@+id/constraintLayout4"
-        android:layout_width="403dp"
-        android:layout_height="382dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/constraintLayout5"
+        android:layout_width="413dp"
+        android:layout_height="563dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.75"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="398dp"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout3"
+                android:layout_width="417dp"
+                android:layout_height="151dp"
+                android:background="@drawable/path_10430"
+                android:backgroundTint="#29292B">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="54dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="@string/formTopic2"
+                    android:textColor="#F6F6F6"
+                    android:textSize="24sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
             <EditText
                 android:id="@+id/cutomerName"
@@ -61,8 +56,8 @@
                 android:foregroundTint="#FFFFFF"
                 android:hint="@string/nameHint"
                 android:inputType="textPersonName"
-                android:textColor="#BDB8B8"
-                android:textColorHint="#FFFFFF" />
+                android:textColor="#FFFEFE"
+                android:textColorHint="#E4DCDC" />
 
             <EditText
                 android:id="@+id/customerMobile"
@@ -76,7 +71,7 @@
                 android:foregroundTint="#FFFFFF"
                 android:hint="@string/phoneHint"
                 android:inputType="number"
-                android:textColor="#BDB8B8"
+                android:textColor="#FFFEFE"
                 android:textColorHint="#FDF9F9" />
 
             <EditText
@@ -89,9 +84,9 @@
                 android:backgroundTint="#FFFFFF"
                 android:ems="10"
                 android:foregroundTint="#FFFFFF"
-                android:hint="@string/hintEmail"
+                android:hint="@string/newAccountEmail"
                 android:inputType="textEmailAddress"
-                android:textColor="#BDB8B8"
+                android:textColor="#FFFDFD"
                 android:textColorHint="#FFFFFF" />
 
             <EditText
@@ -104,9 +99,9 @@
                 android:backgroundTint="#FFFFFF"
                 android:ems="10"
                 android:foregroundTint="#FFFFFF"
-                android:hint="@string/sampleID"
+                android:hint="NIC:"
                 android:inputType="text"
-                android:textColor="#BDB8B8"
+                android:textColor="#FFFCFC"
                 android:textColorHint="#FAFAFA" />
 
             <EditText
@@ -119,9 +114,9 @@
                 android:backgroundTint="#FFFFFF"
                 android:ems="10"
                 android:foregroundTint="#FFFFFF"
-                android:hint="@string/sampleCheckin"
+                android:hint="@string/cheid"
                 android:inputType="date"
-                android:textColor="#BDB8B8"
+                android:textColor="#FFFFFF"
                 android:textColorHint="#FAFAFA" />
 
             <EditText
@@ -134,9 +129,9 @@
                 android:backgroundTint="#FFFFFF"
                 android:ems="10"
                 android:foregroundTint="#FFFFFF"
-                android:hint="@string/sampleCheckOut"
+                android:hint="@string/cod"
                 android:inputType="date"
-                android:textColor="#BDB8B8"
+                android:textColor="#FFFFFF"
                 android:textColorHint="#FAFAFA" />
 
             <EditText
@@ -151,8 +146,8 @@
                 android:foregroundTint="#FFFFFF"
                 android:hint="@string/numP"
                 android:inputType="number"
-                android:textColor="#BDB8B8"
-                android:textColorHint="#FAFAFA" />
+                android:textColor="#FFFFFF"
+                android:textColorHint="#C5B2B2" />
 
             <EditText
                 android:id="@+id/frmPrice"
@@ -167,6 +162,7 @@
                 android:hint="100"
                 android:inputType="number|numberDecimal"
                 android:textColor="#FFFFFF"
+                android:visibility="gone"
                 tools:text="100" />
 
             <EditText
@@ -181,6 +177,7 @@
                 android:foregroundTint="#FFFFFF"
                 android:inputType="number|numberDecimal"
                 android:textColor="#FFFFFF"
+                android:visibility="gone"
                 tools:text="100" />
 
             <EditText
@@ -195,7 +192,8 @@
                 android:foregroundTint="#FFFFFF"
                 android:inputType="text"
                 android:text="@string/defaultHotelName"
-                android:textColor="#BDB8B8" />
+                android:textColor="#BDB8B8"
+                android:visibility="gone" />
 
 
         </LinearLayout>

@@ -31,7 +31,7 @@ public class TripProfile extends AppCompatActivity {
 
         tripID = findViewById(R.id.upTripid);
         place = findViewById(R.id.upTripPlace);
-        date = findViewById(R.id.upTripPlace);
+        date = findViewById(R.id.upTripDate);
         time = findViewById(R.id.upTripTime);
         paticipent = findViewById(R.id.upTripNumb);
 
@@ -41,7 +41,7 @@ public class TripProfile extends AppCompatActivity {
         place.setText(trip.getPlace());
         date.setText(trip.getDate());
         time.setText(trip.getTime());
-        paticipent.setText(trip.getTime());
+        paticipent.setText(trip.getNumber());
 
 
 
@@ -53,8 +53,8 @@ public class TripProfile extends AppCompatActivity {
     }
 
     public void UpdateTrip(View view){
-        TripModel tr = new TripModel(trip.getId(),trip.getPlace().toString(),trip.getDate().toString(),
-                trip.getTime().toString(),trip.getNumber().toString(),0,0
+        TripModel tr = new TripModel(trip.getId(),place.getText().toString(),date.getText().toString(),
+                date.getText().toString(),time.getText().toString(),0,0
         );
         int s = db.updateTrp(tr);
         startActivity(new Intent(context,my_deals.class));
