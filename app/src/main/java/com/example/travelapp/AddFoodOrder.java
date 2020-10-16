@@ -37,6 +37,10 @@ public class AddFoodOrder extends AppCompatActivity {
                 String f2 = q2.getText().toString();
                 String f3 = q3.getText().toString();
 
+
+
+                //creating a model for orders
+                // pass the set data to model order
                 OrderModel myorder = new OrderModel(name,mob,Integer.parseInt(f1),Integer.parseInt(f2),Integer.parseInt(f3));
                 dbHandler.adddOrder(myorder);
                 startActivity(new Intent(context,MainActivity.class));

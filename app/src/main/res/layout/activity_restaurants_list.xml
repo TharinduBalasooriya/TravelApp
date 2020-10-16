@@ -206,7 +206,7 @@
             android:layout_marginStart="4dp"
             android:layout_marginTop="20dp"
             android:background="#FFFFFF"
-            android:onClick="goTo"
+            android:onClick="goToAddFood"
 
             android:padding="1dp"
             android:src="@drawable/lotusleaf"

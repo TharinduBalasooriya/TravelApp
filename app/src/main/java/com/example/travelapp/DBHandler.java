@@ -116,6 +116,11 @@ public class DBHandler extends SQLiteOpenHelper {
                 +STARTED+ " TEXT,"
                 +FINISHED+" TEXT" +
                 ");";
+
+
+
+
+        //Oder table create quarry
         String ORDER_TABLE_CREATE_QUERY = "CREATE TABLE "+ORDER_TABLE_NAME+" " +
                 "("
                 +ID+" INTEGER PRIMARY KEY AUTOINCREMENT,"
@@ -126,6 +131,8 @@ public class DBHandler extends SQLiteOpenHelper {
                 +ITEM3_QTY+ " TEXT,"
                 +TOT_PRICE_ORDER+" TEXT" +
                 ");";
+        //Create quarry finished
+
 
         String CARD_TABLE_CREATE_QUERY = "CREATE TABLE "+CARD_TABLE_NAME+" " +
             "("
@@ -331,6 +338,7 @@ public class DBHandler extends SQLiteOpenHelper {
     }
 
     //add order
+    //insert order deatils to database
     public void adddOrder(OrderModel order){
 
         SQLiteDatabase db =  getWritableDatabase();
@@ -342,6 +350,8 @@ public class DBHandler extends SQLiteOpenHelper {
         contentValues.put(ITEM3_QTY,order.getItemq3());
         contentValues.put(TOT_PRICE_ORDER,order.getTotPrice());
 
+
+        //Insert data for order table
         db.insert(ORDER_TABLE_NAME,null,contentValues);
         db.close();
 
