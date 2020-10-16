@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    //navigate to the restuarent list from main_activity
     public void goToOrder(View view){
         Intent intent = new Intent(this,RestaurantsList.class);
         startActivity(intent);
