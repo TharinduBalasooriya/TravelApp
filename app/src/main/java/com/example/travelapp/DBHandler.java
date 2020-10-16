@@ -392,6 +392,8 @@ public class DBHandler extends SQLiteOpenHelper {
     }
 
     //update order
+    //update order details to database
+
     public int updateOrder(OrderModel order){
         SQLiteDatabase db = getWritableDatabase();
 
