@@ -18,8 +18,8 @@ public class RestaurantsList extends AppCompatActivity {
 
 
 
-
-    public void goTo  (View view){
+    //Navigate to add food form
+    public void goToAddFood  (View view){
         startActivity(new Intent(this,AddFoodOrder.class));
 
     }

@@ -20,7 +20,9 @@ public class OrderModel implements Serializable {
         this.item1q = item1q;
         this.itemq2 = itemq2;
         this.itemq3 = itemq3;
-        this.totPrice = item1q * 100 + itemq2 + 270 + itemq3 * 300;
+
+
+        this.totPrice = calctotprice(item1q,itemq2,itemq3);
     }
 
     public OrderModel(String cusName, String cusMobile, int item1q, int itemq2, int itemq3) {
@@ -29,7 +31,14 @@ public class OrderModel implements Serializable {
         this.item1q = item1q;
         this.itemq2 = itemq2;
         this.itemq3 = itemq3;
-        this.totPrice = item1q * 100 + itemq2 + 270 + itemq3 * 300;
+
+
+        this.totPrice = calctotprice(item1q,itemq2,itemq3);
+    }
+
+    public double calctotprice(int i1, int i2, int i3 ){
+        double tot = i1 * 100 + i2 * 270 + i3 * 300;
+        return tot;
     }
 
     public int getId() {

@@ -116,6 +116,11 @@ public class DBHandler extends SQLiteOpenHelper {
                 +STARTED+ " TEXT,"
                 +FINISHED+" TEXT" +
                 ");";
+
+
+
+
+        //Oder table create quarry
         String ORDER_TABLE_CREATE_QUERY = "CREATE TABLE "+ORDER_TABLE_NAME+" " +
                 "("
                 +ID+" INTEGER PRIMARY KEY AUTOINCREMENT,"
@@ -126,6 +131,8 @@ public class DBHandler extends SQLiteOpenHelper {
                 +ITEM3_QTY+ " TEXT,"
                 +TOT_PRICE_ORDER+" TEXT" +
                 ");";
+        //Create quarry finished
+
 
         String CARD_TABLE_CREATE_QUERY = "CREATE TABLE "+CARD_TABLE_NAME+" " +
             "("
@@ -331,6 +338,7 @@ public class DBHandler extends SQLiteOpenHelper {
     }
 
     //add order
+    //insert order deatils to database
     public void adddOrder(OrderModel order){
 
         SQLiteDatabase db =  getWritableDatabase();
@@ -342,6 +350,8 @@ public class DBHandler extends SQLiteOpenHelper {
         contentValues.put(ITEM3_QTY,order.getItemq3());
         contentValues.put(TOT_PRICE_ORDER,order.getTotPrice());
 
+
+        //Insert data for order table
         db.insert(ORDER_TABLE_NAME,null,contentValues);
         db.close();
 
@@ -352,15 +362,16 @@ public class DBHandler extends SQLiteOpenHelper {
 
         List<OrderModel> orders = new ArrayList();
         SQLiteDatabase db = getReadableDatabase();
+        //select all order details
         String query = "SELECT * FROM "+ORDER_TABLE_NAME;
 
         Cursor cursor = db.rawQuery(query,null);
 
         if(cursor.moveToFirst()){
             do {
-                // Create new ToDo object
+                //create order object
                 OrderModel order = new OrderModel();
-                // mmgby6hh
+                //set values for order object
                 order.setId(cursor.getInt(0));
                 order.setCusName(cursor.getString(1));
                 order.setCusMobile(cursor.getString(2));
@@ -368,10 +379,13 @@ public class DBHandler extends SQLiteOpenHelper {
                 order.setItemq2(Integer.parseInt(cursor.getString(4)));
                 order.setItemq3(Integer.parseInt(cursor.getString(5)));
                 order.setTotPrice(Double.parseDouble(cursor.getString(6)));
-                //toDos [obj,objs,asas,asa]
+
+                // new order add to the orders arraylist
                 orders.add(order);
             }while (cursor.moveToNext());
         }
+
+        //return the array list
         return orders;
     }
     //delete Order
@@ -382,6 +396,8 @@ public class DBHandler extends SQLiteOpenHelper {
     }
 
     //update order
+    //update order details to database
+
     public int updateOrder(OrderModel order){
         SQLiteDatabase db = getWritableDatabase();
 
@@ -394,7 +410,7 @@ public class DBHandler extends SQLiteOpenHelper {
         contentValues.put(ITEM3_QTY,order.getItemq3());
 
 
-
+        //update quarry
         int status = db.update(ORDER_TABLE_NAME,contentValues,ID +" =?",
                 new String[]{String.valueOf(order.getId())});
 

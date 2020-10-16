@@ -20,6 +20,10 @@ public class my_deals extends AppCompatActivity {
 
     }
 
+
+
+
+    //Navigate to list view of orders
     public void goToFoodOrderList(View view){
         Intent intent = new Intent(this,FoodorderList.class);
         startActivity(intent);
