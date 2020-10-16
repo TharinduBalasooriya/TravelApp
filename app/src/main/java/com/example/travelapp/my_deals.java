@@ -14,6 +14,7 @@ public class my_deals extends AppCompatActivity {
         setContentView(R.layout.activity_my_deals);
     }
 
+    //go to booking list
     public void goToBookingList(View view){
         Intent intent = new Intent(this,pendingBookingList.class);
         startActivity(intent);

@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class Update_Booking extends AppCompatActivity {
 
@@ -20,10 +21,13 @@ public class Update_Booking extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_update__booking);
         Intent intent = getIntent();
+
+        //catch the booking model
         book = (BookingModel) intent.getSerializableExtra("BOOKING");
 
         context = this;
 
+        //get views
         hotelName = findViewById(R.id.uphotelName);
         cusName = findViewById(R.id.upcutomerName);
         cusMail = findViewById(R.id.upcustomerEmail);
@@ -35,6 +39,7 @@ public class Update_Booking extends AppCompatActivity {
         hPrice = findViewById(R.id.upfrmPrice);
         hDisc = findViewById(R.id.upfrmDis);
 
+        //set current available data to text fields
         hotelName.setText(book.gethName());
         cusName.setText(book.getName());
         cusMail.setText(book.getEmail());
@@ -49,7 +54,10 @@ public class Update_Booking extends AppCompatActivity {
 
 
     }
+
+    //update function
     public void updateBookingNow(View view){
+        //get the id of the booking
         int id = book.getId();
         String hn = hotelName.getText().toString();
         String name = cusName.getText().toString();
@@ -62,10 +70,13 @@ public class Update_Booking extends AppCompatActivity {
         int hotelDiscount = Integer.parseInt(hDisc.getText().toString());
         int mobile = Integer.parseInt(cusMobile.getText().toString());
         long started = System.currentTimeMillis();
+
+        //creating a new booking with updated values and id
         BookingModel bookingModel = new BookingModel(id,name,nic,email,hn,mobile,started,0,hotelPrice,hotelDiscount,checkIn,checkout,personCount);
+        //update booking
         int state = db.updateSingleBooking(bookingModel);
         System.out.println(state);
-
+        Toast.makeText(context, "Hotel Booking updated successfully", Toast.LENGTH_SHORT).show();
         Intent intent = new Intent(context,pendingBookingList.class);
         startActivity(intent);
 

@@ -34,21 +34,28 @@ public class HotelAdapter extends RecyclerView.Adapter<HotelAdapter.MyViewHolder
     @Override
     public void onBindViewHolder(MyViewHolder holder, int position) {
         final HotelModel model = mylist.get(position);
+        //set data in hotel list
         holder.name.setText(model.getHotel_name());
         holder.image.setImageDrawable(mcontext.getResources().getDrawable(model.getImage()));
         holder.parentLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(@NonNull View view) {
-                Toast.makeText(mcontext, "Hello", Toast.LENGTH_SHORT).show();
+
+                Toast.makeText(mcontext, model.getHotel_name(), Toast.LENGTH_SHORT).show();
 
 
-
+                //creating a intent object
                 Intent intent = new Intent(mcontext,HotellearnMoreView.class);
+
+                //put extra messages in intent object
                 intent.putExtra("image",model.getImage());
                 intent.putExtra("name",model.getHotel_name());
                 intent.putExtra("desc",model.getDescription());
                 intent.putExtra("disc",model.getDiscount());
                 intent.putExtra("price",model.getPrice());
+
+                //starting next activity
+                //goto descriptive view of hotel
                 mcontext.startActivity(intent);
 
 

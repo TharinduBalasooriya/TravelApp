@@ -7,47 +7,42 @@
     android:background="#000000"
     tools:context=".Update_Booking">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/upconstraintLayout3"
-        android:layout_width="417dp"
-        android:layout_height="151dp"
-        android:background="@drawable/path_10430"
-        android:backgroundTint="#29292B"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="54dp"
-            android:fontFamily="@font/poppins_semibold"
-            android:text="@string/updateFormTopic"
-            android:textColor="#F6F6F6"
-            android:textSize="24sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
     <ScrollView
         android:id="@+id/upconstraintLayout4"
-        android:layout_width="403dp"
-        android:layout_height="382dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/upconstraintLayout5"
+        android:layout_width="0dp"
+        android:layout_height="482dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.75"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/upconstraintLayout3">
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="398dp"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/upconstraintLayout3"
+                android:layout_width="417dp"
+                android:layout_height="151dp"
+                android:background="@drawable/path_10430"
+                android:backgroundTint="#29292B">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="54dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="@string/updateFormTopic"
+                    android:textColor="#F6F6F6"
+                    android:textSize="24sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
             <EditText
                 android:id="@+id/upcutomerName"

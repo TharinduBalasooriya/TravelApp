@@ -18,7 +18,11 @@ public class hotel_booking_preview extends AppCompatActivity {
         setContentView(R.layout.activity_hotel_booking_preview);
         context = this;
         Intent intent = getIntent();
+
+        //catch the booking object
         book = (BookingModel) intent.getSerializableExtra("book");
+
+        //set values
         String name = book.getName();
         TextView nameView = findViewById(R.id.bpreName);
         nameView.setText("Name : " + name);
@@ -62,17 +66,25 @@ public class hotel_booking_preview extends AppCompatActivity {
 
 
     }
+
+    //delete booking
     public void deleteBooking(View view){
+
         DBHandler db = new DBHandler(context);
+        //calling delete booking class in DB handler class
         db.deleteBooking(book.getId());
-        startActivity(new Intent(context,pendingBookingList.class));
+        Toast.makeText(context, "Your booking has been canceled", Toast.LENGTH_SHORT).show();
+        startActivity(new Intent(context,pendingBookingList.class)); // navigate back to pending booking list
     }
 
+    //passing data to update from
     public void goToUpdate(View view){
 
+
         Intent intent = new Intent(context,Update_Booking.class);
+        //passing the booking object
         intent.putExtra("BOOKING",book);
-        startActivity(intent);
+        startActivity(intent);//go to update booking class
 
     }
 }

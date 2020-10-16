@@ -22,7 +22,7 @@
     <TextView
         android:id="@+id/hotelName"
         android:layout_width="140dp"
-        android:layout_height="32dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="60dp"

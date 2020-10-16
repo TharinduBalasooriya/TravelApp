@@ -16,9 +16,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
+
+    //navigate to Hotel List
     public void goToHotel(View view){
         Intent intent = new Intent(this,HotelList.class);
-        startActivity(intent);
+        startActivity(intent); //starting the Activity
 
     }
 

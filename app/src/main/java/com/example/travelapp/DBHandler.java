@@ -77,6 +77,8 @@ public class DBHandler extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
+
+        //creating hotel table query
         String BOOKING_TABLE_CREATE_QUERY = "CREATE TABLE "+BOOKING_TABLE_NAME+" " +
                 "("
                 +ID+" INTEGER PRIMARY KEY AUTOINCREMENT,"
@@ -145,6 +147,8 @@ public class DBHandler extends SQLiteOpenHelper {
 
 
         db.execSQL(TRIP_TABLE_CREATE_QUERY);
+
+        //execute hotel table create query
         db.execSQL(BOOKING_TABLE_CREATE_QUERY);
         db.execSQL(USER_PROFILE_DETAILS_CREATE_QUERY);
         db.execSQL(ORDER_TABLE_CREATE_QUERY);
@@ -179,8 +183,11 @@ public class DBHandler extends SQLiteOpenHelper {
 
     //add booking method
     public void addBooking(BookingModel booking){
+        //open data base connection to write data
         SQLiteDatabase sqLiteDatabase = getWritableDatabase();
         ContentValues contentValues = new ContentValues();
+        //add values as key value pairs
+        //key table name , value customer inout
         contentValues.put(CUSNAME,booking.getName());
         contentValues.put(HOTEL_NAME,booking.gethName());
         contentValues.put(CUSMAIL,booking.getEmail());
@@ -205,11 +212,12 @@ public class DBHandler extends SQLiteOpenHelper {
 
     }
     //get All bookings
-
+    //returns booking as a array list
     public List<BookingModel> getAllBookings(){
 
         List<BookingModel> bookings = new ArrayList();
         SQLiteDatabase db = getReadableDatabase();
+        //query to select all bookings
         String query = "SELECT * FROM " + BOOKING_TABLE_NAME;
 
         Cursor cursor = db.rawQuery(query,null);
@@ -220,7 +228,7 @@ public class DBHandler extends SQLiteOpenHelper {
             do {
                 // Create new Booking Object
                 BookingModel booking = new BookingModel();
-                // mmgby6hh
+                // set values to booking object
                booking.setId(cursor.getInt(0));
                booking.setName(cursor.getString(1));
                booking.sethName(cursor.getString(2));
@@ -241,7 +249,8 @@ public class DBHandler extends SQLiteOpenHelper {
 
                Log.d("GetData"," " + cursor.getInt(0));
                Log.d("GetData",""+booking.getMobile());
-                //toDos [obj,objs,asas,asa]
+
+               //add booking object to array list
                 bookings.add(booking);
             }while (cursor.moveToNext());
         }
@@ -251,6 +260,7 @@ public class DBHandler extends SQLiteOpenHelper {
     //delete Booking
     public void deleteBooking(int id){
         SQLiteDatabase db = getWritableDatabase();
+        //delete by id query
         db.delete(BOOKING_TABLE_NAME,"id =?",new String[]{String.valueOf(id)});
         db.close();
     }
@@ -295,7 +305,7 @@ public class DBHandler extends SQLiteOpenHelper {
         SQLiteDatabase db = getWritableDatabase();
 
         ContentValues contentValues = new ContentValues();
-
+        // put values as key value pairs
         contentValues.put(CUSNAME,booking.getName());
         contentValues.put(HOTEL_NAME,booking.gethName());
         contentValues.put(CUSMAIL,booking.getEmail());
@@ -312,6 +322,7 @@ public class DBHandler extends SQLiteOpenHelper {
         contentValues.put(DISCPRICE_HOTEL,booking.getDiscountPrice());
         contentValues.put(FINALPRICE_HOTEL,booking.getFinalPrice());
 
+        //update query
         int status = db.update(BOOKING_TABLE_NAME,contentValues,ID +" =?",
                 new String[]{String.valueOf(booking.getId())});
 
@@ -431,7 +442,7 @@ public class DBHandler extends SQLiteOpenHelper {
             do {
 
                 TripModel trip = new TripModel();
-                // mmgby6hh
+
                 trip.setId(cursor.getInt(0));
                 trip.setPlace(cursor.getString(1));
                 trip.setDate(cursor.getString(2));

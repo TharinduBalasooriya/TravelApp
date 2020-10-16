@@ -17,8 +17,8 @@ public class DateDifferenceTest {
 
     public void get_date_difference_is_corredt(){
 
-         result = hotel_booking_form.getDateDif("24/09/2020","26/09/2020");
-        assertEquals(2,result,0.001);
+         result = hotel_booking_form.getDateDif("5/09/2020","10/09/2020");
+        assertEquals(5,result,0.001);
     }
     @After
     public void clear_Data(){

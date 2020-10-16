@@ -36,18 +36,24 @@ public class HotellearnMoreView extends AppCompatActivity {
         pr.setText(Integer.toString(price));
         dc.setText(Integer.toString(discount));
     }
+
+    //go to hotel booking form
     public void goToBook(View view){
         Intent intent = new Intent(this,hotelBookinForm1.class);
+        //catching some data from the hotel descriptive view
         TextView name = findViewById(R.id.hotelName);
         TextView price = findViewById(R.id.lrnPrice);
         TextView discount = findViewById(R.id.lrndisc);
         String hName = name.getText().toString();
         String hPrice = price.getText().toString();
         String hDiscount = discount.getText().toString();
+
+        //put hotel details as extra messages
         intent.putExtra("hotelName",hName);
         intent.putExtra("hotelPrice",hPrice);
         intent.putExtra("hotelDiscount",hDiscount);
 
+        //navigate to hotel booking form
         startActivity(intent);
 
     }

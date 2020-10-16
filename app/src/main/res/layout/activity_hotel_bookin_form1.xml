@@ -118,7 +118,8 @@
                 android:hint="@string/cheid"
                 android:inputType="date"
                 android:textColor="#FFFFFF"
-                android:textColorHint="#FAFAFA" />
+                android:textColorHint="#FAFAFA"
+                android:textSize="18sp" />
 
             <EditText
                 android:id="@+id/frmCheckOut"
@@ -133,7 +134,8 @@
                 android:hint="@string/cod"
                 android:inputType="date"
                 android:textColor="#FFFFFF"
-                android:textColorHint="#FAFAFA" />
+                android:textColorHint="#FAFAFA"
+                android:textSize="18sp" />
 
             <EditText
                 android:id="@+id/personNumber"
