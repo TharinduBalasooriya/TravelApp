@@ -52,8 +52,8 @@ public class UpdateOrder extends AppCompatActivity {
         String cuname = name.getText().toString();
         String cumobile = mobile.getText().toString();
         int cq1 = Integer.parseInt(q1.getText().toString());
-        int cq2 = Integer.parseInt(q1.getText().toString());
-        int cq3 = Integer.parseInt(q1.getText().toString());
+        int cq2 = Integer.parseInt(q2.getText().toString());
+        int cq3 = Integer.parseInt(q3.getText().toString());
         
         //create model with updated values
         OrderModel uporder = new OrderModel(id,cuname,cumobile,cq1,cq2,cq3);
