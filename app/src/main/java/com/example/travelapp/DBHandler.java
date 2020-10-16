@@ -493,6 +493,8 @@ public class DBHandler extends SQLiteOpenHelper {
     }
     //getAllCard
 
+
+
     public List<cardModel> getAllCard(){
 
         List<cardModel> cards = new ArrayList();

@@ -14,6 +14,8 @@ public class Profile_Inter extends AppCompatActivity {
         setContentView(R.layout.activity_profile__inter);
     }
 
+
+    
     public void goToCard(View view){
 
         startActivity( new Intent(this,cardssummary.class));

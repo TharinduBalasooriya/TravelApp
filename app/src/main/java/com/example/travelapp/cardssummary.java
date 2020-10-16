@@ -28,9 +28,9 @@ public class cardssummary extends AppCompatActivity {
         context = this;
         dbHandler = new DBHandler(context);
 
-        listView = findViewById(R.id.cardListView);
-        cusCards = new ArrayList<>();
-        cusCards = dbHandler.getAllCard();
+        listView = findViewById(R.id.cardListView); //get id of the list view
+        cusCards = new ArrayList<>(); //creating array list to save cus card details
+        cusCards = dbHandler.getAllCard(); //get all cards of customer
 
         cardAdapter adapter = new cardAdapter(context,R.layout.single_card,cusCards);
         listView.setAdapter(adapter);
@@ -41,7 +41,7 @@ public class cardssummary extends AppCompatActivity {
 
                 cardModel card = cusCards.get(i);
                 Intent intent = new Intent(context,UpdateCard.class);
-                Log.d("TRIP",Integer.toString(card.getId()));
+                Log.d("GETCARD",Integer.toString(card.getId()));
                 intent.putExtra("CARD",card);
                 startActivity(intent);
 

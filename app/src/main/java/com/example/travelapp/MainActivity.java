@@ -36,6 +36,8 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this,Destinations.class);
         startActivity(intent);
     }
+
+    //go to user profile interface
     public void goToProfileInt(View view){
         Intent intent = new Intent(this,Profile_Inter.class);
         startActivity(intent);
