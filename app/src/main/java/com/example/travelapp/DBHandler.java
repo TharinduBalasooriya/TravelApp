@@ -362,15 +362,16 @@ public class DBHandler extends SQLiteOpenHelper {
 
         List<OrderModel> orders = new ArrayList();
         SQLiteDatabase db = getReadableDatabase();
+        //select all order details
         String query = "SELECT * FROM "+ORDER_TABLE_NAME;
 
         Cursor cursor = db.rawQuery(query,null);
 
         if(cursor.moveToFirst()){
             do {
-                // Create new ToDo object
+                //create order object
                 OrderModel order = new OrderModel();
-                // mmgby6hh
+                //set values for order object
                 order.setId(cursor.getInt(0));
                 order.setCusName(cursor.getString(1));
                 order.setCusMobile(cursor.getString(2));
@@ -378,10 +379,13 @@ public class DBHandler extends SQLiteOpenHelper {
                 order.setItemq2(Integer.parseInt(cursor.getString(4)));
                 order.setItemq3(Integer.parseInt(cursor.getString(5)));
                 order.setTotPrice(Double.parseDouble(cursor.getString(6)));
-                //toDos [obj,objs,asas,asa]
+
+                // new order add to the orders arraylist
                 orders.add(order);
             }while (cursor.moveToNext());
         }
+
+        //return the array list
         return orders;
     }
     //delete Order
@@ -406,7 +410,7 @@ public class DBHandler extends SQLiteOpenHelper {
         contentValues.put(ITEM3_QTY,order.getItemq3());
 
 
-
+        //update quarry
         int status = db.update(ORDER_TABLE_NAME,contentValues,ID +" =?",
                 new String[]{String.valueOf(order.getId())});
 

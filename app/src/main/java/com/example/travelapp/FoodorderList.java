@@ -29,8 +29,12 @@ public class FoodorderList extends AppCompatActivity {
 
         listView = findViewById(R.id.orderList);
         cusOrders = new ArrayList<>();
+
+        //fetching all orders from the database
         cusOrders = dbHandler.getAllOrders();
 
+
+        //view orders in list view
         OrderListAdapter adapter = new OrderListAdapter(context,R.layout.single_forder,cusOrders);
         listView.setAdapter(adapter);
 
@@ -40,6 +44,7 @@ public class FoodorderList extends AppCompatActivity {
 
                 OrderModel order =cusOrders.get(i);
                 Intent intent = new Intent(context,UpdateOrder.class);
+                //pass the order model to update class
                 intent.putExtra("order",order);
                 startActivity(intent);
 

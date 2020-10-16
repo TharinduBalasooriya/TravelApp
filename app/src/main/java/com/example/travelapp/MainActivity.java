@@ -21,6 +21,9 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
 
     }
+
+
+    //Navigate to Users deals page
     public void goMyDeals(View view){
         Intent intent = new Intent(this,my_deals.class);
         startActivity(intent);
