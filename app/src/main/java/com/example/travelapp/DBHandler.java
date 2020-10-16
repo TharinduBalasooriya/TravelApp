@@ -108,6 +108,7 @@ public class DBHandler extends SQLiteOpenHelper {
                 +PASSWORD + " TEXT"+
                 ");";
 
+        //trip table create query
         String TRIP_TABLE_CREATE_QUERY = "CREATE TABLE "+TRIP_TABLE_NAME+" " +
                 "("
                 +ID+" INTEGER PRIMARY KEY AUTOINCREMENT,"
@@ -330,23 +331,6 @@ public class DBHandler extends SQLiteOpenHelper {
         return status;
     }
 
-    public void addTrip(TripModel tripmodel){
-           SQLiteDatabase sqLiteDatabase = getWritableDatabase();
-
-           ContentValues contentValues = new ContentValues();
-
-           contentValues.put(PLACE, tripmodel.getPlace());
-           contentValues.put(TRIP_DATE, tripmodel.getDate());
-           contentValues.put(TIME, tripmodel.getTime());
-           contentValues.put(NO_OF_PARTICIPANTS, tripmodel.getNumber());
-
-
-            //save to table
-            sqLiteDatabase.insert(TRIP_TABLE_NAME, null, contentValues);
-            //close database
-            sqLiteDatabase.close();
-
-    }
 
     //add order
     //insert order deatils to database
@@ -429,6 +413,25 @@ public class DBHandler extends SQLiteOpenHelper {
         return status;
     }
 
+    //add trip function
+    //save trip data to database
+    public void addTrip(TripModel tripmodel){
+        SQLiteDatabase sqLiteDatabase = getWritableDatabase();
+
+        ContentValues contentValues = new ContentValues();
+
+        contentValues.put(PLACE, tripmodel.getPlace());
+        contentValues.put(TRIP_DATE, tripmodel.getDate());
+        contentValues.put(TIME, tripmodel.getTime());
+        contentValues.put(NO_OF_PARTICIPANTS, tripmodel.getNumber());
+
+
+        //save to table
+        sqLiteDatabase.insert(TRIP_TABLE_NAME, null, contentValues);
+        //close database
+        sqLiteDatabase.close();
+
+    }
     //getAllTrips
     public List<TripModel> getAllTrips(){
 
@@ -440,14 +443,15 @@ public class DBHandler extends SQLiteOpenHelper {
 
         if(cursor.moveToFirst()){
             do {
-
+                // create a object from trip model
                 TripModel trip = new TripModel();
-
+                // set vales for object
                 trip.setId(cursor.getInt(0));
                 trip.setPlace(cursor.getString(1));
                 trip.setDate(cursor.getString(2));
                 trip.setTime(cursor.getString(3));
                 trip.setNumber(cursor.getString(4));
+                //add trip object to trips array list
                 trips.add(trip);
             }while (cursor.moveToNext());
         }

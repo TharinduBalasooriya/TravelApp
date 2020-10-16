@@ -30,6 +30,7 @@ public class my_deals extends AppCompatActivity {
         startActivity(intent);
     }
 
+    //go to tip list view
     public void  goToTripList(View view){
         Intent intent = new Intent(this,TripList.class);
         startActivity(intent);

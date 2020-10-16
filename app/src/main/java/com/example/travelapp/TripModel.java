@@ -10,7 +10,7 @@ public class TripModel implements Serializable {
     public TripModel(){
 
     }
-
+    //constructors
     public TripModel(int id, String place, String date, String time, String number, long started, long finished) {
         this.id = id;
         this.place = place;

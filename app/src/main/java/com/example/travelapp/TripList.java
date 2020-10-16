@@ -28,13 +28,18 @@ public class TripList extends AppCompatActivity {
         context = this;
         dbHandler = new DBHandler(context);
 
+        //get list view of trips
         listView = findViewById(R.id.tripList);
+        //create arary list to save trip data
         cusTrips = new ArrayList<>();
+        //get all trip details from data base
         cusTrips = dbHandler.getAllTrips();
 
+        //show trips in a list view
         TripAdapter adapter = new TripAdapter(context,R.layout.single_trip,cusTrips);
         listView.setAdapter(adapter);
 
+        //when user clicks on a item in trip list view
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {

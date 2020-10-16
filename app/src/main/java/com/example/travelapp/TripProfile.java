@@ -36,7 +36,7 @@ public class TripProfile extends AppCompatActivity {
         paticipent = findViewById(R.id.upTripNumb);
 
 
-
+        // set text in trip profile view
         tripID.setText("ID : " + trip.getId());
         place.setText(trip.getPlace());
         date.setText(trip.getDate());
@@ -52,6 +52,7 @@ public class TripProfile extends AppCompatActivity {
         startActivity(new Intent(context,my_deals.class));
     }
 
+    //when user clicks on update button
     public void UpdateTrip(View view){
         TripModel tr = new TripModel(trip.getId(),place.getText().toString(),date.getText().toString(),
                 date.getText().toString(),time.getText().toString(),0,0
